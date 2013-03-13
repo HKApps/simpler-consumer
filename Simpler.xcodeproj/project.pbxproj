@@ -33,9 +33,13 @@
 		F42ABEFD16F00E2800133E48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFC16F00E2800133E48 /* QuartzCore.framework */; };
 		F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0016F0123900133E48 /* ZXingObjC.framework */; };
 		F42ABF0416F012C500133E48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0216F0128300133E48 /* AudioToolbox.framework */; };
-		F42ABF0816F0181000133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0716F0181000133E48 /* FacebookSDK.framework */; };
 		F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */; };
 		F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */; };
+		F42ABF1116F01F6C00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
+		F42ABF1316F021ED00133E48 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1216F021ED00133E48 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F42ABF1516F021F100133E48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1416F021F100133E48 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,10 +84,14 @@
 		F42ABEFC16F00E2800133E48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F42ABF0016F0123900133E48 /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZXingObjC.framework; sourceTree = "<group>"; };
 		F42ABF0216F0128300133E48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F42ABF0716F0181000133E48 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F42ABF0916F0183500133E48 /* HPDT_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_LoginViewController.h; sourceTree = "<group>"; };
 		F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_LoginViewController.m; sourceTree = "<group>"; };
 		F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_LoginViewController.xib; sourceTree = "<group>"; };
+		F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		F42ABF1216F021ED00133E48 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F42ABF1616F021FD00133E48 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */,
+				F42ABF1516F021F100133E48 /* Social.framework in Frameworks */,
+				F42ABF1316F021ED00133E48 /* AdSupport.framework in Frameworks */,
 				F42ABF0416F012C500133E48 /* AudioToolbox.framework in Frameworks */,
 				F42ABEFD16F00E2800133E48 /* QuartzCore.framework in Frameworks */,
 				F42ABEFB16F00E2100133E48 /* ImageIO.framework in Frameworks */,
@@ -102,7 +113,7 @@
 				F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */,
 				F42ABEB516EFF9DE00133E48 /* CoreData.framework in Frameworks */,
 				F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */,
-				F42ABF0816F0181000133E48 /* FacebookSDK.framework in Frameworks */,
+				F42ABF1116F01F6C00133E48 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +153,11 @@
 		F42ABEAD16EFF9DE00133E48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF0716F0181000133E48 /* FacebookSDK.framework */,
+				F42ABF1616F021FD00133E48 /* Accounts.framework */,
+				F42ABF1416F021F100133E48 /* Social.framework */,
+				F42ABF1216F021ED00133E48 /* AdSupport.framework */,
+				F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */,
+				F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */,
 				F42ABF0216F0128300133E48 /* AudioToolbox.framework */,
 				F42ABF0016F0123900133E48 /* ZXingObjC.framework */,
 				F42ABEFC16F00E2800133E48 /* QuartzCore.framework */,
@@ -295,6 +310,7 @@
 				F42ABEC716EFF9DE00133E48 /* Default-568h@2x.png in Resources */,
 				F42ABEF116F00CD500133E48 /* QRScannerViewController.xib in Resources */,
 				F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */,
+				F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +462,10 @@
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -465,6 +485,10 @@
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;

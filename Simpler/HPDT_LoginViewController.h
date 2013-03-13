@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTAppDelegate.h"
 
 @interface HPDT_LoginViewController : UIViewController
+
+
+- (IBAction)facebookAuthButtonAction:(id)sender;
 
 @end
