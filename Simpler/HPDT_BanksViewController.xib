@@ -146,7 +146,7 @@
 						<reference key="IBUIFontDescription" ref="848139992"/>
 						<reference key="IBUIFont" ref="541243872"/>
 					</object>
-					<object class="IBUIImageView" id="93435155">
+					<object class="IBUIImageView" id="520439688">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{28, 87}, {262, 49}}</string>
@@ -256,7 +256,7 @@
 							<reference ref="69037005"/>
 							<reference ref="65455695"/>
 							<reference ref="435228688"/>
-							<reference ref="93435155"/>
+							<reference ref="520439688"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -313,7 +313,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
-						<reference key="object" ref="93435155"/>
+						<reference key="object" ref="520439688"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
