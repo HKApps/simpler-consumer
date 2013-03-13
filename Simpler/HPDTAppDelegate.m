@@ -7,11 +7,8 @@
 //
 
 #import "HPDTAppDelegate.h"
-<<<<<<< HEAD
 #import "QRScannerViewController.h"
-=======
 #import "HPDT_LoginViewController.h"
->>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
@@ -28,17 +25,11 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-<<<<<<< HEAD
-    QRScannerViewController * qrScannerViewController = [[QRScannerViewController alloc] init];
-    qrScannerViewController.title = @"Scan";
-    
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:qrScannerViewController];
-=======
+
     HPDT_LoginViewController * loginViewController = [[HPDT_LoginViewController alloc] init];
     loginViewController.title = @"Scan";
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
->>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
     self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
@@ -65,24 +56,19 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-<<<<<<< HEAD
-=======
+
     
     // We need to properly handle activation of the application with regards to Facebook Login
     // (e.g., returning from iOS 6.0 Login Dialog or from fast app switching).
     [FBSession.activeSession handleDidBecomeActive];
->>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
-<<<<<<< HEAD
-=======
-    
+
     [FBSession.activeSession close];
->>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 }
 
 - (void)saveContext
@@ -180,8 +166,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-<<<<<<< HEAD
-=======
+
 
 /*
  * Facebook Integration: Callback for session changes.
@@ -247,5 +232,4 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     return [FBSession.activeSession handleOpenURL:url];
 }
 
->>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 @end
