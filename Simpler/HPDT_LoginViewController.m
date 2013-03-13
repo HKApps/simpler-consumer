@@ -35,6 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)loginButtonAction:(id)sender {
+    
+}
+
 
 - (IBAction)facebookAuthButtonAction:(id)sender {
     HPDTAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];

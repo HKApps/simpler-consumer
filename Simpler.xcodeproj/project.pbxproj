@@ -63,7 +63,6 @@
 		F42ABF1516F021F100133E48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1416F021F100133E48 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
-		F42ABF1F16F1383600133E48 /* HPDTPaymentCardsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDTPaymentCardsDatasource.m */; };
 		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
 		F42ABF2416F13F4A00133E48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2316F13F4A00133E48 /* Card.m */; };
 		F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+HPDT.m */; };
@@ -523,11 +522,9 @@
 				A655429E16F01F5B00BA9659 /* HPDT_PasscodeViewController.m in Sources */,
 				A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */,
 				A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */,
-				F42ABF1F16F1383600133E48 /* HPDTPaymentCardsDatasource.m in Sources */,
 				F42ABF2416F13F4A00133E48 /* Card.m in Sources */,
 				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
-				F42ABF1F16F1383600133E48 /* HPDTPaymentCardsDatasource.m in Sources */,
 				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
