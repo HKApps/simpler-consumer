@@ -9,6 +9,8 @@
 #import "HPDTAppDelegate.h"
 #import "QRScannerViewController.h"
 
+NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
+
 @implementation HPDTAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;

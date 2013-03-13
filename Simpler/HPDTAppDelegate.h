@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import <FacebookSDK/FacebookSDK.h>
+
+extern NSString *const FBSessionStateChangedNotification;
+
 @interface HPDTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
