@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HPDTPaymentsCardsDatasource : NSObject
+@interface HPDTPaymentCardsDatasource : NSObject
 <UITableViewDataSource>
 
 @end

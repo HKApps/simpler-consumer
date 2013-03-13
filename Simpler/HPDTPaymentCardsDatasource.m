@@ -6,16 +6,17 @@
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "HPDTPaymentsCardsDatasource.h"
+#import "HPDTPaymentCardsDatasource.h"
+#import "HPDT_CardTableViewCell.h"
 
 
-@interface HPDTPaymentsCardsDatasource ()
+@interface HPDTPaymentCardsDatasource ()
 
 - (int) numberOfCards;
 
 @end
 
-@implementation HPDTPaymentsCardsDatasource
+@implementation HPDTPaymentCardsDatasource
 
 - (int) numberOfCards {
     //mocking the data
@@ -38,7 +39,19 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    static NSString *CellIdentifier = @"CardTableViewCell";
+    
+    HPDT_CardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CardTableViewCell" owner:nil options:nil];
+        for (id currentObject in topLevelObjects) {
+            if ([currentObject isKindOfClass:[HPDT_CardTableViewCell class]]) {
+                cell = currentObject;
+                break;
+            }
+        }
+    }
+    return cell;
 }
 
 
