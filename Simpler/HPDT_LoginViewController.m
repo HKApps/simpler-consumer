@@ -35,4 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+<<<<<<< HEAD
+=======
+
+- (IBAction)facebookAuthButtonAction:(id)sender {
+    HPDTAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    // The user has initiated a login, so call the openSession method
+    // and show the login UX if necessary.
+    [appDelegate openSessionWithAllowLoginUI:YES];
+}
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 @end

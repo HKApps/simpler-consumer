@@ -2,6 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1280</int>
+<<<<<<< HEAD
 		<string key="IBDocument.SystemVersion">10K549</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
 		<string key="IBDocument.AppKitVersion">1038.36</string>
@@ -15,6 +16,19 @@
 			<string>IBUIView</string>
 			<string>IBUITableView</string>
 			<string>IBProxyObject</string>
+=======
+		<string key="IBDocument.SystemVersion">11C25</string>
+		<string key="IBDocument.InterfaceBuilderVersion">1919</string>
+		<string key="IBDocument.AppKitVersion">1138.11</string>
+		<string key="IBDocument.HIToolboxVersion">566.00</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+			<string key="NS.object.0">916</string>
+		</object>
+		<array key="IBDocument.IntegratedClassDependencies">
+			<string>IBProxyObject</string>
+			<string>IBUIView</string>
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -35,6 +49,7 @@
 			<object class="IBUIView" id="191373211">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
+<<<<<<< HEAD
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUISearchBar" id="430398128">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -69,6 +84,8 @@
 						<float key="IBUISectionFooterHeight">22</float>
 					</object>
 				</array>
+=======
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
@@ -105,10 +122,13 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
+<<<<<<< HEAD
 						<array class="NSMutableArray" key="children">
 							<reference ref="430398128"/>
 							<reference ref="489255866"/>
 						</array>
+=======
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -122,6 +142,7 @@
 						<reference key="object" ref="975951072"/>
 						<reference key="parent" ref="0"/>
 					</object>
+<<<<<<< HEAD
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
 						<reference key="object" ref="430398128"/>
@@ -132,6 +153,8 @@
 						<reference key="object" ref="489255866"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
+=======
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -140,14 +163,21 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+<<<<<<< HEAD
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+=======
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
+<<<<<<< HEAD
 			<int key="maxID">5</int>
+=======
+			<int key="maxID">3</int>
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -165,6 +195,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+<<<<<<< HEAD
 		<string key="IBCocoaTouchPluginVersion">933</string>
+=======
+		<string key="IBCocoaTouchPluginVersion">916</string>
+>>>>>>> 785c8fb9d27044d0ed29c9167ae55d05e8899ca1
 	</data>
 </archive>
