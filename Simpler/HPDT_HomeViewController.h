@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HPDT_HomeViewController : UIViewController
+<UITableViewDelegate>
 
 @end

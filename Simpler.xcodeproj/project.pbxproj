@@ -55,16 +55,14 @@
 		F42ABEFD16F00E2800133E48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFC16F00E2800133E48 /* QuartzCore.framework */; };
 		F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0016F0123900133E48 /* ZXingObjC.framework */; };
 		F42ABF0416F012C500133E48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0216F0128300133E48 /* AudioToolbox.framework */; };
-		F42ABF0816F0181000133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0716F0181000133E48 /* FacebookSDK.framework */; };
+		F42ABF0816F0181000133E48 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */; };
 		F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */; };
-		F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */; };
-		F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */; };
-		F42ABF1116F01F6C00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
 		F42ABF1316F021ED00133E48 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1216F021ED00133E48 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1516F021F100133E48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1416F021F100133E48 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
+		F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +148,8 @@
 		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F42ABF1616F021FD00133E48 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		F42ABF1D16F1383600133E48 /* HPDT_PaymentCardsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_PaymentCardsModel.h; sourceTree = "<group>"; };
+		F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_PaymentCardsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 				F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */,
 				F42ABEB516EFF9DE00133E48 /* CoreData.framework in Frameworks */,
 				F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */,
-				F42ABF0816F0181000133E48 /* FacebookSDK.framework in Frameworks */,
+				F42ABF0816F0181000133E48 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,6 @@
 		F42ABEAD16EFF9DE00133E48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF0716F0181000133E48 /* FacebookSDK.framework */,
 				F42ABF1616F021FD00133E48 /* Accounts.framework */,
 				F42ABF1416F021F100133E48 /* Social.framework */,
 				F42ABF1216F021ED00133E48 /* AdSupport.framework */,
@@ -236,6 +235,7 @@
 		F42ABEB616EFF9DE00133E48 /* Simpler */ = {
 			isa = PBXGroup;
 			children = (
+				F42ABF1C16F1380E00133E48 /* Models */,
 				F42ABEEC16F00CAC00133E48 /* Interface */,
 				F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */,
 				F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */,
@@ -322,6 +322,15 @@
 				A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		F42ABF1C16F1380E00133E48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F42ABF1D16F1383600133E48 /* HPDT_PaymentCardsModel.h */,
+				F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +423,6 @@
 				A655429F16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib in Resources */,
 				A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */,
 				A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */,
-				A65542AE16F0223500BA9659 /* HPDT_RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +473,7 @@
 				A655429E16F01F5B00BA9659 /* HPDT_PasscodeViewController.m in Sources */,
 				A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */,
 				A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */,
+				F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
