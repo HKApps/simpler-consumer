@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QRScannerViewController.h"
 
 @interface HPDTAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,8 +16,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-//Just for demoing
-@property (nonatomic, strong) QRScannerViewController * qrScannerViewController;
+@property (nonatomic, strong) UINavigationController * navigationController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

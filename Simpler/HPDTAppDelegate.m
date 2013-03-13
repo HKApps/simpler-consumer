@@ -7,6 +7,7 @@
 //
 
 #import "HPDTAppDelegate.h"
+#import "QRScannerViewController.h"
 
 @implementation HPDTAppDelegate
 
@@ -21,8 +22,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     
-    self.qrScannerViewController = [[QRScannerViewController alloc] init];
-    self.window.rootViewController = _qrScannerViewController;
+    QRScannerViewController * qrScannerViewController = [[QRScannerViewController alloc] init];
+    qrScannerViewController.title = @"Scan";
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:qrScannerViewController];
+    self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
     return YES;
