@@ -29,6 +29,8 @@
 		A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A216F0200900BA9659 /* HPDT_TransactionViewController.xib */; };
 		A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */; };
 		A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */; };
+		A69B795016F13B7200E9C1D5 /* HPDT_CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B794E16F13B7100E9C1D5 /* HPDT_CardTableViewCell.m */; };
+		A69B795116F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */; };
 		F42ABEAF16EFF9DE00133E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEAE16EFF9DE00133E48 /* UIKit.framework */; };
 		F42ABEB116EFF9DE00133E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB016EFF9DE00133E48 /* Foundation.framework */; };
 		F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB216EFF9DE00133E48 /* CoreGraphics.framework */; };
@@ -113,6 +115,9 @@
 		A65542A516F0202400BA9659 /* HPDT_WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_WalletViewController.h; sourceTree = "<group>"; };
 		A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_WalletViewController.m; sourceTree = "<group>"; };
 		A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_WalletViewController.xib; sourceTree = "<group>"; };
+		A69B794D16F13B7100E9C1D5 /* HPDT_CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_CardTableViewCell.h; sourceTree = "<group>"; };
+		A69B794E16F13B7100E9C1D5 /* HPDT_CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_CardTableViewCell.m; sourceTree = "<group>"; };
+		A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_CardTableViewCell.xib; sourceTree = "<group>"; };
 		F42ABEAB16EFF9DE00133E48 /* Simpler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simpler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42ABEAE16EFF9DE00133E48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F42ABEB016EFF9DE00133E48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -203,6 +208,9 @@
 		F42ABEA216EFF9DE00133E48 = {
 			isa = PBXGroup;
 			children = (
+				A69B794D16F13B7100E9C1D5 /* HPDT_CardTableViewCell.h */,
+				A69B794E16F13B7100E9C1D5 /* HPDT_CardTableViewCell.m */,
+				A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */,
 				F42ABEB616EFF9DE00133E48 /* Simpler */,
 				F42ABED816EFF9DE00133E48 /* SimplerTests */,
 				F42ABEAD16EFF9DE00133E48 /* Frameworks */,
@@ -456,6 +464,7 @@
 				A655429F16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib in Resources */,
 				A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */,
 				A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */,
+				A69B795116F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +519,8 @@
 				F42ABF2416F13F4A00133E48 /* Card.m in Sources */,
 				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
+				F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */,
+				A69B795016F13B7200E9C1D5 /* HPDT_CardTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

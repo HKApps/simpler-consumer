@@ -44,7 +44,6 @@
 						<string key="NSFrame">{{20, 213}, {280, 227}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="322478382">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
@@ -92,14 +91,14 @@
 					<object class="IBUIButton" id="105672019">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{273, 184}, {21, 21}}</string>
+						<string key="NSFrame">{{273, 183}, {29, 29}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">+</string>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<int key="IBUIButtonType">5</int>
 						<reference key="IBUIHighlightedTitleColor" ref="322478382"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
@@ -111,11 +110,11 @@
 						</object>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<int key="type">2</int>
-							<double key="pointSize">15</double>
+							<int key="size">2</int>
 						</object>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">15</double>
+							<double key="NSSize">18</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
@@ -131,7 +130,7 @@
 					<object class="IBUILabel" id="861928678">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{99, 56}, {117, 19}}</string>
+						<string key="NSFrame">{{102, 59}, {117, 19}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -242,12 +241,12 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="771530442"/>
 							<reference ref="516887193"/>
-							<reference ref="105672019"/>
-							<reference ref="861928678"/>
 							<reference ref="69143334"/>
 							<reference ref="69037005"/>
 							<reference ref="65455695"/>
 							<reference ref="435228688"/>
+							<reference ref="105672019"/>
+							<reference ref="861928678"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
