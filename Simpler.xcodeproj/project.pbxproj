@@ -65,6 +65,7 @@
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
 		F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */; };
+		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 				F42ABEB516EFF9DE00133E48 /* CoreData.framework in Frameworks */,
 				F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */,
 				F42ABF0816F0181000133E48 /* (null) in Frameworks */,
+				F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
