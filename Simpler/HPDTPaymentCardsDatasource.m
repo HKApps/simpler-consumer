@@ -7,7 +7,7 @@
 //
 
 #import "HPDTPaymentCardsDatasource.h"
-#import "HPDT_CardTableViewCell.h"
+#import "HPDTCardTableViewCell.h"
 
 
 @interface HPDTPaymentCardsDatasource ()
@@ -41,16 +41,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"CardTableViewCell";
     
-    HPDT_CardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    HPDTCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CardTableViewCell" owner:nil options:nil];
         for (id currentObject in topLevelObjects) {
-            if ([currentObject isKindOfClass:[HPDT_CardTableViewCell class]]) {
+            if ([currentObject isKindOfClass:[HPDTCardTableViewCell class]]) {
                 cell = currentObject;
                 break;
             }
         }
     }
+    
     return cell;
 }
 

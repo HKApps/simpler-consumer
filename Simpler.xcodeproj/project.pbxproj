@@ -68,6 +68,7 @@
 		F42ABF2416F13F4A00133E48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2316F13F4A00133E48 /* Card.m */; };
 		F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+HPDT.m */; };
 		F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* HPDTUtil.m */; };
+		F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,8 @@
 		F42ABF2616F13F8D00133E48 /* Card+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+HPDT.m"; sourceTree = "<group>"; };
 		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
 		F42ABF2A16F1402300133E48 /* HPDTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTUtil.m; sourceTree = "<group>"; };
+		F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTCardTableViewCell.h; sourceTree = "<group>"; };
+		F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTCardTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */,
+				F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */,
+				F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */,
 			);
 			name = UITableViewCells;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
 				F42ABF1F16F1383600133E48 /* HPDTPaymentCardsDatasource.m in Sources */,
+				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
