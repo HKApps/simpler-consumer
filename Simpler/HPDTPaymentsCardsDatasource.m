@@ -6,14 +6,29 @@
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "HPDT_PaymentCardsModel.h"
+#import "HPDTPaymentsCardsDatasource.h"
 
-@implementation HPDT_PaymentCardsModel
 
+@interface HPDTPaymentsCardsDatasource ()
+
+- (int) numberOfCards;
+
+@end
+
+@implementation HPDTPaymentsCardsDatasource
+
+- (int) numberOfCards {
+    //mocking the data
+    return 4;
+}
+
+
+
+#pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(section==0){
-        return 1;
+        return [self numberOfCards];
     } else {
         return 0;
     }

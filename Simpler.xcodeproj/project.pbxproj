@@ -62,8 +62,11 @@
 		F42ABF1516F021F100133E48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1416F021F100133E48 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
-		F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */; };
+		F42ABF1F16F1383600133E48 /* HPDTPaymentsCardsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDTPaymentsCardsDatasource.m */; };
 		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
+		F42ABF2416F13F4A00133E48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2316F13F4A00133E48 /* Card.m */; };
+		F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+HPDT.m */; };
+		F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* HPDTUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,8 +152,14 @@
 		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F42ABF1616F021FD00133E48 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		F42ABF1D16F1383600133E48 /* HPDT_PaymentCardsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_PaymentCardsModel.h; sourceTree = "<group>"; };
-		F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_PaymentCardsModel.m; sourceTree = "<group>"; };
+		F42ABF1D16F1383600133E48 /* HPDTPaymentsCardsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPaymentsCardsDatasource.h; sourceTree = "<group>"; };
+		F42ABF1E16F1383600133E48 /* HPDTPaymentsCardsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPaymentsCardsDatasource.m; sourceTree = "<group>"; };
+		F42ABF2216F13F4A00133E48 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F42ABF2316F13F4A00133E48 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		F42ABF2516F13F8D00133E48 /* Card+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+HPDT.h"; sourceTree = "<group>"; };
+		F42ABF2616F13F8D00133E48 /* Card+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+HPDT.m"; sourceTree = "<group>"; };
+		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
+		F42ABF2A16F1402300133E48 /* HPDTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,11 +246,11 @@
 		F42ABEB616EFF9DE00133E48 /* Simpler */ = {
 			isa = PBXGroup;
 			children = (
+				F42ABF2816F13FF600133E48 /* Utils */,
 				F42ABF1C16F1380E00133E48 /* Models */,
 				F42ABEEC16F00CAC00133E48 /* Interface */,
 				F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */,
 				F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */,
-				F42ABEC816EFF9DE00133E48 /* Simpler.xcdatamodeld */,
 				F42ABEB716EFF9DE00133E48 /* Supporting Files */,
 			);
 			path = Simpler;
@@ -329,10 +338,32 @@
 		F42ABF1C16F1380E00133E48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF1D16F1383600133E48 /* HPDT_PaymentCardsModel.h */,
-				F42ABF1E16F1383600133E48 /* HPDT_PaymentCardsModel.m */,
+				F42ABF1D16F1383600133E48 /* HPDTPaymentsCardsDatasource.h */,
+				F42ABF1E16F1383600133E48 /* HPDTPaymentsCardsDatasource.m */,
+				F42ABF2516F13F8D00133E48 /* Card+HPDT.h */,
+				F42ABF2616F13F8D00133E48 /* Card+HPDT.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F42ABF2116F13E7F00133E48 /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				F42ABEC816EFF9DE00133E48 /* Simpler.xcdatamodeld */,
+				F42ABF2216F13F4A00133E48 /* Card.h */,
+				F42ABF2316F13F4A00133E48 /* Card.m */,
+			);
+			name = "Core Data Models";
+			sourceTree = "<group>";
+		};
+		F42ABF2816F13FF600133E48 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F42ABF2116F13E7F00133E48 /* Core Data Models */,
+				F42ABF2916F1402300133E48 /* HPDTUtil.h */,
+				F42ABF2A16F1402300133E48 /* HPDTUtil.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,7 +506,10 @@
 				A655429E16F01F5B00BA9659 /* HPDT_PasscodeViewController.m in Sources */,
 				A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */,
 				A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */,
-				F42ABF1F16F1383600133E48 /* HPDT_PaymentCardsModel.m in Sources */,
+				F42ABF1F16F1383600133E48 /* HPDTPaymentsCardsDatasource.m in Sources */,
+				F42ABF2416F13F4A00133E48 /* Card.m in Sources */,
+				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
+				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

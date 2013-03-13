@@ -1,5 +1,5 @@
 //
-//  HPDT_PaymentCardsModel.h
+//  HPDTUtil.h
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HPDT_PaymentCardsModel : NSObject
-<UITableViewDataSource>
+@interface HPDTUtil : NSObject
 
-
++ (void) criticalError: (NSError *) error;
++ (void) criticalErrorWithString: (NSString *) error;
 
 @end
