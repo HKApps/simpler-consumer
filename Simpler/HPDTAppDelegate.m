@@ -119,15 +119,18 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
+    
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Simpler.sqlite"];
+    //NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Simpler.sqlite"];
+    NSURL *inMemoryStoreUrl = [NSURL URLWithString:@"InMemoryStore"];
     
+    //We use an in-memory store because we don't want to save any data on the phone for now
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:inMemoryStoreUrl options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          
