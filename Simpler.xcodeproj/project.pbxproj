@@ -202,10 +202,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F42ABEA216EFF9DE00133E48 = {
+		A69B795716F140BF00E9C1D5 /* UITableViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		F42ABEA216EFF9DE00133E48 = {
+			isa = PBXGroup;
+			children = (
 				F42ABEB616EFF9DE00133E48 /* Simpler */,
 				F42ABED816EFF9DE00133E48 /* SimplerTests */,
 				F42ABEAD16EFF9DE00133E48 /* Frameworks */,
@@ -251,6 +258,7 @@
 			children = (
 				F42ABF2816F13FF600133E48 /* Utils */,
 				F42ABF2116F13E7F00133E48 /* Core Data Models */,
+				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
 				F42ABF1C16F1380E00133E48 /* Models */,
 				F42ABEEC16F00CAC00133E48 /* Interface */,
 				F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */,
