@@ -40,7 +40,7 @@
 					<object class="IBUITextField" id="5765909">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{88, 165}, {144, 31}}</string>
+						<string key="NSFrame">{{20, 161}, {280, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="969069125"/>
@@ -75,7 +75,7 @@
 					<object class="IBUITextField" id="969069125">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{88, 211}, {144, 31}}</string>
+						<string key="NSFrame">{{20, 207}, {280, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="159002511"/>
@@ -101,10 +101,9 @@
 					<object class="IBUIButton" id="159002511">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{88, 317}, {144, 37}}</string>
+						<string key="NSFrame">{{20, 319}, {280, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -136,7 +135,7 @@
 					<object class="IBUIImageView" id="800501944">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{40, 17}, {240, 128}}</string>
+						<string key="NSFrame">{{20, 20}, {280, 98}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="5765909"/>
@@ -184,10 +183,10 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="159002511"/>
 							<reference ref="800501944"/>
 							<reference ref="5765909"/>
 							<reference ref="969069125"/>
+							<reference ref="159002511"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
