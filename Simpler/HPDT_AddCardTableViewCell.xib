@@ -31,19 +31,19 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUITableViewCell" id="564397328">
+			<object class="IBUITableViewCell" id="1040793552">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIView" id="711462911">
-						<reference key="NSNextResponder" ref="564397328"/>
+					<object class="IBUIView" id="594783699">
+						<reference key="NSNextResponder" ref="1040793552"/>
 						<int key="NSvFlags">256</int>
 						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUITextField" id="1020985751">
-								<reference key="NSNextResponder" ref="711462911"/>
+							<object class="IBUITextField" id="807805552">
+								<reference key="NSNextResponder" ref="594783699"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{13, 6}, {97, 31}}</string>
-								<reference key="NSSuperview" ref="711462911"/>
+								<reference key="NSSuperview" ref="594783699"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
@@ -75,10 +75,10 @@
 								</object>
 							</object>
 						</array>
-						<string key="NSFrameSize">{188, 43}</string>
-						<reference key="NSSuperview" ref="564397328"/>
+						<string key="NSFrameSize">{277, 43}</string>
+						<reference key="NSSuperview" ref="1040793552"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1020985751"/>
+						<reference key="NSNextKeyView" ref="807805552"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
@@ -90,12 +90,12 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{188, 44}</string>
+				<string key="NSFrameSize">{277, 44}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="711462911"/>
+				<reference key="NSNextKeyView" ref="594783699"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-				<reference key="IBUIContentView" ref="711462911"/>
+				<reference key="IBUIContentView" ref="594783699"/>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -121,16 +121,16 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="564397328"/>
+						<reference key="object" ref="1040793552"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="1020985751"/>
+							<reference ref="807805552"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="1020985751"/>
-						<reference key="parent" ref="564397328"/>
+						<reference key="object" ref="807805552"/>
+						<reference key="parent" ref="1040793552"/>
 					</object>
 				</array>
 			</object>
@@ -152,7 +152,7 @@
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">HPDT_AddCardTableViewCell</string>
-					<string key="superclassName">UIView</string>
+					<string key="superclassName">UITableViewCell</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/HPDT_AddCardTableViewCell.h</string>
