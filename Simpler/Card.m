@@ -11,8 +11,9 @@
 
 @implementation Card
 
+@dynamic last_four;
 @dynamic token;
 @dynamic type;
-@dynamic last_four;
+@dynamic name;
 
 @end

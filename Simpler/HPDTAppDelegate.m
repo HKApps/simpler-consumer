@@ -25,13 +25,13 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
-
     HPDT_LoginViewController * loginViewController = [[HPDT_LoginViewController alloc] init];
     loginViewController.title = @"Scan";
     
     HPDT_HomeViewController * homeViewController = [[HPDT_HomeViewController alloc] init];
     homeViewController.title = @"Home";
+    
+    _paymentCardsDatasource = [[HPDTPaymentCardsDatasource alloc] initWithContext:self.managedObjectContext];
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     

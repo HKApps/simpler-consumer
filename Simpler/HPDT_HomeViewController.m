@@ -7,6 +7,7 @@
 //
 
 #import "HPDT_HomeViewController.h"
+#import "HPDTAppDelegate.h"
 
 @implementation HPDT_HomeViewController
 
@@ -35,6 +36,9 @@
     // Do any additional setup after loading the view from its nib.
     
     self.navigationController.navigationBarHidden = YES;
+    
+
+    
 }
 
 - (void)viewDidUnload

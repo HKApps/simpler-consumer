@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTCardsViewController.h"
 
-@interface HPDT_HomeViewController : UIViewController
+@interface HPDT_HomeViewController : HPDTCardsViewController
 <UITableViewDelegate>
+
 
 @end
