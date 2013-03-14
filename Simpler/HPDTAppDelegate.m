@@ -10,6 +10,7 @@
 #import "QRScannerViewController.h"
 #import "HPDT_LoginViewController.h"
 #import "HPDT_HomeViewController.h"
+#import "Card+HPDT.h"
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
@@ -25,13 +26,19 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
-
     HPDT_LoginViewController * loginViewController = [[HPDT_LoginViewController alloc] init];
     loginViewController.title = @"Scan";
     
     HPDT_HomeViewController * homeViewController = [[HPDT_HomeViewController alloc] init];
     homeViewController.title = @"Home";
+        
+    //Mocking the data
+    for(int i=0; i<4; i++){
+        Card * card = [NSEntityDescription
+                       insertNewObjectForEntityForName:@"Card"
+                       inManagedObjectContext:self.managedObjectContext];
+        card.name = [NSString stringWithFormat:@"Card Name %i", i];
+    }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     

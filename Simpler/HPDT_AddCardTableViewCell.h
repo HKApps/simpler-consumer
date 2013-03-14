@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPDT_AddCardTableViewCell : UIView
+@interface HPDT_AddCardTableViewCell : UITableViewCell
 
 @end

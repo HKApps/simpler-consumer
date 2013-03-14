@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTCardsViewController.h"
 
-@interface HPDT_HomeViewController : UIViewController
+@interface HPDT_HomeViewController : HPDTCardsViewController
 <UITableViewDelegate>
+
+
+-(IBAction)didTapProfileButton:(id)sender;
+-(IBAction)didTapAddCardButton:(id)sender;
+-(IBAction)didTapPayButton:(id)sender;
 
 @end

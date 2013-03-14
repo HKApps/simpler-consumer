@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import <FacebookSDK/FacebookSDK.h>
+
+#import "HPDTPaymentCardsDatasource.h"
 
 extern NSString *const FBSessionStateChangedNotification;
 
@@ -22,6 +23,10 @@ extern NSString *const FBSessionStateChangedNotification;
 
 @property (nonatomic, strong) UINavigationController * navigationController;
 
+//Application Specific Singletons
+@property (nonatomic, strong) HPDTPaymentCardsDatasource * paymentCardsDatasource;
+
+//Methods
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 

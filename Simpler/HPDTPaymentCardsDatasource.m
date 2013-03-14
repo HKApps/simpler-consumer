@@ -8,46 +8,25 @@
 
 #import "HPDTPaymentCardsDatasource.h"
 #import "HPDTCardTableViewCell.h"
-
+#import "Card+HPDT.h"
 
 @implementation HPDTPaymentCardsDatasource
 
-- (int) numberOfCards {
-    //mocking the data
-    return 4;
-}
-
-
-
-#pragma mark UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if(section==0){
-        return [self numberOfCards];
-    } else {
-        return 0;
-    }
-}
-
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"CardTableViewCell";
+- (id) initWithContext: (NSManagedObjectContext*) context {
+    self = [self init];
     
-    HPDTCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CardTableViewCell" owner:nil options:nil];
-        for (id currentObject in topLevelObjects) {
-            if ([currentObject isKindOfClass:[HPDTCardTableViewCell class]]) {
-                cell = currentObject;
-                break;
-            }
-        }
-    }
-    
-    return cell;
+    self->ctx = context;
+ 
+
+    [self reloadData];
+    return self;
 }
+
+- (void) reloadData {
+    _cards = [Card getAllCardsInContext:self->ctx];
+}
+
+
 
 
 @end

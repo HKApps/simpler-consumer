@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface HPDTPaymentCardsDatasource : NSObject <UITableViewDataSource>
+{
+    NSManagedObjectContext * ctx;
+}
 
+
+
+- (id) initWithContext: (NSManagedObjectContext*) context;
 
 @end
