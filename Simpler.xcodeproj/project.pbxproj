@@ -35,6 +35,10 @@
 		A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796E16F15A4100E9C1D5 /* giftDeactive.png */; };
 		A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */; };
 		A69B797416F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */; };
+		A69B797E16F1673E00E9C1D5 /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797A16F1673E00E9C1D5 /* amex.png */; };
+		A69B797F16F1673E00E9C1D5 /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797B16F1673E00E9C1D5 /* visa.png */; };
+		A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797C16F1673E00E9C1D5 /* masterCard.png */; };
+		A69B798116F1673E00E9C1D5 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797D16F1673E00E9C1D5 /* discover.png */; };
 		F42ABEAF16EFF9DE00133E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEAE16EFF9DE00133E48 /* UIKit.framework */; };
 		F42ABEB116EFF9DE00133E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB016EFF9DE00133E48 /* Foundation.framework */; };
 		F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB216EFF9DE00133E48 /* CoreGraphics.framework */; };
@@ -140,6 +144,10 @@
 		A69B797016F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddCardTableViewCell.h; sourceTree = "<group>"; };
 		A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddCardTableViewCell.m; sourceTree = "<group>"; };
 		A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCardTableViewCell.xib; sourceTree = "<group>"; };
+		A69B797A16F1673E00E9C1D5 /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amex.png; path = Graphics/amex.png; sourceTree = "<group>"; };
+		A69B797B16F1673E00E9C1D5 /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = visa.png; path = Graphics/visa.png; sourceTree = "<group>"; };
+		A69B797C16F1673E00E9C1D5 /* masterCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = masterCard.png; path = Graphics/masterCard.png; sourceTree = "<group>"; };
+		A69B797D16F1673E00E9C1D5 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = discover.png; path = Graphics/discover.png; sourceTree = "<group>"; };
 		F42ABEAB16EFF9DE00133E48 /* Simpler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simpler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42ABEAE16EFF9DE00133E48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F42ABEB016EFF9DE00133E48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -326,11 +334,6 @@
 				F42ABEB816EFF9DE00133E48 /* Simpler-Info.plist */,
 				F42ABEB916EFF9DE00133E48 /* InfoPlist.strings */,
 				F42ABEBC16EFF9DE00133E48 /* main.m */,
-				A69B796216F1564200E9C1D5 /* user.png */,
-				A69B796816F159F200E9C1D5 /* DebitDeactive.png */,
-				A69B796E16F15A4100E9C1D5 /* giftDeactive.png */,
-				A69B796C16F15A1000E9C1D5 /* giftActive.png */,
-				A69B796416F156AF00E9C1D5 /* DebitActive.png */,
 				F42ABEBE16EFF9DE00133E48 /* Simpler-Prefix.pch */,
 				F42ABEC216EFF9DE00133E48 /* Default.png */,
 				F42ABEC416EFF9DE00133E48 /* Default@2x.png */,
@@ -454,6 +457,15 @@
 		F4BC87BF16F15FD200456B18 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				A69B797A16F1673E00E9C1D5 /* amex.png */,
+				A69B797B16F1673E00E9C1D5 /* visa.png */,
+				A69B797C16F1673E00E9C1D5 /* masterCard.png */,
+				A69B797D16F1673E00E9C1D5 /* discover.png */,
+				A69B796216F1564200E9C1D5 /* user.png */,
+				A69B796816F159F200E9C1D5 /* DebitDeactive.png */,
+				A69B796E16F15A4100E9C1D5 /* giftDeactive.png */,
+				A69B796C16F15A1000E9C1D5 /* giftActive.png */,
+				A69B796416F156AF00E9C1D5 /* DebitActive.png */,
 				F4BC87C016F15FDA00456B18 /* LockScreen */,
 			);
 			name = Graphics;
@@ -578,6 +590,10 @@
 				F4BC87CF16F15FE500456B18 /* passcodeTopBackground_red.png in Resources */,
 				F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */,
 				F4BC87D216F15FF900456B18 /* HPDTLockScreenViewController.xib in Resources */,
+				A69B797E16F1673E00E9C1D5 /* amex.png in Resources */,
+				A69B797F16F1673E00E9C1D5 /* visa.png in Resources */,
+				A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */,
+				A69B798116F1673E00E9C1D5 /* discover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
