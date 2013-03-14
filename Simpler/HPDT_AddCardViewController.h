@@ -10,4 +10,7 @@
 
 @interface HPDT_AddCardViewController : UIViewController
 
+@property (nonatomic,strong) IBOutlet UIView * addCreditCardView;
+@property (nonatomic,strong) IBOutlet UIView * addGiftCardView;
+
 @end
