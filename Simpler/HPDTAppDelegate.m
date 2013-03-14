@@ -188,6 +188,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
             if (!error) {
                 // We have a valid session
                 NSLog(@"User session found");
+                [self showHomeView];
             }
             break;
         case FBSessionStateClosed:
@@ -242,7 +243,14 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 
 
 - (void)showHomeView {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.5];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.window cache:YES];
+    
     self.window.rootViewController = self.navigationController;
+    
+    [UIView commitAnimations];
 }
 
 
