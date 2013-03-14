@@ -10,4 +10,9 @@
 
 @interface HPDTCardTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) IBOutlet UILabel * cardName;
+@property (nonatomic, strong) IBOutlet UILabel * cardType;
+@property (nonatomic, strong) IBOutlet UILabel * cardDigits;
+@property (nonatomic, strong) IBOutlet UIImageView * cardImage;
+
 @end

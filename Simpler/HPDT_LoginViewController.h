@@ -11,7 +11,12 @@
 
 @interface HPDT_LoginViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UITextField * emailAddress;
+@property (nonatomic, strong) IBOutlet UITextField * password;
 
+
+- (IBAction)loginButtonAction:(id)sender;
+- (IBAction)doneEditing:(id)sender;
 - (IBAction)facebookAuthButtonAction:(id)sender;
 
 @end

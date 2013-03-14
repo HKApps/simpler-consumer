@@ -1,5 +1,5 @@
 //
-//  HPDT_PaymentCardsModel.h
+//  Login.h
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HPDTPaymentCardsDatasource : NSObject <UITableViewDataSource>
+@interface Login : NSObject
 
++ (BOOL) validateLogin: (NSString*) username password:(NSString*) password;
 
 @end

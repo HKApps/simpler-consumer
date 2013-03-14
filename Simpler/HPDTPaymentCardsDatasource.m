@@ -10,12 +10,6 @@
 #import "HPDTCardTableViewCell.h"
 
 
-@interface HPDTPaymentCardsDatasource ()
-
-- (int) numberOfCards;
-
-@end
-
 @implementation HPDTPaymentCardsDatasource
 
 - (int) numberOfCards {
