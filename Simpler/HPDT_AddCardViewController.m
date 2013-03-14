@@ -106,19 +106,30 @@
         switch([indexPath row]){
             case 0:
             {
-                cell.
+                cell.textField.placeholder = @"Card #";
+                cell.textField.tag = kCardNumber;
+                cell.textField.delegate = self;
                 break;
             }
             case 1:
             {
+                cell.textField.placeholder = @"Exp. Date";
+                cell.textField.tag = kExpDate;
+                cell.textField.delegate = self;
                 break;
             }
             case 2:
             {
+                cell.textField.placeholder = @"Security Code";
+                cell.textField.tag = kSecurtyCode;
+                cell.textField.delegate = self;
                 break;
             }
             case 3:
             {
+                cell.textField.placeholder = @"Zip Code";
+                cell.textField.tag = kZipCode;
+                cell.textField.delegate = self;
                 break;
             }
             default:
@@ -129,10 +140,16 @@
         switch([indexPath row]){
             case 0:
             {
+                cell.textField.placeholder = @"Merchant Name";
+                cell.textField.tag = kMerchantName;
+                cell.textField.delegate = self;
                 break;
             }
             case 1:
             {
+                cell.textField.placeholder = @"8 Digit Code";
+                cell.textField.tag = k8DigitCode;
+                cell.textField.delegate = self;
                 break;
             }
             default:

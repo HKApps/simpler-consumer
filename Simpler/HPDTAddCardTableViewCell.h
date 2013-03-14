@@ -10,4 +10,6 @@
 
 @interface HPDTAddCardTableViewCell : UITableViewCell
 
+@property (nonatomic,strong) IBOutlet UITextField * textField;
+
 @end
