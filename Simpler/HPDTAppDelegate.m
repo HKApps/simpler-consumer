@@ -9,6 +9,7 @@
 #import "HPDTAppDelegate.h"
 #import "QRScannerViewController.h"
 #import "HPDT_LoginViewController.h"
+#import "HPDT_HomeViewController.h"
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
@@ -29,8 +30,12 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     HPDT_LoginViewController * loginViewController = [[HPDT_LoginViewController alloc] init];
     loginViewController.title = @"Scan";
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    self.window.rootViewController = self.navigationController;
+    HPDT_HomeViewController * homeViewController = [[HPDT_HomeViewController alloc] init];
+    homeViewController.title = @"Home";
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    
+    self.window.rootViewController = loginViewController;
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -234,5 +239,11 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     // attempt to extract a token from the url
     return [FBSession.activeSession handleOpenURL:url];
 }
+
+
+- (void)showHomeView {
+    self.window.rootViewController = self.navigationController;
+}
+
 
 @end

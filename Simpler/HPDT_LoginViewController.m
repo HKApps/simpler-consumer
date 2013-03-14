@@ -7,6 +7,8 @@
 //
 
 #import "HPDT_LoginViewController.h"
+#import "Login.h"
+#import "HPDTAppDelegate.h"
 
 @interface HPDT_LoginViewController ()
 
@@ -36,8 +38,21 @@
 }
 
 - (IBAction)loginButtonAction:(id)sender {
-    
+    if([Login validateLogin:_emailAddress.text password:_password.text]){
+        
+        [(HPDTAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
+        
+    } else {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Invalid username or password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
 }
+
+
+- (IBAction)doneEditing:(id)sender{
+    [(UIView*) sender resignFirstResponder];
+}
+
 
 
 - (IBAction)facebookAuthButtonAction:(id)sender {
