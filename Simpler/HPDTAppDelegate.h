@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-#import "HPDTPaymentCardsDatasource.h"
-
 extern NSString *const FBSessionStateChangedNotification;
 
 @interface HPDTAppDelegate : UIResponder <UIApplicationDelegate>
@@ -22,9 +20,6 @@ extern NSString *const FBSessionStateChangedNotification;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (nonatomic, strong) UINavigationController * navigationController;
-
-//Application Specific Singletons
-@property (nonatomic, strong) HPDTPaymentCardsDatasource * paymentCardsDatasource;
 
 //Methods
 - (void)saveContext;

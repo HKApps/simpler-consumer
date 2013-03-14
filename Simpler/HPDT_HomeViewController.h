@@ -10,7 +10,7 @@
 #import "HPDTCardsViewController.h"
 
 @interface HPDT_HomeViewController : HPDTCardsViewController
-<UITableViewDelegate>
+<UITableViewDelegate, UITableViewDataSource>
 
 
 -(IBAction)didTapProfileButton:(id)sender;

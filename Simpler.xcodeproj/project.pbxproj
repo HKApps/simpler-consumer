@@ -73,7 +73,6 @@
 		F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */; };
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
 		F42ABF3516F151ED00133E48 /* HPDTCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* HPDTCardsViewController.m */; };
-		F42ABF3716F1572D00133E48 /* HPDTPaymentCardsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF1E16F1383600133E48 /* HPDTPaymentCardsDatasource.m */; };
 		F42ABF3A16F1577800133E48 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3916F1577800133E48 /* Card.m */; };
 		F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4BC87BE16F15F0C00456B18 /* HPDTLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* HPDTLockScreenViewController.m */; };
@@ -179,8 +178,6 @@
 		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F42ABF1616F021FD00133E48 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		F42ABF1D16F1383600133E48 /* HPDTPaymentCardsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPaymentCardsDatasource.h; sourceTree = "<group>"; };
-		F42ABF1E16F1383600133E48 /* HPDTPaymentCardsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPaymentCardsDatasource.m; sourceTree = "<group>"; };
 		F42ABF2516F13F8D00133E48 /* Card+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+HPDT.h"; sourceTree = "<group>"; };
 		F42ABF2616F13F8D00133E48 /* Card+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+HPDT.m"; sourceTree = "<group>"; };
 		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
@@ -307,12 +304,12 @@
 		F42ABEB616EFF9DE00133E48 /* Simpler */ = {
 			isa = PBXGroup;
 			children = (
-				F4BC87BF16F15FD200456B18 /* Graphics */,
-				F42ABF2816F13FF600133E48 /* Utils */,
-				F42ABF2116F13E7F00133E48 /* Core Data Models */,
+				F42ABEEC16F00CAC00133E48 /* Interface */,
 				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
 				F42ABF1C16F1380E00133E48 /* Models */,
-				F42ABEEC16F00CAC00133E48 /* Interface */,
+				F42ABF2116F13E7F00133E48 /* Core Data Models */,
+				F4BC87BF16F15FD200456B18 /* Graphics */,
+				F42ABF2816F13FF600133E48 /* Utils */,
 				F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */,
 				F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */,
 				F42ABEB716EFF9DE00133E48 /* Supporting Files */,
@@ -413,8 +410,6 @@
 		F42ABF1C16F1380E00133E48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF1D16F1383600133E48 /* HPDTPaymentCardsDatasource.h */,
-				F42ABF1E16F1383600133E48 /* HPDTPaymentCardsDatasource.m */,
 				F42ABF2516F13F8D00133E48 /* Card+HPDT.h */,
 				F42ABF2616F13F8D00133E48 /* Card+HPDT.m */,
 				F42ABF3016F1499000133E48 /* Login.h */,
@@ -633,7 +628,6 @@
 				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
 				F42ABF3516F151ED00133E48 /* HPDTCardsViewController.m in Sources */,
-				F42ABF3716F1572D00133E48 /* HPDTPaymentCardsDatasource.m in Sources */,
 				F42ABF3A16F1577800133E48 /* Card.m in Sources */,
 				A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */,
 				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,

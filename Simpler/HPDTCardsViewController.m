@@ -29,8 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.tableView.dataSource = [(HPDTAppDelegate*)[[UIApplication sharedApplication] delegate] paymentCardsDatasource];
+    [self reloadData];
 }
 
 - (void)didReceiveMemoryWarning

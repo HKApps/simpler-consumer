@@ -38,9 +38,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.navigationController.navigationBarHidden = YES;
-    
+        
 }
 
 - (void)viewDidUnload
@@ -48,6 +46,10 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -65,28 +67,40 @@
 }
 
 -(IBAction)didTapAddCardButton:(id)sender{
+    self.navigationController.navigationBarHidden = NO;
+    
     HPDT_AddCardViewController * addCardViewController = [[HPDT_AddCardViewController alloc] init];
+    addCardViewController.title = @"Add Card";
     [self.navigationController pushViewController:addCardViewController animated:YES];
 }
 
 -(IBAction)didTapPayButton:(id)sender{
+    self.navigationController.navigationBarHidden = NO;
+
     QRScannerViewController * qrScannerViewController = [[QRScannerViewController alloc] init];
+    qrScannerViewController.title = @"QR Scanner";
     [self.navigationController pushViewController:qrScannerViewController animated:YES];
 }
 
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    self.navigationController.navigationBarHidden = NO;
+
     HPDT_EditCardViewController * editCardViewController = [[HPDT_EditCardViewController alloc] init];
+    editCardViewController.title = @"Edit Card";
     [self.navigationController pushViewController:editCardViewController animated:YES];
 }
 
 
 #pragma mark UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell * cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell * cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [super tableView:tableView numberOfRowsInSection:section];
+}
 
 @end
