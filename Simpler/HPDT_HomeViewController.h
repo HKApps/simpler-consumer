@@ -13,4 +13,8 @@
 <UITableViewDelegate>
 
 
+-(IBAction)didTapProfileButton:(id)sender;
+-(IBAction)didTapAddCardButton:(id)sender;
+-(IBAction)didTapPayButton:(id)sender;
+
 @end

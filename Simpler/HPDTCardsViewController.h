@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTViewController.h"
 
-@interface HPDTCardsViewController : UIViewController <UITableViewDelegate>
+@interface HPDTCardsViewController : HPDTViewController
+<UITableViewDelegate, UITableViewDataSource>
+
+
+@property (nonatomic, strong) NSArray * cards;
 
 @property (nonatomic, strong) IBOutlet UITableView * tableView;
 

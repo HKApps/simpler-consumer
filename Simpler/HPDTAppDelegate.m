@@ -10,6 +10,7 @@
 #import "QRScannerViewController.h"
 #import "HPDT_LoginViewController.h"
 #import "HPDT_HomeViewController.h"
+#import "Card+HPDT.h"
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
@@ -30,8 +31,14 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     
     HPDT_HomeViewController * homeViewController = [[HPDT_HomeViewController alloc] init];
     homeViewController.title = @"Home";
-    
-    _paymentCardsDatasource = [[HPDTPaymentCardsDatasource alloc] initWithContext:self.managedObjectContext];
+        
+    //Mocking the data
+    for(int i=0; i<4; i++){
+        Card * card = [NSEntityDescription
+                       insertNewObjectForEntityForName:@"Card"
+                       inManagedObjectContext:self.managedObjectContext];
+        card.name = [NSString stringWithFormat:@"Card Name %i", i];
+    }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     

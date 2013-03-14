@@ -13,7 +13,6 @@
     NSManagedObjectContext * ctx;
 }
 
-@property (nonatomic, strong) NSArray * cards;
 
 
 - (id) initWithContext: (NSManagedObjectContext*) context;
