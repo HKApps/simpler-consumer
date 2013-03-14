@@ -41,6 +41,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     }
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     
     self.window.rootViewController = loginViewController;
     
