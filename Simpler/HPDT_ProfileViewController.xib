@@ -40,7 +40,7 @@
 					<object class="IBUITableView" id="344032541">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{23, 108}, {274, 200}}</string>
+						<string key="NSFrame">{{23, 86}, {274, 200}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="638190620">
@@ -60,7 +60,7 @@
 					<object class="IBUILabel" id="131002186">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{23, 79}, {172, 21}}</string>
+						<string key="NSFrame">{{23, 57}, {172, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -69,7 +69,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Accounts and Security</string>
-						<object class="NSColor" key="IBUITextColor" id="769559881">
+						<object class="NSColor" key="IBUITextColor" id="1059289156">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
 						</object>
@@ -89,7 +89,7 @@
 					<object class="IBUIButton" id="41837812">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{22, 347}, {277, 37}}</string>
+						<string key="NSFrame">{{22, 325}, {277, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -99,7 +99,7 @@
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Log Out</string>
 						<reference key="IBUIHighlightedTitleColor" ref="638190620"/>
-						<reference key="IBUINormalTitleColor" ref="769559881"/>
+						<reference key="IBUINormalTitleColor" ref="1059289156"/>
 						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
@@ -126,6 +126,10 @@
 					</object>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
+					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
+					<string key="IBUIDisplayName">Freeform</string>
+				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</array>

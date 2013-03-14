@@ -94,7 +94,7 @@
 						<reference key="IBUIFontDescription" ref="241639442"/>
 						<reference key="IBUIFont" ref="69999420"/>
 					</object>
-					<object class="IBUILabel" id="533478617">
+					<object class="IBUILabel" id="42842189">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{228, 104}, {8, 21}}</string>
@@ -113,7 +113,7 @@
 						<reference key="IBUIFontDescription" ref="241639442"/>
 						<reference key="IBUIFont" ref="69999420"/>
 					</object>
-					<object class="IBUILabel" id="112037653">
+					<object class="IBUILabel" id="703851081">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{234, 104}, {51, 21}}</string>
@@ -164,6 +164,10 @@
 					</object>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
+					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
+					<string key="IBUIDisplayName">Freeform</string>
+				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</array>
@@ -194,8 +198,8 @@
 							<reference ref="114678035"/>
 							<reference ref="957375256"/>
 							<reference ref="162948700"/>
-							<reference ref="533478617"/>
-							<reference ref="112037653"/>
+							<reference ref="42842189"/>
+							<reference ref="703851081"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -232,12 +236,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="533478617"/>
+						<reference key="object" ref="42842189"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="112037653"/>
+						<reference key="object" ref="703851081"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
