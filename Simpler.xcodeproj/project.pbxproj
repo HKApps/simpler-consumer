@@ -20,9 +20,7 @@
 		A655428F16F01EED00BA9659 /* HPDT_AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428D16F01EED00BA9659 /* HPDT_AddCardViewController.m */; };
 		A655429016F01EED00BA9659 /* HPDT_AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */; };
 		A655429416F01F1100BA9659 /* HPDT_AddCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655429216F01F1100BA9659 /* HPDT_AddCreditViewController.m */; };
-		A655429516F01F1100BA9659 /* HPDT_AddCreditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655429316F01F1100BA9659 /* HPDT_AddCreditViewController.xib */; };
 		A655429916F01F3300BA9659 /* HPDT_AddGiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655429716F01F3300BA9659 /* HPDT_AddGiftViewController.m */; };
-		A655429A16F01F3300BA9659 /* HPDT_AddGiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655429816F01F3300BA9659 /* HPDT_AddGiftViewController.xib */; };
 		A655429E16F01F5B00BA9659 /* HPDT_PasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655429C16F01F5B00BA9659 /* HPDT_PasscodeViewController.m */; };
 		A655429F16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655429D16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib */; };
 		A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A116F0200800BA9659 /* HPDT_TransactionViewController.m */; };
@@ -30,6 +28,13 @@
 		A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */; };
 		A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */; };
 		A69B795116F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */; };
+		A69B796316F1564200E9C1D5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796216F1564200E9C1D5 /* user.png */; };
+		A69B796516F156AF00E9C1D5 /* DebitActive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796416F156AF00E9C1D5 /* DebitActive.png */; };
+		A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796816F159F200E9C1D5 /* DebitDeactive.png */; };
+		A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796C16F15A1000E9C1D5 /* giftActive.png */; };
+		A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796E16F15A4100E9C1D5 /* giftDeactive.png */; };
+		A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */; };
+		A69B797416F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */; };
 		F42ABEAF16EFF9DE00133E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEAE16EFF9DE00133E48 /* UIKit.framework */; };
 		F42ABEB116EFF9DE00133E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB016EFF9DE00133E48 /* Foundation.framework */; };
 		F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB216EFF9DE00133E48 /* CoreGraphics.framework */; };
@@ -102,10 +107,8 @@
 		A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCardViewController.xib; sourceTree = "<group>"; };
 		A655429116F01F1100BA9659 /* HPDT_AddCreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddCreditViewController.h; sourceTree = "<group>"; };
 		A655429216F01F1100BA9659 /* HPDT_AddCreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddCreditViewController.m; sourceTree = "<group>"; };
-		A655429316F01F1100BA9659 /* HPDT_AddCreditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCreditViewController.xib; sourceTree = "<group>"; };
 		A655429616F01F3300BA9659 /* HPDT_AddGiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddGiftViewController.h; sourceTree = "<group>"; };
 		A655429716F01F3300BA9659 /* HPDT_AddGiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddGiftViewController.m; sourceTree = "<group>"; };
-		A655429816F01F3300BA9659 /* HPDT_AddGiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddGiftViewController.xib; sourceTree = "<group>"; };
 		A655429B16F01F5B00BA9659 /* HPDT_PasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_PasscodeViewController.h; sourceTree = "<group>"; };
 		A655429C16F01F5B00BA9659 /* HPDT_PasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_PasscodeViewController.m; sourceTree = "<group>"; };
 		A655429D16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_PasscodeViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +119,14 @@
 		A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_WalletViewController.m; sourceTree = "<group>"; };
 		A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_WalletViewController.xib; sourceTree = "<group>"; };
 		A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_CardTableViewCell.xib; sourceTree = "<group>"; };
+		A69B796216F1564200E9C1D5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Graphics/user.png; sourceTree = "<group>"; };
+		A69B796416F156AF00E9C1D5 /* DebitActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DebitActive.png; path = Graphics/DebitActive.png; sourceTree = "<group>"; };
+		A69B796816F159F200E9C1D5 /* DebitDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DebitDeactive.png; path = Graphics/DebitDeactive.png; sourceTree = "<group>"; };
+		A69B796C16F15A1000E9C1D5 /* giftActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftActive.png; path = Graphics/giftActive.png; sourceTree = "<group>"; };
+		A69B796E16F15A4100E9C1D5 /* giftDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftDeactive.png; path = Graphics/giftDeactive.png; sourceTree = "<group>"; };
+		A69B797016F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddCardTableViewCell.h; sourceTree = "<group>"; };
+		A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddCardTableViewCell.m; sourceTree = "<group>"; };
+		A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCardTableViewCell.xib; sourceTree = "<group>"; };
 		F42ABEAB16EFF9DE00133E48 /* Simpler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simpler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42ABEAE16EFF9DE00133E48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F42ABEB016EFF9DE00133E48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +224,9 @@
 				A69B794F16F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib */,
 				F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */,
 				F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */,
+				A69B797016F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.h */,
+				A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */,
+				A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */,
 			);
 			name = UITableViewCells;
 			sourceTree = "<group>";
@@ -281,6 +295,11 @@
 				F42ABEB816EFF9DE00133E48 /* Simpler-Info.plist */,
 				F42ABEB916EFF9DE00133E48 /* InfoPlist.strings */,
 				F42ABEBC16EFF9DE00133E48 /* main.m */,
+				A69B796216F1564200E9C1D5 /* user.png */,
+				A69B796816F159F200E9C1D5 /* DebitDeactive.png */,
+				A69B796E16F15A4100E9C1D5 /* giftDeactive.png */,
+				A69B796C16F15A1000E9C1D5 /* giftActive.png */,
+				A69B796416F156AF00E9C1D5 /* DebitActive.png */,
 				F42ABEBE16EFF9DE00133E48 /* Simpler-Prefix.pch */,
 				F42ABEC216EFF9DE00133E48 /* Default.png */,
 				F42ABEC416EFF9DE00133E48 /* Default@2x.png */,
@@ -337,10 +356,8 @@
 				A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */,
 				A655429116F01F1100BA9659 /* HPDT_AddCreditViewController.h */,
 				A655429216F01F1100BA9659 /* HPDT_AddCreditViewController.m */,
-				A655429316F01F1100BA9659 /* HPDT_AddCreditViewController.xib */,
 				A655429616F01F3300BA9659 /* HPDT_AddGiftViewController.h */,
 				A655429716F01F3300BA9659 /* HPDT_AddGiftViewController.m */,
-				A655429816F01F3300BA9659 /* HPDT_AddGiftViewController.xib */,
 				A655429B16F01F5B00BA9659 /* HPDT_PasscodeViewController.h */,
 				A655429C16F01F5B00BA9659 /* HPDT_PasscodeViewController.m */,
 				A655429D16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib */,
@@ -471,12 +488,16 @@
 				A655428616F01E3B00BA9659 /* HPDT_BanksViewController.xib in Resources */,
 				A655428B16F01E5F00BA9659 /* HPDT_EditCardViewController.xib in Resources */,
 				A655429016F01EED00BA9659 /* HPDT_AddCardViewController.xib in Resources */,
-				A655429516F01F1100BA9659 /* HPDT_AddCreditViewController.xib in Resources */,
-				A655429A16F01F3300BA9659 /* HPDT_AddGiftViewController.xib in Resources */,
 				A655429F16F01F5B00BA9659 /* HPDT_PasscodeViewController.xib in Resources */,
 				A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */,
 				A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */,
 				A69B795116F13B7200E9C1D5 /* HPDT_CardTableViewCell.xib in Resources */,
+				A69B796316F1564200E9C1D5 /* user.png in Resources */,
+				A69B796516F156AF00E9C1D5 /* DebitActive.png in Resources */,
+				A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */,
+				A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */,
+				A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */,
+				A69B797416F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +553,7 @@
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
 				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
+				A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
