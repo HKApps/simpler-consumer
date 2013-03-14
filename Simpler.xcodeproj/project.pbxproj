@@ -35,6 +35,9 @@
 		A69B797F16F1673E00E9C1D5 /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797B16F1673E00E9C1D5 /* visa.png */; };
 		A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797C16F1673E00E9C1D5 /* masterCard.png */; };
 		A69B798116F1673E00E9C1D5 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797D16F1673E00E9C1D5 /* discover.png */; };
+		A69B798C16F191E300E9C1D5 /* backgroundTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B798A16F191E300E9C1D5 /* backgroundTwo.png */; };
+		A69B798D16F191E300E9C1D5 /* backgroundOne.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B798B16F191E300E9C1D5 /* backgroundOne.png */; };
+		A69B799016F1944D00E9C1D5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B798F16F1944D00E9C1D5 /* logo.png */; };
 		F42ABEAF16EFF9DE00133E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEAE16EFF9DE00133E48 /* UIKit.framework */; };
 		F42ABEB116EFF9DE00133E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB016EFF9DE00133E48 /* Foundation.framework */; };
 		F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB216EFF9DE00133E48 /* CoreGraphics.framework */; };
@@ -140,6 +143,9 @@
 		A69B797B16F1673E00E9C1D5 /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = visa.png; path = Graphics/visa.png; sourceTree = "<group>"; };
 		A69B797C16F1673E00E9C1D5 /* masterCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = masterCard.png; path = Graphics/masterCard.png; sourceTree = "<group>"; };
 		A69B797D16F1673E00E9C1D5 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = discover.png; path = Graphics/discover.png; sourceTree = "<group>"; };
+		A69B798A16F191E300E9C1D5 /* backgroundTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundTwo.png; path = Graphics/backgroundTwo.png; sourceTree = "<group>"; };
+		A69B798B16F191E300E9C1D5 /* backgroundOne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundOne.png; path = Graphics/backgroundOne.png; sourceTree = "<group>"; };
+		A69B798F16F1944D00E9C1D5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Graphics/logo.png; sourceTree = "<group>"; };
 		F42ABEAB16EFF9DE00133E48 /* Simpler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simpler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42ABEAE16EFF9DE00133E48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F42ABEB016EFF9DE00133E48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -456,8 +462,11 @@
 			children = (
 				A69B797A16F1673E00E9C1D5 /* amex.png */,
 				A69B797B16F1673E00E9C1D5 /* visa.png */,
+				A69B798F16F1944D00E9C1D5 /* logo.png */,
 				A69B797C16F1673E00E9C1D5 /* masterCard.png */,
 				A69B797D16F1673E00E9C1D5 /* discover.png */,
+				A69B798A16F191E300E9C1D5 /* backgroundTwo.png */,
+				A69B798B16F191E300E9C1D5 /* backgroundOne.png */,
 				A69B796216F1564200E9C1D5 /* user.png */,
 				A69B796816F159F200E9C1D5 /* DebitDeactive.png */,
 				A69B796E16F15A4100E9C1D5 /* giftDeactive.png */,
@@ -591,6 +600,9 @@
 				A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */,
 				A69B798116F1673E00E9C1D5 /* discover.png in Resources */,
 				F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */,
+				A69B798C16F191E300E9C1D5 /* backgroundTwo.png in Resources */,
+				A69B798D16F191E300E9C1D5 /* backgroundOne.png in Resources */,
+				A69B799016F1944D00E9C1D5 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,7 +37,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="136515320">
+					<object class="IBUIImageView" id="604655911">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{29, 55}, {263, 52}}</string>
@@ -46,6 +46,10 @@
 						<reference key="NSNextKeyView" ref="482868959"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">backgroundTwo.png</string>
+						</object>
 					</object>
 					<object class="IBUIImageView" id="482868959">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -173,7 +177,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="136515320"/>
+				<reference key="NSNextKeyView" ref="604655911"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -217,7 +221,7 @@
 							<reference ref="42842189"/>
 							<reference ref="703851081"/>
 							<reference ref="482868959"/>
-							<reference ref="136515320"/>
+							<reference ref="604655911"/>
 							<reference ref="957375256"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -265,7 +269,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="136515320"/>
+						<reference key="object" ref="604655911"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -306,6 +310,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="NS.key.0">backgroundTwo.png</string>
+			<string key="NS.object.0">{274, 105}</string>
+		</object>
 		<string key="IBCocoaTouchPluginVersion">933</string>
 	</data>
 </archive>

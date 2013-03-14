@@ -42,14 +42,16 @@
 							<object class="IBUITextField" id="807805552">
 								<reference key="NSNextResponder" ref="594783699"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{13, 6}, {97, 31}}</string>
+								<string key="NSFrame">{{13, 6}, {253, 31}}</string>
 								<reference key="NSSuperview" ref="594783699"/>
+								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<string key="IBUIText">Some Text</string>
+								<string key="IBUIText"/>
 								<int key="IBUIBorderStyle">3</int>
+								<string key="IBUIPlaceholder">Text</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MAA</bytes>
