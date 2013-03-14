@@ -13,8 +13,8 @@
 @interface Card : NSManagedObject
 
 @property (nonatomic, retain) NSString * last_four;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * token;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSString * name;
 
 @end

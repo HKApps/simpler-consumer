@@ -7,6 +7,8 @@
 //
 
 #import "HPDT_ProfileViewController.h"
+#import "User+HPDT.h"
+#import "HPDTAppDelegate.h"
 
 @implementation HPDT_ProfileViewController
 
@@ -14,7 +16,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.rowTitles = @[@"Banks & Cards", @"Passcode Lock", @"Set Payment Preferences", @"Transaction History"];
     }
     return self;
 }
@@ -46,6 +48,34 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)didTapLogout{
+    HPDTAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate logout];
+}
+
+
+#pragma mark UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 4;
+}
+
+// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ProfileTableViewCell"];
+    cell.textLabel.text = (NSString*) [_rowTitles objectAtIndex:[indexPath row]];
+    if([indexPath row] == 1){
+        if([User passcodeLockEnabled: self->ctx]){
+            cell.textLabel.text = [cell.textLabel.text stringByAppendingFormat:@"         ON"];
+        } else {
+            cell.textLabel.text = [cell.textLabel.text stringByAppendingFormat:@"         OFF"];
+        }
+    }
+    return cell;
 }
 
 @end

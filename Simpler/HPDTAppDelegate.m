@@ -10,7 +10,10 @@
 #import "QRScannerViewController.h"
 #import "HPDT_LoginViewController.h"
 #import "HPDT_HomeViewController.h"
+#import "HPDT_RegisterViewController.h"
 #import "Card+HPDT.h"
+#import "User+HPDT.h"
+
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
@@ -39,11 +42,18 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
                        inManagedObjectContext:self.managedObjectContext];
         card.name = [NSString stringWithFormat:@"Card Name %i", i];
     }
+    User * user = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"User"
+                   inManagedObjectContext:self.managedObjectContext];
+    User.name = @"Default User";
+    
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.loginNavigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    self.loginNavigationController.navigationBar.tintColor = [UIColor blackColor];
     
-    self.window.rootViewController = loginViewController;
+    self.window.rootViewController = self.loginNavigationController;
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -260,6 +270,28 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     
     [UIView commitAnimations];
 }
+
+- (void)showLoginView {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.5];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.window cache:YES];
+    
+    self.window.rootViewController = self.loginNavigationController;
+    
+    [UIView commitAnimations];
+}
+
+- (void)logout {
+    
+    User * user = [User getCurrentUserInContext:self.managedObjectContext];
+    [self.managedObjectContext deleteObject:user];
+    //TODO: Think through deauth, should facebook be deauthed ?  for the whole phone ?
+    
+    [self.loginNavigationController popToRootViewControllerAnimated:NO];
+    [self showLoginView];
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
 
 
 @end

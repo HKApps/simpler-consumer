@@ -12,6 +12,7 @@
 #import "HPDT_AddCardViewController.h"
 #import "HPDT_EditCardViewController.h"
 #import "QRScannerViewController.h"
+#import "User+HPDT.h"
 
 @implementation HPDT_HomeViewController
 
@@ -37,8 +38,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-        
+    
+    [User getCurrentUserInContext:self->ctx];
+    
 }
 
 - (void)viewDidUnload

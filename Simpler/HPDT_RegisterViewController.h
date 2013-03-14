@@ -10,4 +10,7 @@
 
 @interface HPDT_RegisterViewController : UIViewController
 
+
+- (IBAction) didTapSignUpButton: (id) sender;
+
 @end

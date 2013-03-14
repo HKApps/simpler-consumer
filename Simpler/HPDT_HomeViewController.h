@@ -12,6 +12,7 @@
 @interface HPDT_HomeViewController : HPDTCardsViewController
 <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) IBOutlet UILabel * header;
 
 -(IBAction)didTapProfileButton:(id)sender;
 -(IBAction)didTapAddCardButton:(id)sender;

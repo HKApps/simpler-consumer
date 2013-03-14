@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTViewController.h"
 
-@interface HPDT_ProfileViewController : UIViewController
+@interface HPDT_ProfileViewController : HPDTViewController
+<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) NSArray * rowTitles;
+
+-(IBAction)didTapLogout;
 
 @end

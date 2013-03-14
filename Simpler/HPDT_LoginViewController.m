@@ -9,6 +9,7 @@
 #import "HPDT_LoginViewController.h"
 #import "Login.h"
 #import "HPDTAppDelegate.h"
+#import "HPDT_RegisterViewController.h"
 
 @interface HPDT_LoginViewController ()
 
@@ -61,5 +62,11 @@
     // and show the login UX if necessary.
     [appDelegate openSessionWithAllowLoginUI:YES];
 }
+
+- (IBAction)didTapRegisterButton:(id)sender {
+    HPDT_RegisterViewController * registerViewController = [[HPDT_RegisterViewController alloc] init];
+    [self.navigationController pushViewController:registerViewController animated:YES];
+}
+
 
 @end

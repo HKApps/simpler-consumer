@@ -18,5 +18,6 @@
 - (IBAction)loginButtonAction:(id)sender;
 - (IBAction)doneEditing:(id)sender;
 - (IBAction)facebookAuthButtonAction:(id)sender;
+- (IBAction)didTapRegisterButton:(id)sender;
 
 @end

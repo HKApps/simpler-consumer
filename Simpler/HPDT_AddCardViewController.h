@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HPDT_AddCardViewController : UIViewController
+@interface HPDT_AddCardViewController : UIViewController {
+    BOOL creditViewOnTop;
+}
 
+@property (nonatomic,strong) IBOutlet UIView * dataContainerView;
 @property (nonatomic,strong) IBOutlet UIView * addCreditCardView;
 @property (nonatomic,strong) IBOutlet UIView * addGiftCardView;
+@property (nonatomic,strong) IBOutlet UIButton * creditCardButton;
+@property (nonatomic,strong) IBOutlet UIButton * giftCardButton;
+
+-(IBAction)didTapCreditCardButton:(id)sender;
+-(IBAction)didTapGiftCardButton:(id)sender;
 
 @end

@@ -20,6 +20,8 @@ extern NSString *const FBSessionStateChangedNotification;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (nonatomic, strong) UINavigationController * navigationController;
+@property (nonatomic, strong) UINavigationController * loginNavigationController;
+
 
 //Methods
 - (void)saveContext;
@@ -28,5 +30,8 @@ extern NSString *const FBSessionStateChangedNotification;
 - (BOOL)openSessionWithAllowLoginUI:(BOOL)allowLoginUI;
 
 - (void)showHomeView;
+- (void)showLoginView;
+- (void)logout;
+
 
 @end

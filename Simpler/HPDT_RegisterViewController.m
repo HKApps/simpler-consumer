@@ -7,6 +7,7 @@
 //
 
 #import "HPDT_RegisterViewController.h"
+#import "HPDTAppDelegate.h"
 
 @implementation HPDT_RegisterViewController
 
@@ -47,5 +48,19 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark IBActions
+
+- (IBAction) didTapSignUpButton: (id) sender {
+
+    //Validate the username and password
+    //Regiseter with server (problably asyc call..
+    //Then Log them in
+    //And switch to home view
+    
+    [(HPDTAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
+
+}
+
 
 @end

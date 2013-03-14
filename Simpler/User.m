@@ -1,19 +1,20 @@
 //
-//  Card.m
+//  User.m
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "Card.h"
+#import "User.h"
 
 
-@implementation Card
+@implementation User
 
-@dynamic last_four;
+@dynamic email;
+@dynamic id;
 @dynamic name;
-@dynamic token;
-@dynamic type;
+@dynamic passcode;
+@dynamic passcode_lock;
 
 @end

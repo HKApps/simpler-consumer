@@ -14,7 +14,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self->creditViewOnTop = YES;
     }
     return self;
 }
@@ -48,5 +48,31 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark IBActions
+
+-(IBAction)didTapCreditCardButton:(id)sender{
+    if(!creditViewOnTop){
+        _creditCardButton.selected = YES;
+        _giftCardButton.selected = NO;
+        [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [_dataContainerView addSubview:_addCreditCardView];
+        creditViewOnTop = YES;
+    }
+    
+    
+}
+
+-(IBAction)didTapGiftCardButton:(id)sender{
+    if(creditViewOnTop){
+        _creditCardButton.selected = NO;
+        _giftCardButton.selected = YES;
+        [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [_dataContainerView addSubview:_addGiftCardView];
+        creditViewOnTop = NO;
+    }
+    
+}
+
 
 @end
