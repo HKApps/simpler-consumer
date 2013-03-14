@@ -30,7 +30,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     self.window.backgroundColor = [UIColor whiteColor];
     
     HPDT_LoginViewController * loginViewController = [[HPDT_LoginViewController alloc] init];
-    loginViewController.title = @"Scan";
+    loginViewController.title = @"Login";
     
     HPDT_HomeViewController * homeViewController = [[HPDT_HomeViewController alloc] init];
     homeViewController.title = @"Home";
@@ -42,11 +42,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
                        inManagedObjectContext:self.managedObjectContext];
         card.name = [NSString stringWithFormat:@"Card Name %i", i];
     }
-    User * user = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"User"
-                   inManagedObjectContext:self.managedObjectContext];
-    User.name = @"Default User";
-    
+
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
@@ -272,6 +268,13 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 }
 
 - (void)showLoginView {
+    //Mocking data..
+    User * user = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"User"
+                   inManagedObjectContext:self.managedObjectContext];
+    user.name = @"Default User";
+    
+    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:.5];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.window cache:YES];

@@ -9,6 +9,8 @@
 #import "HPDT_ProfileViewController.h"
 #import "User+HPDT.h"
 #import "HPDTAppDelegate.h"
+#import "HPDT_BanksViewController.h"
+#import "HPDTPasscodeEntryViewController.h"
 
 @implementation HPDT_ProfileViewController
 
@@ -75,7 +77,29 @@
             cell.textLabel.text = [cell.textLabel.text stringByAppendingFormat:@"         OFF"];
         }
     }
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch([indexPath row]){
+        case 1:
+        {
+            HPDT_BanksViewController * banksViewController = [[HPDT_BanksViewController alloc] init];
+            [self.navigationController pushViewController:banksViewController animated:YES];
+            break;
+        }
+        case 2:
+        {
+            HPDTPasscodeEntryViewController * passcodeEntryViewController = [[HPDTPasscodeEntryViewController alloc] init];
+            [self.navigationController pushViewController:passcodeEntryViewController animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 @end

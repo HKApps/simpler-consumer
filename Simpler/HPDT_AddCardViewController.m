@@ -7,6 +7,14 @@
 //
 
 #import "HPDT_AddCardViewController.h"
+#import "HPDTAddCardTableViewCell.h"
+
+#define kCardNumber 1
+#define kExpDate 2
+#define kSecurtyCode 3
+#define kZipCode 4
+#define kMerchantName 5
+#define k8DigitCode 6
 
 @implementation HPDT_AddCardViewController
 
@@ -24,7 +32,6 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -34,6 +41,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    _creditCardButton.selected = YES;
+    _giftCardButton.selected = NO;
+    [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [_dataContainerView addSubview:_addCreditCardView];
+    creditViewOnTop = YES;
 }
 
 - (void)viewDidUnload
@@ -72,6 +84,69 @@
         creditViewOnTop = NO;
     }
     
+}
+
+
+#pragma mark UITableViewDataSource
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"HPDTAddCardTableViewCell";
+    
+    HPDTAddCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"HPDTAddCardTableViewCell" owner:nil options:nil];
+        for (id currentObject in topLevelObjects) {
+            if ([currentObject isKindOfClass:[HPDTAddCardTableViewCell class]]) {
+                cell = currentObject;
+                break;
+            }
+        }
+    }
+    if(creditViewOnTop){
+        switch([indexPath row]){
+            case 0:
+            {
+                cell.
+                break;
+            }
+            case 1:
+            {
+                break;
+            }
+            case 2:
+            {
+                break;
+            }
+            case 3:
+            {
+                break;
+            }
+            default:
+                break;
+        }
+    } else {
+        
+        switch([indexPath row]){
+            case 0:
+            {
+                break;
+            }
+            case 1:
+            {
+                break;
+            }
+            default:
+                break;
+        }
+    
+    }
+
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 4;
 }
 
 

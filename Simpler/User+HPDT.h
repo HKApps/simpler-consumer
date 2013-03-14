@@ -10,7 +10,7 @@
 
 @interface User (HPDT)
 
-+ (User *) getCurrentUserInContext: (NSManagedObjectContext) ctx;
-+ (BOOL) passcodeLockEnabled: (NSManagedObjectContext) ctx;
++ (User *) getCurrentUserInContext: (NSManagedObjectContext*) ctx;
++ (BOOL) passcodeLockEnabled: (NSManagedObjectContext*) ctx;
 
 @end

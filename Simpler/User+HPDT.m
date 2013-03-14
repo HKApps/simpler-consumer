@@ -23,9 +23,11 @@
     NSArray *array = [ctx executeFetchRequest:request error:&error];
     if(error!=nil){
         [HPDTUtil criticalError:error];
+        return nil;
     }
-    if([array count]){
+    if(![array count]){
         [HPDTUtil criticalErrorWithString:@"Current user not found"];
+        return nil;
     }
     
     return [array objectAtIndex:0];

@@ -29,8 +29,8 @@
 		A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796816F159F200E9C1D5 /* DebitDeactive.png */; };
 		A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796C16F15A1000E9C1D5 /* giftActive.png */; };
 		A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796E16F15A4100E9C1D5 /* giftDeactive.png */; };
-		A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */; };
-		A69B797416F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */; };
+		A69B797316F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */; };
+		A69B797416F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */; };
 		A69B797E16F1673E00E9C1D5 /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797A16F1673E00E9C1D5 /* amex.png */; };
 		A69B797F16F1673E00E9C1D5 /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797B16F1673E00E9C1D5 /* visa.png */; };
 		A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797C16F1673E00E9C1D5 /* masterCard.png */; };
@@ -88,6 +88,8 @@
 		F4BC87D916F185C700456B18 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D816F185C700456B18 /* Card.m */; };
 		F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+HPDT.m */; };
 		F4BC87E916F18E4100456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E816F18E4100456B18 /* User.m */; };
+		F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */; };
+		F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,9 +133,9 @@
 		A69B796816F159F200E9C1D5 /* DebitDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DebitDeactive.png; path = Graphics/DebitDeactive.png; sourceTree = "<group>"; };
 		A69B796C16F15A1000E9C1D5 /* giftActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftActive.png; path = Graphics/giftActive.png; sourceTree = "<group>"; };
 		A69B796E16F15A4100E9C1D5 /* giftDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftDeactive.png; path = Graphics/giftDeactive.png; sourceTree = "<group>"; };
-		A69B797016F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddCardTableViewCell.h; sourceTree = "<group>"; };
-		A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddCardTableViewCell.m; sourceTree = "<group>"; };
-		A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCardTableViewCell.xib; sourceTree = "<group>"; };
+		A69B797016F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTAddCardTableViewCell.h; sourceTree = "<group>"; };
+		A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTAddCardTableViewCell.m; sourceTree = "<group>"; };
+		A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTAddCardTableViewCell.xib; sourceTree = "<group>"; };
 		A69B797A16F1673E00E9C1D5 /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amex.png; path = Graphics/amex.png; sourceTree = "<group>"; };
 		A69B797B16F1673E00E9C1D5 /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = visa.png; path = Graphics/visa.png; sourceTree = "<group>"; };
 		A69B797C16F1673E00E9C1D5 /* masterCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = masterCard.png; path = Graphics/masterCard.png; sourceTree = "<group>"; };
@@ -211,6 +213,9 @@
 		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87E716F18E4100456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F4BC87E816F18E4100456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPasscodeEntryViewController.h; sourceTree = "<group>"; };
+		F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPasscodeEntryViewController.m; sourceTree = "<group>"; };
+		F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTPasscodeEntryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,9 +261,9 @@
 				A69B794F16F13B7200E9C1D5 /* HPDTCardTableViewCell.xib */,
 				F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */,
 				F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */,
-				A69B797016F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.h */,
-				A69B797116F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m */,
-				A69B797216F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib */,
+				A69B797016F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.h */,
+				A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */,
+				A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */,
 			);
 			name = UITableViewCells;
 			sourceTree = "<group>";
@@ -310,7 +315,6 @@
 			isa = PBXGroup;
 			children = (
 				F42ABEEC16F00CAC00133E48 /* Interface */,
-				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
 				F42ABF1C16F1380E00133E48 /* Models */,
 				F42ABF2116F13E7F00133E48 /* Core Data Models */,
 				F4BC87BF16F15FD200456B18 /* Graphics */,
@@ -358,10 +362,14 @@
 		F42ABEEC16F00CAC00133E48 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				F4BC87B816F15EF000456B18 /* Library */,
+				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
 				F4BC87BC16F15F0C00456B18 /* HPDTLockScreenViewController.h */,
 				F4BC87BD16F15F0C00456B18 /* HPDTLockScreenViewController.m */,
 				F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */,
-				F4BC87B816F15EF000456B18 /* Library */,
+				F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */,
+				F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */,
+				F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */,
 				F42ABEED16F00CD500133E48 /* QRScannerViewController.h */,
 				F42ABEEE16F00CD500133E48 /* QRScannerViewController.m */,
 				F42ABEEF16F00CD500133E48 /* QRScannerViewController.xib */,
@@ -568,7 +576,7 @@
 				A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */,
 				A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */,
 				A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */,
-				A69B797416F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.xib in Resources */,
+				A69B797416F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib in Resources */,
 				F4BC87C916F15FE500456B18 /* lock_background.png in Resources */,
 				F4BC87CA16F15FE500456B18 /* lock_background@2x.png in Resources */,
 				F4BC87CB16F15FE500456B18 /* passcodeFieldBackground.png in Resources */,
@@ -582,6 +590,7 @@
 				A69B797F16F1673E00E9C1D5 /* visa.png in Resources */,
 				A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */,
 				A69B798116F1673E00E9C1D5 /* discover.png in Resources */,
+				F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,12 +643,13 @@
 				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
 				F42ABF3516F151ED00133E48 /* HPDTCardsViewController.m in Sources */,
-				A69B797316F15AEA00E9C1D5 /* HPDT_AddCardTableViewCell.m in Sources */,
+				A69B797316F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m in Sources */,
 				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,
 				F4BC87D516F1647800456B18 /* HPDTViewController.m in Sources */,
 				F4BC87D916F185C700456B18 /* Card.m in Sources */,
 				F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */,
 				F4BC87E916F18E4100456B18 /* User.m in Sources */,
+				F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

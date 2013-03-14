@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "HPDT_AddCardTableViewCell.h"
+#import "HPDTAddCardTableViewCell.h"
 
-@implementation HPDT_AddCardTableViewCell
+@implementation HPDTAddCardTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

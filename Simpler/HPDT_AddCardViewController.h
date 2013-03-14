@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HPDTViewController.h"
 
-@interface HPDT_AddCardViewController : UIViewController {
+@interface HPDT_AddCardViewController : HPDTViewController
+<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
     BOOL creditViewOnTop;
 }
+
+@property (nonatomic,strong) NSArray * creditCardFieldNames;
+@property (nonatomic,strong) NSArray * giftCardFieldNames;
+
 
 @property (nonatomic,strong) IBOutlet UIView * dataContainerView;
 @property (nonatomic,strong) IBOutlet UIView * addCreditCardView;
