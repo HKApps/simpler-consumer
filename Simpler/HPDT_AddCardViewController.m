@@ -8,6 +8,7 @@
 
 #import "HPDT_AddCardViewController.h"
 #import "HPDTAddCardTableViewCell.h"
+#import "Card+HPDT.h"
 
 #define kCardNumber 1
 #define kExpDate 2
@@ -23,6 +24,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self->creditViewOnTop = YES;
+        _values = [NSMutableDictionary dictionaryWithCapacity:6];
+        _keys = @[@"CardNumber", @"ExpDate", @"SecurityCode", @"ZipCode", @"MerchantName", @"8DigitCode"];
     }
     return self;
 }
@@ -40,12 +43,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    _creditCardButton.selected = YES;
-    _giftCardButton.selected = NO;
-    [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [_dataContainerView addSubview:_addCreditCardView];
-    creditViewOnTop = YES;
 }
 
 - (void)viewDidUnload
@@ -55,6 +52,13 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    _creditCardButton.selected = YES;
+    _giftCardButton.selected = NO;
+    [_dataContainerView addSubview:_addCreditCardView];
+    creditViewOnTop = YES;
+}
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -67,7 +71,7 @@
     if(!creditViewOnTop){
         _creditCardButton.selected = YES;
         _giftCardButton.selected = NO;
-        [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [_addGiftCardView removeFromSuperview];
         [_dataContainerView addSubview:_addCreditCardView];
         creditViewOnTop = YES;
     }
@@ -79,12 +83,36 @@
     if(creditViewOnTop){
         _creditCardButton.selected = NO;
         _giftCardButton.selected = YES;
-        [_dataContainerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [_addCreditCardView removeFromSuperview];
         [_dataContainerView addSubview:_addGiftCardView];
         creditViewOnTop = NO;
     }
     
 }
+
+
+
+-(IBAction)didTapAddCardButton:(id)sender{
+    
+    
+    //Initiate REST call
+    //I.E. Send this data directly to the API without saving
+    //Probably want to notify the user that an API call is happening
+    //The below goes in the async callback
+    
+    Card * card = [[Card alloc] init];
+    if(creditViewOnTop){
+        card.type = @"MasterCard";
+    } else {
+        card.type = @"Gift";
+    }
+    card.last_four = @"9999"; //from API?
+    card.token = @"Token";
+    card.name = @"No Name Specified";
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 
 #pragma mark UITableViewDataSource
@@ -163,7 +191,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    int numberOfRows = 4;
+    if(!creditViewOnTop)
+        numberOfRows = 2;
+    return numberOfRows;
+}
+
+#pragma mark UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [_values setObject:textField.text forKey:[_keys objectAtIndex:textField.tag]];
 }
 
 

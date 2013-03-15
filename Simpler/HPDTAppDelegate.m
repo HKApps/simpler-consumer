@@ -41,6 +41,12 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
                        insertNewObjectForEntityForName:@"Card"
                        inManagedObjectContext:self.managedObjectContext];
         card.name = [NSString stringWithFormat:@"Card Name %i", i];
+        card.last_four = [NSString stringWithFormat:@"%i%i%i%i", i, i, i, i];
+        card.type = @"American Express";
+        card.token = [NSString stringWithFormat:@"Token%i", i ];
+        if(i==2){
+            card.isDefault = [NSNumber numberWithBool:YES];
+        }
     }
 
     
@@ -257,6 +263,13 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 
 
 - (void)showHomeView {
+    //Mocking data..
+    User * user = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"User"
+                   inManagedObjectContext:self.managedObjectContext];
+    user.name = @"Default User";
+    
+
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:.5];
@@ -268,12 +281,6 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 }
 
 - (void)showLoginView {
-    //Mocking data..
-    User * user = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"User"
-                   inManagedObjectContext:self.managedObjectContext];
-    user.name = @"Default User";
-    
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:.5];

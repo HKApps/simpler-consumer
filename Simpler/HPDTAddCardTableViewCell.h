@@ -12,4 +12,6 @@
 
 @property (nonatomic,strong) IBOutlet UITextField * textField;
 
+-(IBAction)didEndEnding:(id)sender;
+
 @end

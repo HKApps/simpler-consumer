@@ -7,6 +7,8 @@
 //
 
 #import "HPDT_BanksViewController.h"
+#import "HPDT_AddCardViewController.h"
+#import "Card+HPDT.h"
 
 @implementation HPDT_BanksViewController
 
@@ -32,7 +34,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    Card * defaultCard = [Card getDefaultCard:self->ctx];
+    _defaultCardName.text = defaultCard.name;
+    _defaultCardLastFour.text = defaultCard.last_four;
+    _defaultCardType.text = defaultCard.type;
+    _defaultCardImageView.image = defaultCard.cardImage;
 }
 
 - (void)viewDidUnload
@@ -47,5 +54,16 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark IBActions
+
+- (IBAction)didTapAddCard:(id)sender {
+    self.navigationController.navigationBarHidden = NO;
+    
+    HPDT_AddCardViewController * addCardViewController = [[HPDT_AddCardViewController alloc] init];
+    addCardViewController.title = @"Add Card";
+    [self.navigationController pushViewController:addCardViewController animated:YES];
+}
+
 
 @end

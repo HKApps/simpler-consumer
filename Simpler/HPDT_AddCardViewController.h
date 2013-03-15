@@ -16,6 +16,9 @@
 
 @property (nonatomic,strong) NSArray * creditCardFieldNames;
 @property (nonatomic,strong) NSArray * giftCardFieldNames;
+@property (nonatomic,strong) NSMutableDictionary * values;
+@property (nonatomic,strong) NSArray * keys;
+
 
 
 @property (nonatomic,strong) IBOutlet UIView * dataContainerView;
@@ -26,5 +29,6 @@
 
 -(IBAction)didTapCreditCardButton:(id)sender;
 -(IBAction)didTapGiftCardButton:(id)sender;
-
+-(IBAction)didEndEnding:(id)sender;
+-(IBAction)didTapAddCardButton:(id)sender;
 @end

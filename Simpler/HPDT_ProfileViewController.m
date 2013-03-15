@@ -85,13 +85,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch([indexPath row]){
-        case 1:
+        case 0:
         {
             HPDT_BanksViewController * banksViewController = [[HPDT_BanksViewController alloc] init];
             [self.navigationController pushViewController:banksViewController animated:YES];
             break;
         }
-        case 2:
+        case 1:
         {
             HPDTPasscodeEntryViewController * passcodeEntryViewController = [[HPDTPasscodeEntryViewController alloc] init];
             [self.navigationController pushViewController:passcodeEntryViewController animated:YES];

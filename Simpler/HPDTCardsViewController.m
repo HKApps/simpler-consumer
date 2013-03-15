@@ -77,7 +77,7 @@
     cell.cardDigits.text = card.last_four;
     cell.cardName.text = card.name;
     cell.cardType.text = card.type;
-    //cell.cardImage.image = nil;
+    cell.cardImage.image = card.cardImage;
     
     return cell;
 }

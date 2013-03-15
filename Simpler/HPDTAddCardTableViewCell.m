@@ -26,4 +26,8 @@
     // Configure the view for the selected state
 }
 
+
+-(IBAction)didEndEnding:(id)sender {
+    [sender resignFirstResponder];
+}
 @end

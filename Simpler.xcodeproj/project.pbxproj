@@ -88,11 +88,11 @@
 		F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */; };
 		F4BC87D216F15FF900456B18 /* HPDTLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */; };
 		F4BC87D516F1647800456B18 /* HPDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D416F1647800456B18 /* HPDTViewController.m */; };
-		F4BC87D916F185C700456B18 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D816F185C700456B18 /* Card.m */; };
 		F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+HPDT.m */; };
-		F4BC87E916F18E4100456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E816F18E4100456B18 /* User.m */; };
 		F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */; };
 		F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */; };
+		F4BC87F216F290EE00456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F116F290EE00456B18 /* User.m */; };
+		F4BC87F516F2910700456B18 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F416F2910700456B18 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,17 +211,18 @@
 		F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTLockScreenViewController.xib; sourceTree = "<group>"; };
 		F4BC87D316F1647700456B18 /* HPDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTViewController.h; sourceTree = "<group>"; };
 		F4BC87D416F1647800456B18 /* HPDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTViewController.m; sourceTree = "<group>"; };
-		F4BC87D616F1854C00456B18 /* 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.xcdatamodel; sourceTree = "<group>"; };
-		F4BC87D716F185C700456B18 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		F4BC87D816F185C700456B18 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		F4BC87D616F1854C00456B18 /* 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 3.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87E016F186E100456B18 /* User+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+HPDT.h"; sourceTree = "<group>"; };
 		F4BC87E116F186E100456B18 /* User+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+HPDT.m"; sourceTree = "<group>"; };
-		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.xcdatamodel; sourceTree = "<group>"; };
-		F4BC87E716F18E4100456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		F4BC87E816F18E4100456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 4.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPasscodeEntryViewController.h; sourceTree = "<group>"; };
 		F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPasscodeEntryViewController.m; sourceTree = "<group>"; };
 		F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTPasscodeEntryViewController.xib; sourceTree = "<group>"; };
+		F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.xcdatamodel; sourceTree = "<group>"; };
+		F4BC87F016F290EE00456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F4BC87F116F290EE00456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F4BC87F316F2910700456B18 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F4BC87F416F2910700456B18 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,11 +431,11 @@
 		F42ABF2116F13E7F00133E48 /* Core Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				F4BC87F016F290EE00456B18 /* User.h */,
+				F4BC87F116F290EE00456B18 /* User.m */,
+				F4BC87F316F2910700456B18 /* Card.h */,
+				F4BC87F416F2910700456B18 /* Card.m */,
 				F42ABEC816EFF9DE00133E48 /* Simpler.xcdatamodeld */,
-				F4BC87E716F18E4100456B18 /* User.h */,
-				F4BC87E816F18E4100456B18 /* User.m */,
-				F4BC87D716F185C700456B18 /* Card.h */,
-				F4BC87D816F185C700456B18 /* Card.m */,
 			);
 			name = "Core Data Models";
 			sourceTree = "<group>";
@@ -658,10 +659,10 @@
 				A69B797316F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m in Sources */,
 				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,
 				F4BC87D516F1647800456B18 /* HPDTViewController.m in Sources */,
-				F4BC87D916F185C700456B18 /* Card.m in Sources */,
 				F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */,
-				F4BC87E916F18E4100456B18 /* User.m in Sources */,
 				F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */,
+				F4BC87F216F290EE00456B18 /* User.m in Sources */,
+				F4BC87F516F2910700456B18 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,12 +879,13 @@
 		F42ABEC816EFF9DE00133E48 /* Simpler.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */,
 				F42ABF3616F1565400133E48 /* 2.xcdatamodel */,
 				F4BC87D616F1854C00456B18 /* 3.xcdatamodel */,
 				F4BC87E316F18D7000456B18 /* 4.xcdatamodel */,
 				F42ABEC916EFF9DE00133E48 /* Simpler.xcdatamodel */,
 			);
-			currentVersion = F4BC87E316F18D7000456B18 /* 4.xcdatamodel */;
+			currentVersion = F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */;
 			path = Simpler.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

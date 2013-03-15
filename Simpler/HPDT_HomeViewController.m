@@ -39,8 +39,8 @@
 {
     [super viewDidLoad];
     
-    [User getCurrentUserInContext:self->ctx];
-    
+    User * user = [User getCurrentUserInContext:self->ctx];
+    self.header.text = [NSString stringWithFormat:@"%@'s Wallet", user.name];
 }
 
 - (void)viewDidUnload

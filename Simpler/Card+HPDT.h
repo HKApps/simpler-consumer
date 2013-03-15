@@ -11,5 +11,8 @@
 @interface Card (HPDT)
 
 + (NSArray*) getAllCardsInContext: (NSManagedObjectContext *) ctx;
++ (Card *) getDefaultCard: (NSManagedObjectContext *) ctx;
+
+@property (nonatomic,readonly) UIImage * cardImage;
 
 @end
