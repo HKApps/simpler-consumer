@@ -13,7 +13,7 @@
 @interface QRScannerViewController ()
 
 @property (nonatomic, retain) ZXCapture* capture;
-@property (nonatomic, retain) IBOutlet UILabel* decodedLabel;
+//@property (nonatomic, retain) IBOutlet UILabel* decodedLabel;
 
 - (NSString*)displayForResult:(ZXResult*)result;
 
@@ -33,6 +33,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+
+}
+
+- (void)viewWillUnload {
+
+    self.capture = nil;
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    
+  
+    //self.decodedLabel = nil;
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
     
     self.capture = [[ZXCapture alloc] init];
     self.capture.delegate = self;
@@ -42,14 +60,7 @@
     
     self.capture.layer.frame = self.view.bounds;
     [self.view.layer addSublayer:self.capture.layer];
-    [self.view bringSubviewToFront:self.decodedLabel];
-
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    
-    self.decodedLabel = nil;
+    //[self.view bringSubviewToFront:self.decodedLabel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -146,11 +157,39 @@
 
 - (void)captureResult:(ZXCapture*)capture result:(ZXResult*)result {
     if (result) {
-        // We got a result. Display information about the result onscreen.
-        [self.decodedLabel performSelectorOnMainThread:@selector(setText:) withObject:[self displayForResult:result] waitUntilDone:YES];
+        [self.capture stop];
         
-        // Vibrate
+        //We got a qrcode
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        
+        NSLog(@"%@", result.text);
+        //  merchant_id; merchant_processor_id; merchant_interchange_category; item1_name, item1_price, item1_quantity, item1_id
+        //  i.e. 178394; 13940028395038; CPS / Supermarket Credit; espresso, 1.50, 3, 1234; breakfast burrito, $5.00, 1, 1237
+
+        NSArray * components = [result.text componentsSeparatedByString:@"; "];
+        NSString * merchant_id = [components objectAtIndex:0];
+        NSString * merchant_processor_id = [components objectAtIndex:1];
+        NSString * merchant_interchange_category = [components objectAtIndex:2];
+        NSDictionary * partialDetails = @{@"merchant_id":merchant_id,
+                                          @"merchant_processor_id":merchant_processor_id,
+                                          @"merchant_interchange_category":merchant_interchange_category,
+                                          };
+        NSMutableArray * items = [NSMutableArray arrayWithCapacity:5];
+        for(int i=3; i<[components count]; i++){
+            NSArray * itemComponents = [[components objectAtIndex:i] componentsSeparatedByString:@", "];
+            NSDictionary * itemDetails = @{@"name":[itemComponents objectAtIndex:0],
+                                           @"price":[itemComponents objectAtIndex:1],
+                                           @"quantity":[itemComponents objectAtIndex:2],
+                                           @"id":[itemComponents objectAtIndex:3]
+                                           };
+            [items addObject:itemDetails];
+            
+        }
+        NSMutableDictionary * ticketDetails = [NSMutableDictionary dictionaryWithDictionary:partialDetails];
+        [ticketDetails setObject:items forKey:@"items"];
+        
+        NSLog(@"%@", ticketDetails.debugDescription);
+        
     }
 }
 

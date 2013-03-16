@@ -42,7 +42,7 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
                        inManagedObjectContext:self.managedObjectContext];
         card.name = [NSString stringWithFormat:@"Card Name %i", i];
         card.last_four = [NSString stringWithFormat:@"%i%i%i%i", i, i, i, i];
-        card.type = @"American Express";
+        card.card_type = @"American Express";
         card.token = [NSString stringWithFormat:@"Token%i", i ];
         if(i==2){
             card.isDefault = [NSNumber numberWithBool:YES];

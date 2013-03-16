@@ -70,13 +70,13 @@
     
     UIImage * image;
     
-    if([self.type isEqualToString:@"American Express"]){
+    if([self.card_type isEqualToString:@"American Express"]){
         image = [UIImage imageNamed:@"amex"];
-    } else if ([self.type isEqualToString:@"Visa"]){
+    } else if ([self.card_type isEqualToString:@"Visa"]){
         image = [UIImage imageNamed:@"visa"];
-    } else if ([self.type isEqualToString:@"MasterCard"]){
+    } else if ([self.card_type isEqualToString:@"MasterCard"]){
         image = [UIImage imageNamed:@"masterCard"];
-    } else if ([self.type isEqualToString:@"Discover"]){
+    } else if ([self.card_type isEqualToString:@"Discover"]){
         image = [UIImage imageNamed:@"discover"];
     } else {
         image = [UIImage imageNamed:@"logo"];

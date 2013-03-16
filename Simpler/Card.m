@@ -14,7 +14,7 @@
 @dynamic last_four;
 @dynamic name;
 @dynamic token;
-@dynamic type;
+@dynamic card_type;
 @dynamic isDefault;
 
 @end

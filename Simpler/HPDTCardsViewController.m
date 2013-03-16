@@ -9,7 +9,7 @@
 #import "HPDTCardsViewController.h"
 #import "HPDTAppDelegate.h"
 #import "HPDTCardTableViewCell.h"
-#import "Card+HPDT.h"
+#import "HPDT_EditCardViewController.h"
 
 @interface HPDTCardsViewController ()
 
@@ -29,8 +29,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self reloadData];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self reloadData];
+    [_tableView reloadData];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,9 +49,17 @@
     _cards = [Card getAllCardsInContext:self->ctx];
 }
 
+- (void) pushEditCardView: (Card *) card {
+    
+    HPDT_EditCardViewController * editCardViewController = [[HPDT_EditCardViewController alloc] init];
+    editCardViewController.title = @"Edit Card";
+    editCardViewController.card = card;
+    [self.navigationController pushViewController:editCardViewController animated:YES];
+    self.navigationController.navigationBarHidden = NO;
+    
+}
+
 #pragma mark UITableViewDelegate
-
-
 
 
 #pragma mark UITableViewDataSource
@@ -76,7 +91,7 @@
     Card * card = [_cards objectAtIndex:[indexPath row]];
     cell.cardDigits.text = card.last_four;
     cell.cardName.text = card.name;
-    cell.cardType.text = card.type;
+    cell.cardType.text = card.card_type;
     cell.cardImage.image = card.cardImage;
     
     return cell;

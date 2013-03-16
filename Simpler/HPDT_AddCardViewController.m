@@ -100,11 +100,13 @@
     //Probably want to notify the user that an API call is happening
     //The below goes in the async callback
     
-    Card * card = [[Card alloc] init];
+    Card * card = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Card"
+                   inManagedObjectContext:self->ctx];
     if(creditViewOnTop){
-        card.type = @"MasterCard";
+        card.card_type = @"MasterCard";
     } else {
-        card.type = @"Gift";
+        card.card_type = @"Gift";
     }
     card.last_four = @"9999"; //from API?
     card.token = @"Token";
@@ -137,6 +139,7 @@
                 cell.textField.placeholder = @"Card #";
                 cell.textField.tag = kCardNumber;
                 cell.textField.delegate = self;
+                cell.textField.keyboardType = UIKeyboardTypeNumberPad;
                 break;
             }
             case 1:
@@ -144,6 +147,7 @@
                 cell.textField.placeholder = @"Exp. Date";
                 cell.textField.tag = kExpDate;
                 cell.textField.delegate = self;
+                cell.textField.keyboardType = UIKeyboardTypeNumberPad;
                 break;
             }
             case 2:
@@ -151,6 +155,7 @@
                 cell.textField.placeholder = @"Security Code";
                 cell.textField.tag = kSecurtyCode;
                 cell.textField.delegate = self;
+                cell.textField.keyboardType = UIKeyboardTypeNumberPad;
                 break;
             }
             case 3:
@@ -158,6 +163,7 @@
                 cell.textField.placeholder = @"Zip Code";
                 cell.textField.tag = kZipCode;
                 cell.textField.delegate = self;
+                cell.textField.keyboardType = UIKeyboardTypeNumberPad;
                 break;
             }
             default:
@@ -178,6 +184,7 @@
                 cell.textField.placeholder = @"8 Digit Code";
                 cell.textField.tag = k8DigitCode;
                 cell.textField.delegate = self;
+                cell.textField.keyboardType = UIKeyboardTypeNumberPad;
                 break;
             }
             default:

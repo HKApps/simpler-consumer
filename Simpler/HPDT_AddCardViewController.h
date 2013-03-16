@@ -29,6 +29,5 @@
 
 -(IBAction)didTapCreditCardButton:(id)sender;
 -(IBAction)didTapGiftCardButton:(id)sender;
--(IBAction)didEndEnding:(id)sender;
 -(IBAction)didTapAddCardButton:(id)sender;
 @end

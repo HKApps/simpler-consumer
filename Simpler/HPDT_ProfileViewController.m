@@ -84,6 +84,9 @@
 #pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    
     switch([indexPath row]){
         case 0:
         {

@@ -13,6 +13,7 @@
 #import "HPDT_EditCardViewController.h"
 #import "QRScannerViewController.h"
 #import "User+HPDT.h"
+#import "Card+HPDT.h"
 
 @implementation HPDT_HomeViewController
 
@@ -51,6 +52,7 @@
 }
 
 - (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
 }
 
@@ -85,12 +87,15 @@
 }
 
 #pragma mark UITableViewDelegate
+
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     self.navigationController.navigationBarHidden = NO;
+    [self pushEditCardView:[self.cards objectAtIndex:[indexPath row]]];
+}
 
-    HPDT_EditCardViewController * editCardViewController = [[HPDT_EditCardViewController alloc] init];
-    editCardViewController.title = @"Edit Card";
-    [self.navigationController pushViewController:editCardViewController animated:YES];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    [self pushEditCardView:[self.cards objectAtIndex:[indexPath row]]];
 }
 
 

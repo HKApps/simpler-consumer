@@ -15,7 +15,7 @@
 @property (nonatomic, retain) NSString * last_four;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * token;
-@property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSString * card_type;
 @property (nonatomic, retain) NSNumber * isDefault;
 
 @end
