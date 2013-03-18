@@ -8,7 +8,7 @@
 
 #import "SIOBanksViewController.h"
 #import "SIOAddCardViewController.h"
-#import "Card+HPDT.h"
+#import "Card+SIO.h"
 
 @implementation SIOBanksViewController
 

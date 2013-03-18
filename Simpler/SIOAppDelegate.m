@@ -11,8 +11,8 @@
 #import "SIOLoginViewController.h"
 #import "SIOHomeViewController.h"
 #import "SIORegisterViewController.h"
-#import "Card+HPDT.h"
-#import "User+HPDT.h"
+#import "Card+SIO.h"
+#import "User+SIO.h"
 
 
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";

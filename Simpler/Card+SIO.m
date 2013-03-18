@@ -1,15 +1,15 @@
 //
-//  Card+HPDT.m
+//  Card+SIO.m
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "Card+HPDT.h"
+#import "Card+SIO.h"
 #import "HPDTUtil.h"
 
-@implementation Card (HPDT)
+@implementation Card (SIO)
 
 + (NSArray*) getAllCardsInContext: (NSManagedObjectContext *) ctx {
     

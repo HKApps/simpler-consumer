@@ -1,13 +1,13 @@
 //
-//  User+HPDT.m
+//  User+SIO.m
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
 //  Copyright (c) 2013 HPDTApps. All rights reserved.
 //
 
-#import "User+HPDT.h"
-#import "HPDTUtil.h"
+#import "User+SIO.h"
+#import "SIOUtil.h"
 
 @implementation User (HPDT)
 

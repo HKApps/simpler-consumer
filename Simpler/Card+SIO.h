@@ -1,5 +1,5 @@
 //
-//  Card+HPDT.h
+//  Card+SIO.h
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
@@ -8,7 +8,7 @@
 
 #import "Card.h"
 
-@interface Card (HPDT)
+@interface Card (SIO)
 
 + (NSArray*) getAllCardsInContext: (NSManagedObjectContext *) ctx;
 + (Card *) getDefaultCard: (NSManagedObjectContext *) ctx;

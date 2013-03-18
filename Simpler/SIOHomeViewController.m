@@ -12,8 +12,8 @@
 #import "SIOAddCardViewController.h"
 #import "SIOEditCardViewController.h"
 #import "SIOQRScannerViewController.h"
-#import "User+HPDT.h"
-#import "Card+HPDT.h"
+#import "User+SIO.h"
+#import "Card+SIO.h"
 
 @implementation SIOHomeViewController
 

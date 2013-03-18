@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Card+SIO.h"
 
 @interface SIOTransactionViewController : UIViewController
+
+
+@property (nonatomic, strong) NSDictionary * transactionDetails;
 
 @end

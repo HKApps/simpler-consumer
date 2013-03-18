@@ -70,7 +70,7 @@
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
 		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
-		F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+HPDT.m */; };
+		F42ABF2716F13F8D00133E48 /* Card+SIO.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+SIO.m */; };
 		F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* HPDTUtil.m */; };
 		F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */; };
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
@@ -87,7 +87,7 @@
 		F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */; };
 		F4BC87D216F15FF900456B18 /* SIOLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */; };
 		F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D416F1647800456B18 /* SIOViewController.m */; };
-		F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+HPDT.m */; };
+		F4BC87E216F186E100456B18 /* User+SIO.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+SIO.m */; };
 		F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */; };
 		F4BC87EE16F19E6800456B18 /* SIOPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */; };
 		F4BC87F216F290EE00456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F116F290EE00456B18 /* User.m */; };
@@ -218,8 +218,8 @@
 		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F42ABF1616F021FD00133E48 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
-		F42ABF2516F13F8D00133E48 /* Card+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+HPDT.h"; sourceTree = "<group>"; };
-		F42ABF2616F13F8D00133E48 /* Card+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+HPDT.m"; sourceTree = "<group>"; };
+		F42ABF2516F13F8D00133E48 /* Card+SIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+SIO.h"; sourceTree = "<group>"; };
+		F42ABF2616F13F8D00133E48 /* Card+SIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+SIO.m"; sourceTree = "<group>"; };
 		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
 		F42ABF2A16F1402300133E48 /* HPDTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTUtil.m; sourceTree = "<group>"; };
 		F42ABF2D16F145D000133E48 /* SIOCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOCardTableViewCell.h; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		F4BC87D316F1647700456B18 /* SIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOViewController.h; sourceTree = "<group>"; };
 		F4BC87D416F1647800456B18 /* SIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOViewController.m; sourceTree = "<group>"; };
 		F4BC87D616F1854C00456B18 /* 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 3.xcdatamodel; sourceTree = "<group>"; };
-		F4BC87E016F186E100456B18 /* User+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+HPDT.h"; sourceTree = "<group>"; };
-		F4BC87E116F186E100456B18 /* User+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+HPDT.m"; sourceTree = "<group>"; };
+		F4BC87E016F186E100456B18 /* User+SIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+SIO.h"; sourceTree = "<group>"; };
+		F4BC87E116F186E100456B18 /* User+SIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+SIO.m"; sourceTree = "<group>"; };
 		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 4.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87EA16F19E6400456B18 /* SIOPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOPasscodeEntryViewController.h; sourceTree = "<group>"; };
 		F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOPasscodeEntryViewController.m; sourceTree = "<group>"; };
@@ -451,12 +451,12 @@
 		F42ABF1C16F1380E00133E48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF2516F13F8D00133E48 /* Card+HPDT.h */,
-				F42ABF2616F13F8D00133E48 /* Card+HPDT.m */,
+				F42ABF2516F13F8D00133E48 /* Card+SIO.h */,
+				F42ABF2616F13F8D00133E48 /* Card+SIO.m */,
 				F42ABF3016F1499000133E48 /* Login.h */,
 				F42ABF3116F1499100133E48 /* Login.m */,
-				F4BC87E016F186E100456B18 /* User+HPDT.h */,
-				F4BC87E116F186E100456B18 /* User+HPDT.m */,
+				F4BC87E016F186E100456B18 /* User+SIO.h */,
+				F4BC87E116F186E100456B18 /* User+SIO.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -740,7 +740,7 @@
 				A655428F16F01EED00BA9659 /* SIOAddCardViewController.m in Sources */,
 				A65542A316F0200900BA9659 /* SIOTransactionViewController.m in Sources */,
 				A65542A816F0202500BA9659 /* SIOWalletViewController.m in Sources */,
-				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
+				F42ABF2716F13F8D00133E48 /* Card+SIO.m in Sources */,
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
 				F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
@@ -748,7 +748,7 @@
 				A69B797316F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m in Sources */,
 				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,
 				F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */,
-				F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */,
+				F4BC87E216F186E100456B18 /* User+SIO.m in Sources */,
 				F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */,
 				F4BC87F216F290EE00456B18 /* User.m in Sources */,
 				F4BC87F816F2AF6700456B18 /* Card.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SIOViewController.h"
-#import "Card+HPDT.h"
+#import "Card+SIO.h"
 
 @interface SIOCardsViewController : SIOViewController
 <UITableViewDelegate, UITableViewDataSource>

@@ -8,7 +8,7 @@
 
 #import "SIOAddCardViewController.h"
 #import "SIOAddCardTableViewCell.h"
-#import "Card+HPDT.h"
+#import "Card+SIO.h"
 
 #define kCardNumber 1
 #define kExpDate 2

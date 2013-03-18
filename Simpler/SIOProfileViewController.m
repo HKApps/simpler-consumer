@@ -7,7 +7,7 @@
 //
 
 #import "SIOProfileViewController.h"
-#import "User+HPDT.h"
+#import "User+SIO.h"
 #import "HPDTAppDelegate.h"
 #import "HPDT_BanksViewController.h"
 #import "SIOPasscodeEntryViewController.h"

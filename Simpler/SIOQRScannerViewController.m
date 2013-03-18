@@ -192,6 +192,7 @@
         NSLog(@"%@", ticketDetails.debugDescription);
         
         SIOTransactionViewController * transactionViewController = [[SIOTransactionViewController alloc] init];
+        transactionViewController.transactionDetails = ticketDetails;
         
         [self.navigationController popViewControllerAnimated:NO];
         [self.navigationController pushViewController:transactionViewController animated:YES];

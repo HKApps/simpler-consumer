@@ -8,7 +8,10 @@
 
 #import "SIOTransactionViewController.h"
 
+
 @implementation SIOTransactionViewController
+
+@synthesize transactionDetails;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
