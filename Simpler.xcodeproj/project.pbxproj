@@ -62,7 +62,6 @@
 		F42ABEF916F00E1C00133E48 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEF816F00E1C00133E48 /* CoreVideo.framework */; };
 		F42ABEFB16F00E2100133E48 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFA16F00E2000133E48 /* ImageIO.framework */; };
 		F42ABEFD16F00E2800133E48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFC16F00E2800133E48 /* QuartzCore.framework */; };
-		F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0016F0123900133E48 /* ZXingObjC.framework */; };
 		F42ABF0416F012C500133E48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0216F0128300133E48 /* AudioToolbox.framework */; };
 		F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */; };
 		F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */; };
@@ -102,6 +101,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = F42ABEAA16EFF9DE00133E48;
 			remoteInfo = Simpler;
+		};
+		F4658D6416F7D00F002F2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25403CB3166A96FA00E13304;
+			remoteInfo = "ZXingObjC-iOS";
+		};
+		F4658D6616F7D00F002F2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25403CC4166A96FA00E13304;
+			remoteInfo = "ZXingObjCTests-iOS";
+		};
+		F4658D6816F7D00F002F2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25404166166AADAC00E13304;
+			remoteInfo = "ZXingObjC-osx";
+		};
+		F4658D6A16F7D00F002F2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25404178166AADAC00E13304;
+			remoteInfo = "ZXingObjCTests-osx";
+		};
+		F4658D6C16F7D00F002F2122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2540439E166ABA0A00E13304;
+			remoteInfo = "OS X Framework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -175,7 +209,6 @@
 		F42ABEF816F00E1C00133E48 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F42ABEFA16F00E2000133E48 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F42ABEFC16F00E2800133E48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F42ABF0016F0123900133E48 /* ZXingObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZXingObjC.framework; sourceTree = "<group>"; };
 		F42ABF0216F0128300133E48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F42ABF0916F0183500133E48 /* HPDT_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_LoginViewController.h; sourceTree = "<group>"; };
 		F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_LoginViewController.m; sourceTree = "<group>"; };
@@ -196,6 +229,7 @@
 		F42ABF3316F151EC00133E48 /* HPDTCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTCardsViewController.h; sourceTree = "<group>"; };
 		F42ABF3416F151EC00133E48 /* HPDTCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTCardsViewController.m; sourceTree = "<group>"; };
 		F42ABF3616F1565400133E48 /* 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 2.xcdatamodel; sourceTree = "<group>"; };
+		F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingObjC.xcodeproj; path = ZXingObjC/ZXingObjC.xcodeproj; sourceTree = "<group>"; };
 		F4BC87B916F15F0200456B18 /* JSLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLockScreenViewController.h; sourceTree = "<group>"; };
 		F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLockScreenViewController.m; sourceTree = "<group>"; };
 		F4BC87BC16F15F0C00456B18 /* HPDTLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTLockScreenViewController.h; sourceTree = "<group>"; };
@@ -218,7 +252,7 @@
 		F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPasscodeEntryViewController.h; sourceTree = "<group>"; };
 		F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPasscodeEntryViewController.m; sourceTree = "<group>"; };
 		F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTPasscodeEntryViewController.xib; sourceTree = "<group>"; };
-		F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.xcdatamodel; sourceTree = "<group>"; };
+		F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 5.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87F016F290EE00456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F4BC87F116F290EE00456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		F4BC87F616F2AF6700456B18 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
@@ -243,7 +277,6 @@
 				F42ABEB116EFF9DE00133E48 /* Foundation.framework in Frameworks */,
 				F42ABEB316EFF9DE00133E48 /* CoreGraphics.framework in Frameworks */,
 				F42ABEB516EFF9DE00133E48 /* CoreData.framework in Frameworks */,
-				F42ABF0116F0123900133E48 /* ZXingObjC.framework in Frameworks */,
 				F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +311,7 @@
 		F42ABEA216EFF9DE00133E48 = {
 			isa = PBXGroup;
 			children = (
+				F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */,
 				F42ABEB616EFF9DE00133E48 /* Simpler */,
 				F42ABED816EFF9DE00133E48 /* SimplerTests */,
 				F42ABEAD16EFF9DE00133E48 /* Frameworks */,
@@ -303,7 +337,6 @@
 				F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */,
 				F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */,
 				F42ABF0216F0128300133E48 /* AudioToolbox.framework */,
-				F42ABF0016F0123900133E48 /* ZXingObjC.framework */,
 				F42ABEFC16F00E2800133E48 /* QuartzCore.framework */,
 				F42ABEFA16F00E2000133E48 /* ImageIO.framework */,
 				F42ABEF816F00E1C00133E48 /* CoreVideo.framework */,
@@ -449,6 +482,18 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		F4658D5C16F7D00E002F2122 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4658D6516F7D00F002F2122 /* libZXingObjC-iOS.a */,
+				F4658D6716F7D00F002F2122 /* ZXingObjCTests-iOS.octest */,
+				F4658D6916F7D00F002F2122 /* libZXingObjC-osx.a */,
+				F4658D6B16F7D00F002F2122 /* ZXingObjCTests-osx.octest */,
+				F4658D6D16F7D00F002F2122 /* ZXingObjC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F4BC87B816F15EF000456B18 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +597,12 @@
 			mainGroup = F42ABEA216EFF9DE00133E48;
 			productRefGroup = F42ABEAC16EFF9DE00133E48 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4658D5C16F7D00E002F2122 /* Products */;
+					ProjectRef = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F42ABEAA16EFF9DE00133E48 /* Simpler */,
@@ -559,6 +610,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4658D6516F7D00F002F2122 /* libZXingObjC-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libZXingObjC-iOS.a";
+			remoteRef = F4658D6416F7D00F002F2122 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4658D6716F7D00F002F2122 /* ZXingObjCTests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ZXingObjCTests-iOS.octest";
+			remoteRef = F4658D6616F7D00F002F2122 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4658D6916F7D00F002F2122 /* libZXingObjC-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libZXingObjC-osx.a";
+			remoteRef = F4658D6816F7D00F002F2122 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4658D6B16F7D00F002F2122 /* ZXingObjCTests-osx.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ZXingObjCTests-osx.octest";
+			remoteRef = F4658D6A16F7D00F002F2122 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4658D6D16F7D00F002F2122 /* ZXingObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZXingObjC.framework;
+			remoteRef = F4658D6C16F7D00F002F2122 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F42ABEA916EFF9DE00133E48 /* Resources */ = {
@@ -767,6 +856,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Shultz (M7P4B7L87L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -775,12 +866,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -790,6 +883,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Shultz (M7P4B7L87L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -798,12 +893,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

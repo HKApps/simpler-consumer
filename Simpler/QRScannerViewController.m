@@ -9,6 +9,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 #import "QRScannerViewController.h"
+#import "HPDT_TransactionViewController.h";
 
 @interface QRScannerViewController ()
 
@@ -189,6 +190,11 @@
         [ticketDetails setObject:items forKey:@"items"];
         
         NSLog(@"%@", ticketDetails.debugDescription);
+        
+        HPDT_TransactionViewController * transactionViewController = [[HPDT_TransactionViewController alloc] init];
+        
+        [self.navigationController popViewControllerAnimated:NO];
+        [self.navigationController pushViewController:transactionViewController animated:YES];
         
     }
 }
