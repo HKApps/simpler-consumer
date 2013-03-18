@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A655427616F01D9400BA9659 /* HPDT_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427416F01D9400BA9659 /* HPDT_HomeViewController.m */; };
-		A655427716F01D9400BA9659 /* HPDT_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427516F01D9400BA9659 /* HPDT_HomeViewController.xib */; };
-		A655427B16F01DE500BA9659 /* HPDT_RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427916F01DE500BA9659 /* HPDT_RegisterViewController.m */; };
-		A655427C16F01DE500BA9659 /* HPDT_RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427A16F01DE500BA9659 /* HPDT_RegisterViewController.xib */; };
-		A655428016F01E1D00BA9659 /* HPDT_ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427E16F01E1D00BA9659 /* HPDT_ProfileViewController.m */; };
-		A655428116F01E1D00BA9659 /* HPDT_ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427F16F01E1D00BA9659 /* HPDT_ProfileViewController.xib */; };
-		A655428516F01E3B00BA9659 /* HPDT_BanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428316F01E3B00BA9659 /* HPDT_BanksViewController.m */; };
-		A655428616F01E3B00BA9659 /* HPDT_BanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428416F01E3B00BA9659 /* HPDT_BanksViewController.xib */; };
-		A655428A16F01E5F00BA9659 /* HPDT_EditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428816F01E5F00BA9659 /* HPDT_EditCardViewController.m */; };
-		A655428B16F01E5F00BA9659 /* HPDT_EditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428916F01E5F00BA9659 /* HPDT_EditCardViewController.xib */; };
-		A655428F16F01EED00BA9659 /* HPDT_AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428D16F01EED00BA9659 /* HPDT_AddCardViewController.m */; };
-		A655429016F01EED00BA9659 /* HPDT_AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */; };
-		A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A116F0200800BA9659 /* HPDT_TransactionViewController.m */; };
-		A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A216F0200900BA9659 /* HPDT_TransactionViewController.xib */; };
-		A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */; };
-		A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */; };
-		A69B795116F13B7200E9C1D5 /* HPDTCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B794F16F13B7200E9C1D5 /* HPDTCardTableViewCell.xib */; };
+		A655427616F01D9400BA9659 /* SIOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427416F01D9400BA9659 /* SIOHomeViewController.m */; };
+		A655427716F01D9400BA9659 /* SIOHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427516F01D9400BA9659 /* SIOHomeViewController.xib */; };
+		A655427B16F01DE500BA9659 /* SIORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427916F01DE500BA9659 /* SIORegisterViewController.m */; };
+		A655427C16F01DE500BA9659 /* SIORegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427A16F01DE500BA9659 /* SIORegisterViewController.xib */; };
+		A655428016F01E1D00BA9659 /* SIOProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655427E16F01E1D00BA9659 /* SIOProfileViewController.m */; };
+		A655428116F01E1D00BA9659 /* SIOProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655427F16F01E1D00BA9659 /* SIOProfileViewController.xib */; };
+		A655428516F01E3B00BA9659 /* SIOBanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428316F01E3B00BA9659 /* SIOBanksViewController.m */; };
+		A655428616F01E3B00BA9659 /* SIOBanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428416F01E3B00BA9659 /* SIOBanksViewController.xib */; };
+		A655428A16F01E5F00BA9659 /* SIOEditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428816F01E5F00BA9659 /* SIOEditCardViewController.m */; };
+		A655428B16F01E5F00BA9659 /* SIOEditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428916F01E5F00BA9659 /* SIOEditCardViewController.xib */; };
+		A655428F16F01EED00BA9659 /* SIOAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655428D16F01EED00BA9659 /* SIOAddCardViewController.m */; };
+		A655429016F01EED00BA9659 /* SIOAddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655428E16F01EED00BA9659 /* SIOAddCardViewController.xib */; };
+		A65542A316F0200900BA9659 /* SIOTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A116F0200800BA9659 /* SIOTransactionViewController.m */; };
+		A65542A416F0200900BA9659 /* SIOTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A216F0200900BA9659 /* SIOTransactionViewController.xib */; };
+		A65542A816F0202500BA9659 /* SIOWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65542A616F0202400BA9659 /* SIOWalletViewController.m */; };
+		A65542A916F0202500BA9659 /* SIOWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65542A716F0202500BA9659 /* SIOWalletViewController.xib */; };
+		A69B795116F13B7200E9C1D5 /* SIOCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B794F16F13B7200E9C1D5 /* SIOCardTableViewCell.xib */; };
 		A69B796316F1564200E9C1D5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796216F1564200E9C1D5 /* user.png */; };
 		A69B796516F156AF00E9C1D5 /* DebitActive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796416F156AF00E9C1D5 /* DebitActive.png */; };
 		A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796816F159F200E9C1D5 /* DebitDeactive.png */; };
 		A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796C16F15A1000E9C1D5 /* giftActive.png */; };
 		A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B796E16F15A4100E9C1D5 /* giftDeactive.png */; };
-		A69B797316F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */; };
-		A69B797416F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */; };
+		A69B797316F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B797116F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m */; };
+		A69B797416F15AEA00E9C1D5 /* SIOAddCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B797216F15AEA00E9C1D5 /* SIOAddCardTableViewCell.xib */; };
 		A69B797E16F1673E00E9C1D5 /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797A16F1673E00E9C1D5 /* amex.png */; };
 		A69B797F16F1673E00E9C1D5 /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797B16F1673E00E9C1D5 /* visa.png */; };
 		A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */ = {isa = PBXBuildFile; fileRef = A69B797C16F1673E00E9C1D5 /* masterCard.png */; };
@@ -44,7 +44,7 @@
 		F42ABEB516EFF9DE00133E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB416EFF9DE00133E48 /* CoreData.framework */; };
 		F42ABEBB16EFF9DE00133E48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEB916EFF9DE00133E48 /* InfoPlist.strings */; };
 		F42ABEBD16EFF9DE00133E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEBC16EFF9DE00133E48 /* main.m */; };
-		F42ABEC116EFF9DE00133E48 /* HPDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */; };
+		F42ABEC116EFF9DE00133E48 /* SIOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEC016EFF9DE00133E48 /* SIOAppDelegate.m */; };
 		F42ABEC316EFF9DE00133E48 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEC216EFF9DE00133E48 /* Default.png */; };
 		F42ABEC516EFF9DE00133E48 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEC416EFF9DE00133E48 /* Default@2x.png */; };
 		F42ABEC716EFF9DE00133E48 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEC616EFF9DE00133E48 /* Default-568h@2x.png */; };
@@ -55,16 +55,16 @@
 		F42ABED516EFF9DE00133E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEB416EFF9DE00133E48 /* CoreData.framework */; };
 		F42ABEDD16EFF9DE00133E48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEDB16EFF9DE00133E48 /* InfoPlist.strings */; };
 		F42ABEE016EFF9DE00133E48 /* SimplerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEDF16EFF9DE00133E48 /* SimplerTests.m */; };
-		F42ABEF016F00CD500133E48 /* QRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEEE16F00CD500133E48 /* QRScannerViewController.m */; };
-		F42ABEF116F00CD500133E48 /* QRScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEEF16F00CD500133E48 /* QRScannerViewController.xib */; };
+		F42ABEF016F00CD500133E48 /* SIOQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABEEE16F00CD500133E48 /* SIOQRScannerViewController.m */; };
+		F42ABEF116F00CD500133E48 /* SIOQRScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABEEF16F00CD500133E48 /* SIOQRScannerViewController.xib */; };
 		F42ABEF516F00E0900133E48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEF416F00E0900133E48 /* AVFoundation.framework */; };
 		F42ABEF716F00E1200133E48 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEF616F00E1200133E48 /* CoreMedia.framework */; };
 		F42ABEF916F00E1C00133E48 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEF816F00E1C00133E48 /* CoreVideo.framework */; };
 		F42ABEFB16F00E2100133E48 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFA16F00E2000133E48 /* ImageIO.framework */; };
 		F42ABEFD16F00E2800133E48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABEFC16F00E2800133E48 /* QuartzCore.framework */; };
 		F42ABF0416F012C500133E48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF0216F0128300133E48 /* AudioToolbox.framework */; };
-		F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */; };
-		F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */; };
+		F42ABF0C16F0183500133E48 /* SIOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF0A16F0183500133E48 /* SIOLoginViewController.m */; };
+		F42ABF0D16F0183500133E48 /* SIOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF0B16F0183500133E48 /* SIOLoginViewController.xib */; };
 		F42ABF1316F021ED00133E48 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1216F021ED00133E48 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1516F021F100133E48 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1416F021F100133E48 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1616F021FD00133E48 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -72,11 +72,11 @@
 		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
 		F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+HPDT.m */; };
 		F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* HPDTUtil.m */; };
-		F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */; };
+		F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */; };
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
-		F42ABF3516F151ED00133E48 /* HPDTCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* HPDTCardsViewController.m */; };
+		F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */; };
 		F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F4BC87BE16F15F0C00456B18 /* HPDTLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* HPDTLockScreenViewController.m */; };
+		F4BC87BE16F15F0C00456B18 /* SIOLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */; };
 		F4BC87C916F15FE500456B18 /* lock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C116F15FE500456B18 /* lock_background.png */; };
 		F4BC87CA16F15FE500456B18 /* lock_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C216F15FE500456B18 /* lock_background@2x.png */; };
 		F4BC87CB16F15FE500456B18 /* passcodeFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C316F15FE500456B18 /* passcodeFieldBackground.png */; };
@@ -85,11 +85,11 @@
 		F4BC87CE16F15FE500456B18 /* passcodeTopBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C616F15FE500456B18 /* passcodeTopBackground@2x.png */; };
 		F4BC87CF16F15FE500456B18 /* passcodeTopBackground_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C716F15FE500456B18 /* passcodeTopBackground_red.png */; };
 		F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */; };
-		F4BC87D216F15FF900456B18 /* HPDTLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */; };
-		F4BC87D516F1647800456B18 /* HPDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D416F1647800456B18 /* HPDTViewController.m */; };
+		F4BC87D216F15FF900456B18 /* SIOLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */; };
+		F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D416F1647800456B18 /* SIOViewController.m */; };
 		F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+HPDT.m */; };
-		F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */; };
-		F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */; };
+		F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */; };
+		F4BC87EE16F19E6800456B18 /* SIOPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */; };
 		F4BC87F216F290EE00456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F116F290EE00456B18 /* User.m */; };
 		F4BC87F816F2AF6700456B18 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F716F2AF6700456B18 /* Card.m */; };
 /* End PBXBuildFile section */
@@ -140,39 +140,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A655427316F01D9400BA9659 /* HPDT_HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_HomeViewController.h; sourceTree = "<group>"; };
-		A655427416F01D9400BA9659 /* HPDT_HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_HomeViewController.m; sourceTree = "<group>"; };
-		A655427516F01D9400BA9659 /* HPDT_HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_HomeViewController.xib; sourceTree = "<group>"; };
-		A655427816F01DE500BA9659 /* HPDT_RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_RegisterViewController.h; sourceTree = "<group>"; };
-		A655427916F01DE500BA9659 /* HPDT_RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_RegisterViewController.m; sourceTree = "<group>"; };
-		A655427A16F01DE500BA9659 /* HPDT_RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_RegisterViewController.xib; sourceTree = "<group>"; };
-		A655427D16F01E1D00BA9659 /* HPDT_ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_ProfileViewController.h; sourceTree = "<group>"; };
-		A655427E16F01E1D00BA9659 /* HPDT_ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_ProfileViewController.m; sourceTree = "<group>"; };
-		A655427F16F01E1D00BA9659 /* HPDT_ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_ProfileViewController.xib; sourceTree = "<group>"; };
-		A655428216F01E3B00BA9659 /* HPDT_BanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_BanksViewController.h; sourceTree = "<group>"; };
-		A655428316F01E3B00BA9659 /* HPDT_BanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_BanksViewController.m; sourceTree = "<group>"; };
-		A655428416F01E3B00BA9659 /* HPDT_BanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_BanksViewController.xib; sourceTree = "<group>"; };
-		A655428716F01E5F00BA9659 /* HPDT_EditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_EditCardViewController.h; sourceTree = "<group>"; };
-		A655428816F01E5F00BA9659 /* HPDT_EditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_EditCardViewController.m; sourceTree = "<group>"; };
-		A655428916F01E5F00BA9659 /* HPDT_EditCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_EditCardViewController.xib; sourceTree = "<group>"; };
-		A655428C16F01EEC00BA9659 /* HPDT_AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_AddCardViewController.h; sourceTree = "<group>"; };
-		A655428D16F01EED00BA9659 /* HPDT_AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_AddCardViewController.m; sourceTree = "<group>"; };
-		A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_AddCardViewController.xib; sourceTree = "<group>"; };
-		A65542A016F0200800BA9659 /* HPDT_TransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_TransactionViewController.h; sourceTree = "<group>"; };
-		A65542A116F0200800BA9659 /* HPDT_TransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_TransactionViewController.m; sourceTree = "<group>"; };
-		A65542A216F0200900BA9659 /* HPDT_TransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_TransactionViewController.xib; sourceTree = "<group>"; };
-		A65542A516F0202400BA9659 /* HPDT_WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_WalletViewController.h; sourceTree = "<group>"; };
-		A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_WalletViewController.m; sourceTree = "<group>"; };
-		A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_WalletViewController.xib; sourceTree = "<group>"; };
-		A69B794F16F13B7200E9C1D5 /* HPDTCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTCardTableViewCell.xib; sourceTree = "<group>"; };
+		A655427316F01D9400BA9659 /* SIOHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOHomeViewController.h; sourceTree = "<group>"; };
+		A655427416F01D9400BA9659 /* SIOHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOHomeViewController.m; sourceTree = "<group>"; };
+		A655427516F01D9400BA9659 /* SIOHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOHomeViewController.xib; sourceTree = "<group>"; };
+		A655427816F01DE500BA9659 /* SIORegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIORegisterViewController.h; sourceTree = "<group>"; };
+		A655427916F01DE500BA9659 /* SIORegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIORegisterViewController.m; sourceTree = "<group>"; };
+		A655427A16F01DE500BA9659 /* SIORegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIORegisterViewController.xib; sourceTree = "<group>"; };
+		A655427D16F01E1D00BA9659 /* SIOProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOProfileViewController.h; sourceTree = "<group>"; };
+		A655427E16F01E1D00BA9659 /* SIOProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOProfileViewController.m; sourceTree = "<group>"; };
+		A655427F16F01E1D00BA9659 /* SIOProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOProfileViewController.xib; sourceTree = "<group>"; };
+		A655428216F01E3B00BA9659 /* SIOBanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOBanksViewController.h; sourceTree = "<group>"; };
+		A655428316F01E3B00BA9659 /* SIOBanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOBanksViewController.m; sourceTree = "<group>"; };
+		A655428416F01E3B00BA9659 /* SIOBanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOBanksViewController.xib; sourceTree = "<group>"; };
+		A655428716F01E5F00BA9659 /* SIOEditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOEditCardViewController.h; sourceTree = "<group>"; };
+		A655428816F01E5F00BA9659 /* SIOEditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOEditCardViewController.m; sourceTree = "<group>"; };
+		A655428916F01E5F00BA9659 /* SIOEditCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOEditCardViewController.xib; sourceTree = "<group>"; };
+		A655428C16F01EEC00BA9659 /* SIOAddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOAddCardViewController.h; sourceTree = "<group>"; };
+		A655428D16F01EED00BA9659 /* SIOAddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOAddCardViewController.m; sourceTree = "<group>"; };
+		A655428E16F01EED00BA9659 /* SIOAddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOAddCardViewController.xib; sourceTree = "<group>"; };
+		A65542A016F0200800BA9659 /* SIOTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOTransactionViewController.h; sourceTree = "<group>"; };
+		A65542A116F0200800BA9659 /* SIOTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOTransactionViewController.m; sourceTree = "<group>"; };
+		A65542A216F0200900BA9659 /* SIOTransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOTransactionViewController.xib; sourceTree = "<group>"; };
+		A65542A516F0202400BA9659 /* SIOWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOWalletViewController.h; sourceTree = "<group>"; };
+		A65542A616F0202400BA9659 /* SIOWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOWalletViewController.m; sourceTree = "<group>"; };
+		A65542A716F0202500BA9659 /* SIOWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOWalletViewController.xib; sourceTree = "<group>"; };
+		A69B794F16F13B7200E9C1D5 /* SIOCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOCardTableViewCell.xib; sourceTree = "<group>"; };
 		A69B796216F1564200E9C1D5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Graphics/user.png; sourceTree = "<group>"; };
 		A69B796416F156AF00E9C1D5 /* DebitActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DebitActive.png; path = Graphics/DebitActive.png; sourceTree = "<group>"; };
 		A69B796816F159F200E9C1D5 /* DebitDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DebitDeactive.png; path = Graphics/DebitDeactive.png; sourceTree = "<group>"; };
 		A69B796C16F15A1000E9C1D5 /* giftActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftActive.png; path = Graphics/giftActive.png; sourceTree = "<group>"; };
 		A69B796E16F15A4100E9C1D5 /* giftDeactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giftDeactive.png; path = Graphics/giftDeactive.png; sourceTree = "<group>"; };
-		A69B797016F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTAddCardTableViewCell.h; sourceTree = "<group>"; };
-		A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTAddCardTableViewCell.m; sourceTree = "<group>"; };
-		A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTAddCardTableViewCell.xib; sourceTree = "<group>"; };
+		A69B797016F15AEA00E9C1D5 /* SIOAddCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOAddCardTableViewCell.h; sourceTree = "<group>"; };
+		A69B797116F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOAddCardTableViewCell.m; sourceTree = "<group>"; };
+		A69B797216F15AEA00E9C1D5 /* SIOAddCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOAddCardTableViewCell.xib; sourceTree = "<group>"; };
 		A69B797A16F1673E00E9C1D5 /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amex.png; path = Graphics/amex.png; sourceTree = "<group>"; };
 		A69B797B16F1673E00E9C1D5 /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = visa.png; path = Graphics/visa.png; sourceTree = "<group>"; };
 		A69B797C16F1673E00E9C1D5 /* masterCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = masterCard.png; path = Graphics/masterCard.png; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 		F42ABEBA16EFF9DE00133E48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F42ABEBC16EFF9DE00133E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F42ABEBE16EFF9DE00133E48 /* Simpler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simpler-Prefix.pch"; sourceTree = "<group>"; };
-		F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDTAppDelegate.h; sourceTree = "<group>"; };
-		F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPDTAppDelegate.m; sourceTree = "<group>"; };
+		F42ABEBF16EFF9DE00133E48 /* SIOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIOAppDelegate.h; sourceTree = "<group>"; };
+		F42ABEC016EFF9DE00133E48 /* SIOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIOAppDelegate.m; sourceTree = "<group>"; };
 		F42ABEC216EFF9DE00133E48 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F42ABEC416EFF9DE00133E48 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F42ABEC616EFF9DE00133E48 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -201,18 +201,18 @@
 		F42ABEDC16EFF9DE00133E48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F42ABEDE16EFF9DE00133E48 /* SimplerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplerTests.h; sourceTree = "<group>"; };
 		F42ABEDF16EFF9DE00133E48 /* SimplerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplerTests.m; sourceTree = "<group>"; };
-		F42ABEED16F00CD500133E48 /* QRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScannerViewController.h; sourceTree = "<group>"; };
-		F42ABEEE16F00CD500133E48 /* QRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScannerViewController.m; sourceTree = "<group>"; };
-		F42ABEEF16F00CD500133E48 /* QRScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRScannerViewController.xib; sourceTree = "<group>"; };
+		F42ABEED16F00CD500133E48 /* SIOQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOQRScannerViewController.h; sourceTree = "<group>"; };
+		F42ABEEE16F00CD500133E48 /* SIOQRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOQRScannerViewController.m; sourceTree = "<group>"; };
+		F42ABEEF16F00CD500133E48 /* SIOQRScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOQRScannerViewController.xib; sourceTree = "<group>"; };
 		F42ABEF416F00E0900133E48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F42ABEF616F00E1200133E48 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F42ABEF816F00E1C00133E48 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		F42ABEFA16F00E2000133E48 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F42ABEFC16F00E2800133E48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F42ABF0216F0128300133E48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F42ABF0916F0183500133E48 /* HPDT_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDT_LoginViewController.h; sourceTree = "<group>"; };
-		F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDT_LoginViewController.m; sourceTree = "<group>"; };
-		F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDT_LoginViewController.xib; sourceTree = "<group>"; };
+		F42ABF0916F0183500133E48 /* SIOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOLoginViewController.h; sourceTree = "<group>"; };
+		F42ABF0A16F0183500133E48 /* SIOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOLoginViewController.m; sourceTree = "<group>"; };
+		F42ABF0B16F0183500133E48 /* SIOLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOLoginViewController.xib; sourceTree = "<group>"; };
 		F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F42ABF1216F021ED00133E48 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F42ABF1416F021F100133E48 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -222,18 +222,18 @@
 		F42ABF2616F13F8D00133E48 /* Card+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+HPDT.m"; sourceTree = "<group>"; };
 		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
 		F42ABF2A16F1402300133E48 /* HPDTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTUtil.m; sourceTree = "<group>"; };
-		F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTCardTableViewCell.h; sourceTree = "<group>"; };
-		F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTCardTableViewCell.m; sourceTree = "<group>"; };
+		F42ABF2D16F145D000133E48 /* SIOCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOCardTableViewCell.h; sourceTree = "<group>"; };
+		F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOCardTableViewCell.m; sourceTree = "<group>"; };
 		F42ABF3016F1499000133E48 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		F42ABF3116F1499100133E48 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
-		F42ABF3316F151EC00133E48 /* HPDTCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTCardsViewController.h; sourceTree = "<group>"; };
-		F42ABF3416F151EC00133E48 /* HPDTCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTCardsViewController.m; sourceTree = "<group>"; };
+		F42ABF3316F151EC00133E48 /* SIOCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOCardsViewController.h; sourceTree = "<group>"; };
+		F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOCardsViewController.m; sourceTree = "<group>"; };
 		F42ABF3616F1565400133E48 /* 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 2.xcdatamodel; sourceTree = "<group>"; };
 		F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingObjC.xcodeproj; path = ZXingObjC/ZXingObjC.xcodeproj; sourceTree = "<group>"; };
 		F4BC87B916F15F0200456B18 /* JSLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLockScreenViewController.h; sourceTree = "<group>"; };
 		F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLockScreenViewController.m; sourceTree = "<group>"; };
-		F4BC87BC16F15F0C00456B18 /* HPDTLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTLockScreenViewController.h; sourceTree = "<group>"; };
-		F4BC87BD16F15F0C00456B18 /* HPDTLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTLockScreenViewController.m; sourceTree = "<group>"; };
+		F4BC87BC16F15F0C00456B18 /* SIOLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOLockScreenViewController.h; sourceTree = "<group>"; };
+		F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOLockScreenViewController.m; sourceTree = "<group>"; };
 		F4BC87C116F15FE500456B18 /* lock_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_background.png; sourceTree = "<group>"; };
 		F4BC87C216F15FE500456B18 /* lock_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock_background@2x.png"; sourceTree = "<group>"; };
 		F4BC87C316F15FE500456B18 /* passcodeFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passcodeFieldBackground.png; sourceTree = "<group>"; };
@@ -242,16 +242,16 @@
 		F4BC87C616F15FE500456B18 /* passcodeTopBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passcodeTopBackground@2x.png"; sourceTree = "<group>"; };
 		F4BC87C716F15FE500456B18 /* passcodeTopBackground_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passcodeTopBackground_red.png; sourceTree = "<group>"; };
 		F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passcodeTopBackground_red@2x.png"; sourceTree = "<group>"; };
-		F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTLockScreenViewController.xib; sourceTree = "<group>"; };
-		F4BC87D316F1647700456B18 /* HPDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTViewController.h; sourceTree = "<group>"; };
-		F4BC87D416F1647800456B18 /* HPDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTViewController.m; sourceTree = "<group>"; };
+		F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOLockScreenViewController.xib; sourceTree = "<group>"; };
+		F4BC87D316F1647700456B18 /* SIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOViewController.h; sourceTree = "<group>"; };
+		F4BC87D416F1647800456B18 /* SIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOViewController.m; sourceTree = "<group>"; };
 		F4BC87D616F1854C00456B18 /* 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 3.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87E016F186E100456B18 /* User+HPDT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+HPDT.h"; sourceTree = "<group>"; };
 		F4BC87E116F186E100456B18 /* User+HPDT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+HPDT.m"; sourceTree = "<group>"; };
 		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 4.xcdatamodel; sourceTree = "<group>"; };
-		F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTPasscodeEntryViewController.h; sourceTree = "<group>"; };
-		F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTPasscodeEntryViewController.m; sourceTree = "<group>"; };
-		F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPDTPasscodeEntryViewController.xib; sourceTree = "<group>"; };
+		F4BC87EA16F19E6400456B18 /* SIOPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOPasscodeEntryViewController.h; sourceTree = "<group>"; };
+		F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOPasscodeEntryViewController.m; sourceTree = "<group>"; };
+		F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOPasscodeEntryViewController.xib; sourceTree = "<group>"; };
 		F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 5.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87F016F290EE00456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F4BC87F116F290EE00456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -298,12 +298,12 @@
 		A69B795716F140BF00E9C1D5 /* UITableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				A69B794F16F13B7200E9C1D5 /* HPDTCardTableViewCell.xib */,
-				F42ABF2D16F145D000133E48 /* HPDTCardTableViewCell.h */,
-				F42ABF2E16F145D000133E48 /* HPDTCardTableViewCell.m */,
-				A69B797016F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.h */,
-				A69B797116F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m */,
-				A69B797216F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib */,
+				A69B794F16F13B7200E9C1D5 /* SIOCardTableViewCell.xib */,
+				F42ABF2D16F145D000133E48 /* SIOCardTableViewCell.h */,
+				F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */,
+				A69B797016F15AEA00E9C1D5 /* SIOAddCardTableViewCell.h */,
+				A69B797116F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m */,
+				A69B797216F15AEA00E9C1D5 /* SIOAddCardTableViewCell.xib */,
 			);
 			name = UITableViewCells;
 			sourceTree = "<group>";
@@ -359,8 +359,8 @@
 				F42ABF2116F13E7F00133E48 /* Core Data Models */,
 				F4BC87BF16F15FD200456B18 /* Graphics */,
 				F42ABF2816F13FF600133E48 /* Utils */,
-				F42ABEBF16EFF9DE00133E48 /* HPDTAppDelegate.h */,
-				F42ABEC016EFF9DE00133E48 /* HPDTAppDelegate.m */,
+				F42ABEBF16EFF9DE00133E48 /* SIOAppDelegate.h */,
+				F42ABEC016EFF9DE00133E48 /* SIOAppDelegate.m */,
 				F42ABEB716EFF9DE00133E48 /* Supporting Files */,
 			);
 			path = Simpler;
@@ -404,46 +404,46 @@
 			children = (
 				F4BC87B816F15EF000456B18 /* Library */,
 				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
-				F4BC87BC16F15F0C00456B18 /* HPDTLockScreenViewController.h */,
-				F4BC87BD16F15F0C00456B18 /* HPDTLockScreenViewController.m */,
-				F4BC87D116F15FF900456B18 /* HPDTLockScreenViewController.xib */,
-				F4BC87EA16F19E6400456B18 /* HPDTPasscodeEntryViewController.h */,
-				F4BC87EB16F19E6500456B18 /* HPDTPasscodeEntryViewController.m */,
-				F4BC87EC16F19E6600456B18 /* HPDTPasscodeEntryViewController.xib */,
-				F42ABEED16F00CD500133E48 /* QRScannerViewController.h */,
-				F42ABEEE16F00CD500133E48 /* QRScannerViewController.m */,
-				F42ABEEF16F00CD500133E48 /* QRScannerViewController.xib */,
-				F42ABF0916F0183500133E48 /* HPDT_LoginViewController.h */,
-				F42ABF0A16F0183500133E48 /* HPDT_LoginViewController.m */,
-				F42ABF0B16F0183500133E48 /* HPDT_LoginViewController.xib */,
-				A655427316F01D9400BA9659 /* HPDT_HomeViewController.h */,
-				A655427416F01D9400BA9659 /* HPDT_HomeViewController.m */,
-				A655427516F01D9400BA9659 /* HPDT_HomeViewController.xib */,
-				A655427816F01DE500BA9659 /* HPDT_RegisterViewController.h */,
-				A655427916F01DE500BA9659 /* HPDT_RegisterViewController.m */,
-				A655427A16F01DE500BA9659 /* HPDT_RegisterViewController.xib */,
-				A655427D16F01E1D00BA9659 /* HPDT_ProfileViewController.h */,
-				A655427E16F01E1D00BA9659 /* HPDT_ProfileViewController.m */,
-				A655427F16F01E1D00BA9659 /* HPDT_ProfileViewController.xib */,
-				A655428216F01E3B00BA9659 /* HPDT_BanksViewController.h */,
-				A655428316F01E3B00BA9659 /* HPDT_BanksViewController.m */,
-				A655428416F01E3B00BA9659 /* HPDT_BanksViewController.xib */,
-				A655428716F01E5F00BA9659 /* HPDT_EditCardViewController.h */,
-				A655428816F01E5F00BA9659 /* HPDT_EditCardViewController.m */,
-				A655428916F01E5F00BA9659 /* HPDT_EditCardViewController.xib */,
-				A655428C16F01EEC00BA9659 /* HPDT_AddCardViewController.h */,
-				A655428D16F01EED00BA9659 /* HPDT_AddCardViewController.m */,
-				A655428E16F01EED00BA9659 /* HPDT_AddCardViewController.xib */,
-				A65542A016F0200800BA9659 /* HPDT_TransactionViewController.h */,
-				A65542A116F0200800BA9659 /* HPDT_TransactionViewController.m */,
-				A65542A216F0200900BA9659 /* HPDT_TransactionViewController.xib */,
-				A65542A516F0202400BA9659 /* HPDT_WalletViewController.h */,
-				A65542A616F0202400BA9659 /* HPDT_WalletViewController.m */,
-				A65542A716F0202500BA9659 /* HPDT_WalletViewController.xib */,
-				F42ABF3316F151EC00133E48 /* HPDTCardsViewController.h */,
-				F42ABF3416F151EC00133E48 /* HPDTCardsViewController.m */,
-				F4BC87D316F1647700456B18 /* HPDTViewController.h */,
-				F4BC87D416F1647800456B18 /* HPDTViewController.m */,
+				F4BC87BC16F15F0C00456B18 /* SIOLockScreenViewController.h */,
+				F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */,
+				F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */,
+				F4BC87EA16F19E6400456B18 /* SIOPasscodeEntryViewController.h */,
+				F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */,
+				F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */,
+				F42ABEED16F00CD500133E48 /* SIOQRScannerViewController.h */,
+				F42ABEEE16F00CD500133E48 /* SIOQRScannerViewController.m */,
+				F42ABEEF16F00CD500133E48 /* SIOQRScannerViewController.xib */,
+				F42ABF0916F0183500133E48 /* SIOLoginViewController.h */,
+				F42ABF0A16F0183500133E48 /* SIOLoginViewController.m */,
+				F42ABF0B16F0183500133E48 /* SIOLoginViewController.xib */,
+				A655427316F01D9400BA9659 /* SIOHomeViewController.h */,
+				A655427416F01D9400BA9659 /* SIOHomeViewController.m */,
+				A655427516F01D9400BA9659 /* SIOHomeViewController.xib */,
+				A655427816F01DE500BA9659 /* SIORegisterViewController.h */,
+				A655427916F01DE500BA9659 /* SIORegisterViewController.m */,
+				A655427A16F01DE500BA9659 /* SIORegisterViewController.xib */,
+				A655427D16F01E1D00BA9659 /* SIOProfileViewController.h */,
+				A655427E16F01E1D00BA9659 /* SIOProfileViewController.m */,
+				A655427F16F01E1D00BA9659 /* SIOProfileViewController.xib */,
+				A655428216F01E3B00BA9659 /* SIOBanksViewController.h */,
+				A655428316F01E3B00BA9659 /* SIOBanksViewController.m */,
+				A655428416F01E3B00BA9659 /* SIOBanksViewController.xib */,
+				A655428716F01E5F00BA9659 /* SIOEditCardViewController.h */,
+				A655428816F01E5F00BA9659 /* SIOEditCardViewController.m */,
+				A655428916F01E5F00BA9659 /* SIOEditCardViewController.xib */,
+				A655428C16F01EEC00BA9659 /* SIOAddCardViewController.h */,
+				A655428D16F01EED00BA9659 /* SIOAddCardViewController.m */,
+				A655428E16F01EED00BA9659 /* SIOAddCardViewController.xib */,
+				A65542A016F0200800BA9659 /* SIOTransactionViewController.h */,
+				A65542A116F0200800BA9659 /* SIOTransactionViewController.m */,
+				A65542A216F0200900BA9659 /* SIOTransactionViewController.xib */,
+				A65542A516F0202400BA9659 /* SIOWalletViewController.h */,
+				A65542A616F0202400BA9659 /* SIOWalletViewController.m */,
+				A65542A716F0202500BA9659 /* SIOWalletViewController.xib */,
+				F42ABF3316F151EC00133E48 /* SIOCardsViewController.h */,
+				F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */,
+				F4BC87D316F1647700456B18 /* SIOViewController.h */,
+				F4BC87D416F1647800456B18 /* SIOViewController.m */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -658,24 +658,24 @@
 				F42ABEC316EFF9DE00133E48 /* Default.png in Resources */,
 				F42ABEC516EFF9DE00133E48 /* Default@2x.png in Resources */,
 				F42ABEC716EFF9DE00133E48 /* Default-568h@2x.png in Resources */,
-				F42ABEF116F00CD500133E48 /* QRScannerViewController.xib in Resources */,
-				F42ABF0D16F0183500133E48 /* HPDT_LoginViewController.xib in Resources */,
+				F42ABEF116F00CD500133E48 /* SIOQRScannerViewController.xib in Resources */,
+				F42ABF0D16F0183500133E48 /* SIOLoginViewController.xib in Resources */,
 				F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */,
-				A655427716F01D9400BA9659 /* HPDT_HomeViewController.xib in Resources */,
-				A655427C16F01DE500BA9659 /* HPDT_RegisterViewController.xib in Resources */,
-				A655428116F01E1D00BA9659 /* HPDT_ProfileViewController.xib in Resources */,
-				A655428616F01E3B00BA9659 /* HPDT_BanksViewController.xib in Resources */,
-				A655428B16F01E5F00BA9659 /* HPDT_EditCardViewController.xib in Resources */,
-				A655429016F01EED00BA9659 /* HPDT_AddCardViewController.xib in Resources */,
-				A65542A416F0200900BA9659 /* HPDT_TransactionViewController.xib in Resources */,
-				A65542A916F0202500BA9659 /* HPDT_WalletViewController.xib in Resources */,
-				A69B795116F13B7200E9C1D5 /* HPDTCardTableViewCell.xib in Resources */,
+				A655427716F01D9400BA9659 /* SIOHomeViewController.xib in Resources */,
+				A655427C16F01DE500BA9659 /* SIORegisterViewController.xib in Resources */,
+				A655428116F01E1D00BA9659 /* SIOProfileViewController.xib in Resources */,
+				A655428616F01E3B00BA9659 /* SIOBanksViewController.xib in Resources */,
+				A655428B16F01E5F00BA9659 /* SIOEditCardViewController.xib in Resources */,
+				A655429016F01EED00BA9659 /* SIOAddCardViewController.xib in Resources */,
+				A65542A416F0200900BA9659 /* SIOTransactionViewController.xib in Resources */,
+				A65542A916F0202500BA9659 /* SIOWalletViewController.xib in Resources */,
+				A69B795116F13B7200E9C1D5 /* SIOCardTableViewCell.xib in Resources */,
 				A69B796316F1564200E9C1D5 /* user.png in Resources */,
 				A69B796516F156AF00E9C1D5 /* DebitActive.png in Resources */,
 				A69B796A16F159F200E9C1D5 /* DebitDeactive.png in Resources */,
 				A69B796D16F15A1000E9C1D5 /* giftActive.png in Resources */,
 				A69B796F16F15A4100E9C1D5 /* giftDeactive.png in Resources */,
-				A69B797416F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.xib in Resources */,
+				A69B797416F15AEA00E9C1D5 /* SIOAddCardTableViewCell.xib in Resources */,
 				F4BC87C916F15FE500456B18 /* lock_background.png in Resources */,
 				F4BC87CA16F15FE500456B18 /* lock_background@2x.png in Resources */,
 				F4BC87CB16F15FE500456B18 /* passcodeFieldBackground.png in Resources */,
@@ -684,12 +684,12 @@
 				F4BC87CE16F15FE500456B18 /* passcodeTopBackground@2x.png in Resources */,
 				F4BC87CF16F15FE500456B18 /* passcodeTopBackground_red.png in Resources */,
 				F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */,
-				F4BC87D216F15FF900456B18 /* HPDTLockScreenViewController.xib in Resources */,
+				F4BC87D216F15FF900456B18 /* SIOLockScreenViewController.xib in Resources */,
 				A69B797E16F1673E00E9C1D5 /* amex.png in Resources */,
 				A69B797F16F1673E00E9C1D5 /* visa.png in Resources */,
 				A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */,
 				A69B798116F1673E00E9C1D5 /* discover.png in Resources */,
-				F4BC87EE16F19E6800456B18 /* HPDTPasscodeEntryViewController.xib in Resources */,
+				F4BC87EE16F19E6800456B18 /* SIOPasscodeEntryViewController.xib in Resources */,
 				A69B798C16F191E300E9C1D5 /* backgroundTwo.png in Resources */,
 				A69B798D16F191E300E9C1D5 /* backgroundOne.png in Resources */,
 				A69B799016F1944D00E9C1D5 /* logo.png in Resources */,
@@ -728,28 +728,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42ABEBD16EFF9DE00133E48 /* main.m in Sources */,
-				F42ABEC116EFF9DE00133E48 /* HPDTAppDelegate.m in Sources */,
+				F42ABEC116EFF9DE00133E48 /* SIOAppDelegate.m in Sources */,
 				F42ABECA16EFF9DE00133E48 /* Simpler.xcdatamodeld in Sources */,
-				F42ABEF016F00CD500133E48 /* QRScannerViewController.m in Sources */,
-				F42ABF0C16F0183500133E48 /* HPDT_LoginViewController.m in Sources */,
-				A655427616F01D9400BA9659 /* HPDT_HomeViewController.m in Sources */,
-				A655427B16F01DE500BA9659 /* HPDT_RegisterViewController.m in Sources */,
-				A655428016F01E1D00BA9659 /* HPDT_ProfileViewController.m in Sources */,
-				A655428516F01E3B00BA9659 /* HPDT_BanksViewController.m in Sources */,
-				A655428A16F01E5F00BA9659 /* HPDT_EditCardViewController.m in Sources */,
-				A655428F16F01EED00BA9659 /* HPDT_AddCardViewController.m in Sources */,
-				A65542A316F0200900BA9659 /* HPDT_TransactionViewController.m in Sources */,
-				A65542A816F0202500BA9659 /* HPDT_WalletViewController.m in Sources */,
+				F42ABEF016F00CD500133E48 /* SIOQRScannerViewController.m in Sources */,
+				F42ABF0C16F0183500133E48 /* SIOLoginViewController.m in Sources */,
+				A655427616F01D9400BA9659 /* SIOHomeViewController.m in Sources */,
+				A655427B16F01DE500BA9659 /* SIORegisterViewController.m in Sources */,
+				A655428016F01E1D00BA9659 /* SIOProfileViewController.m in Sources */,
+				A655428516F01E3B00BA9659 /* SIOBanksViewController.m in Sources */,
+				A655428A16F01E5F00BA9659 /* SIOEditCardViewController.m in Sources */,
+				A655428F16F01EED00BA9659 /* SIOAddCardViewController.m in Sources */,
+				A65542A316F0200900BA9659 /* SIOTransactionViewController.m in Sources */,
+				A65542A816F0202500BA9659 /* SIOWalletViewController.m in Sources */,
 				F42ABF2716F13F8D00133E48 /* Card+HPDT.m in Sources */,
 				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
-				F42ABF2F16F145D000133E48 /* HPDTCardTableViewCell.m in Sources */,
+				F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
-				F42ABF3516F151ED00133E48 /* HPDTCardsViewController.m in Sources */,
-				A69B797316F15AEA00E9C1D5 /* HPDTAddCardTableViewCell.m in Sources */,
+				F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */,
+				A69B797316F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m in Sources */,
 				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,
-				F4BC87D516F1647800456B18 /* HPDTViewController.m in Sources */,
+				F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */,
 				F4BC87E216F186E100456B18 /* User+HPDT.m in Sources */,
-				F4BC87ED16F19E6800456B18 /* HPDTPasscodeEntryViewController.m in Sources */,
+				F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */,
 				F4BC87F216F290EE00456B18 /* User.m in Sources */,
 				F4BC87F816F2AF6700456B18 /* Card.m in Sources */,
 			);
@@ -760,7 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42ABEE016EFF9DE00133E48 /* SimplerTests.m in Sources */,
-				F4BC87BE16F15F0C00456B18 /* HPDTLockScreenViewController.m in Sources */,
+				F4BC87BE16F15F0C00456B18 /* SIOLockScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "HPDTAppDelegate.h"
+#import "SIOAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HPDTAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SIOAppDelegate class]));
     }
 }
