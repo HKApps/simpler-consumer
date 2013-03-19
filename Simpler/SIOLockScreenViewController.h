@@ -19,15 +19,20 @@
 
 #import "JSLockScreenViewController.h"
 
-@interface SIOLockScreenViewController : UIViewController <JSLockScreenDelegate> {
+@interface SIOLockScreenViewController : UIViewController <JSLockScreenDelegate, UITextFieldDelegate> {
     
 	UILabel *statusLabel;
 	
 	JSLockScreenViewController *_lockScreenViewController;
 }
 
-@property (nonatomic, retain) IBOutlet UILabel *statusLabel;
+@property (nonatomic, retain) IBOutlet UIView *lockedView;
+@property (nonatomic, retain) IBOutlet UIView * mainView;
+@property (nonatomic,strong) IBOutlet UITextField * lockCode;
+@property (nonatomic,strong) IBOutlet UITextField * lockCodeConfirm;
 
-- (IBAction)unlock:(id)sender;
+-(IBAction)lock:(id)sender;
+-(IBAction)unlock:(id)sender;
+-(IBAction)doneEditing:(id)sender;
 
 @end

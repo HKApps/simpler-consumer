@@ -28,6 +28,7 @@
 @implementation JSLockScreenViewController
 
 @synthesize delegate = _delegate;
+@synthesize savedPasscode;
 
 - (id)initWithDelegate:(id <JSLockScreenDelegate>)delegate
 {
@@ -259,7 +260,6 @@
 
 - (void)checkPasscode
 {
-	NSString *savedPasscode = @"1234"; // However you store / retrieve your passcode
 	
 	if ([[_passcodeField text] isEqualToString:savedPasscode])
 	{		

@@ -10,7 +10,7 @@
 #import "User+SIO.h"
 #import "SIOAppDelegate.h"
 #import "SIOBanksViewController.h"
-#import "SIOPasscodeEntryViewController.h"
+#import "SIOLockScreenViewController.h"
 
 @implementation SIOProfileViewController
 
@@ -96,7 +96,7 @@
         }
         case 1:
         {
-            SIOPasscodeEntryViewController * passcodeEntryViewController = [[SIOPasscodeEntryViewController alloc] init];
+            SIOLockScreenViewController * passcodeEntryViewController = [[SIOLockScreenViewController alloc] init];
             [self.navigationController pushViewController:passcodeEntryViewController animated:YES];
             break;
         }

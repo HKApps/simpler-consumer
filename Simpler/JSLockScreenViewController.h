@@ -53,6 +53,7 @@
 }
 
 @property (nonatomic, assign) id <JSLockScreenDelegate> delegate;
+@property (nonatomic, retain) NSString * savedPasscode; //TODO: this may not be secure
 
 - (id)initWithDelegate:(id <JSLockScreenDelegate>)delegate;
 

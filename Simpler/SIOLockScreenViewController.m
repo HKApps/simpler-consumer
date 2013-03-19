@@ -18,15 +18,11 @@
 #import "SIOLockScreenViewController.h"
 #import "JSLockScreenViewController.h"
 #import "SIOAppDelegate.h"
+#import "User+SIO.h"
 
 @implementation SIOLockScreenViewController
 @synthesize statusLabel;
 
-- (void)dealloc
-{
-	[statusLabel release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,7 +44,7 @@
 
 - (void)viewDidUnload
 {
-	[self setStatusLabel:nil];
+	//[self setStatusLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -63,28 +59,72 @@
 - (IBAction)unlock:(id)sender
 {
 	_lockScreenViewController = [[JSLockScreenViewController alloc] initWithDelegate:self];
-	UIWindow *window = [(JSLockScreenAppDelegate *)[[UIApplication sharedApplication] delegate] window];
+	UIWindow *window = [(SIOAppDelegate *)[[UIApplication sharedApplication] delegate] window];
+    _lockScreenViewController.savedPasscode =  [(User*) [User getCurrentUserInContext:[(SIOAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]] passcode];
 	[_lockScreenViewController showInWindow:window];
 }
 
+-(IBAction)lock:(id)sender {
+    if(![_lockCode.text length]){
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Passcode is empty" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    if(![_lockCode.text isEqualToString:_lockCodeConfirm.text]){
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The passcodes do not match" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    
+    User * user = (User*) [User getCurrentUserInContext:[(SIOAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]];
+    user.passcode = _lockCode.text;
+    
+    _lockScreenViewController = [[JSLockScreenViewController alloc] initWithDelegate:self];
+	UIWindow *window = [(SIOAppDelegate *)[[UIApplication sharedApplication] delegate] window];
+    _lockScreenViewController.savedPasscode =  user.passcode;
+	[_lockScreenViewController showInWindow:window];
+    
+    self.view = _lockedView;
+}
+
+-(IBAction)doneEditing:(id)sender {
+    [_lockCode resignFirstResponder];
+    [_lockCodeConfirm resignFirstResponder];
+
+}
+
+
+
 - (void)lockScreenDidUnlock:(JSLockScreenViewController *)lockScreen
 {
-	[self.statusLabel setText:@"Success!"];
+    self.view = _mainView;
 }
 
 - (void)lockScreenFailedUnlock:(JSLockScreenViewController *)lockScreen
 {
-	[self.statusLabel setText:@"Failure!"];
+	//[self.statusLabel setText:@"Failure!"];
 }
 
 - (void)lockScreenDidCancel:(JSLockScreenViewController *)lockScreen
 {
-	[self.statusLabel setText:@"Cancelled"];
+	//[self.statusLabel setText:@"Cancelled"];
 }
 
 - (void)lockScreenDidDismiss:(JSLockScreenViewController *)lockScreen
 {
-	[_lockScreenViewController release], _lockScreenViewController = nil;
+	_lockScreenViewController = nil;
 }
+
+
+#pragma mark UITextFieldDelegate
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+ 
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > 4) ? NO : YES;
+    
+}
+
 
 @end

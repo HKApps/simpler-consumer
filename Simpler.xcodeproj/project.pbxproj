@@ -76,8 +76,8 @@
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
 		F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */; };
 		F472B71D16F7E4E0005E474F /* libZXingObjC-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4658D6516F7D00F002F2122 /* libZXingObjC-iOS.a */; };
+		F472B71E16F7F5CD005E474F /* SIOLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */; };
 		F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F4BC87BE16F15F0C00456B18 /* SIOLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */; };
 		F4BC87C916F15FE500456B18 /* lock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C116F15FE500456B18 /* lock_background.png */; };
 		F4BC87CA16F15FE500456B18 /* lock_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C216F15FE500456B18 /* lock_background@2x.png */; };
 		F4BC87CB16F15FE500456B18 /* passcodeFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C316F15FE500456B18 /* passcodeFieldBackground.png */; };
@@ -762,6 +762,7 @@
 				F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */,
 				F4BC87F216F290EE00456B18 /* User.m in Sources */,
 				F4BC87F816F2AF6700456B18 /* Card.m in Sources */,
+				F472B71E16F7F5CD005E474F /* SIOLockScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +771,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42ABEE016EFF9DE00133E48 /* SimplerTests.m in Sources */,
-				F4BC87BE16F15F0C00456B18 /* SIOLockScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
