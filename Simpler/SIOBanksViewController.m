@@ -1,9 +1,9 @@
 //
-//  HPDT_BanksViewController.m
+//  SIOBanksViewController.m
 //  Simpler
 //
 //  Created by Snacks on 3/12/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOBanksViewController.h"

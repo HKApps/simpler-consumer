@@ -1,15 +1,15 @@
 //
-//  HPDT_ProfileViewController.m
+//  SIOProfileViewController.m
 //  Simpler
 //
 //  Created by Snacks on 3/12/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOProfileViewController.h"
 #import "User+SIO.h"
-#import "HPDTAppDelegate.h"
-#import "HPDT_BanksViewController.h"
+#import "SIOAppDelegate.h"
+#import "SIOBanksViewController.h"
 #import "SIOPasscodeEntryViewController.h"
 
 @implementation SIOProfileViewController
@@ -53,7 +53,7 @@
 }
 
 -(IBAction)didTapLogout{
-    HPDTAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    SIOAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     [appDelegate logout];
 }
 
@@ -90,7 +90,7 @@
     switch([indexPath row]){
         case 0:
         {
-            HPDT_BanksViewController * banksViewController = [[HPDT_BanksViewController alloc] init];
+            SIOBanksViewController * banksViewController = [[SIOBanksViewController alloc] init];
             [self.navigationController pushViewController:banksViewController animated:YES];
             break;
         }

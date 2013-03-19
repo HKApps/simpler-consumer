@@ -71,10 +71,11 @@
 		F42ABF1916F0242600133E48 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */; };
 		F42ABF2016F1399B00133E48 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42ABF1016F01F6C00133E48 /* FacebookSDK.framework */; };
 		F42ABF2716F13F8D00133E48 /* Card+SIO.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2616F13F8D00133E48 /* Card+SIO.m */; };
-		F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* HPDTUtil.m */; };
+		F42ABF2B16F1402300133E48 /* SIOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2A16F1402300133E48 /* SIOUtil.m */; };
 		F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */; };
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
 		F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */; };
+		F472B71D16F7E4E0005E474F /* libZXingObjC-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4658D6516F7D00F002F2122 /* libZXingObjC-iOS.a */; };
 		F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4BC87BE16F15F0C00456B18 /* SIOLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */; };
 		F4BC87C916F15FE500456B18 /* lock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C116F15FE500456B18 /* lock_background.png */; };
@@ -136,6 +137,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 2540439E166ABA0A00E13304;
 			remoteInfo = "OS X Framework";
+		};
+		F472B71B16F7E4D9005E474F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25403CB2166A96FA00E13304;
+			remoteInfo = "ZXingObjC-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -220,8 +228,8 @@
 		F42ABF1816F0242600133E48 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		F42ABF2516F13F8D00133E48 /* Card+SIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Card+SIO.h"; sourceTree = "<group>"; };
 		F42ABF2616F13F8D00133E48 /* Card+SIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Card+SIO.m"; sourceTree = "<group>"; };
-		F42ABF2916F1402300133E48 /* HPDTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPDTUtil.h; sourceTree = "<group>"; };
-		F42ABF2A16F1402300133E48 /* HPDTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPDTUtil.m; sourceTree = "<group>"; };
+		F42ABF2916F1402300133E48 /* SIOUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOUtil.h; sourceTree = "<group>"; };
+		F42ABF2A16F1402300133E48 /* SIOUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOUtil.m; sourceTree = "<group>"; };
 		F42ABF2D16F145D000133E48 /* SIOCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOCardTableViewCell.h; sourceTree = "<group>"; };
 		F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOCardTableViewCell.m; sourceTree = "<group>"; };
 		F42ABF3016F1499000133E48 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
@@ -264,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F472B71D16F7E4E0005E474F /* libZXingObjC-iOS.a in Frameworks */,
 				F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */,
 				F42ABF1516F021F100133E48 /* Social.framework in Frameworks */,
 				F42ABF1316F021ED00133E48 /* AdSupport.framework in Frameworks */,
@@ -476,8 +485,8 @@
 		F42ABF2816F13FF600133E48 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F42ABF2916F1402300133E48 /* HPDTUtil.h */,
-				F42ABF2A16F1402300133E48 /* HPDTUtil.m */,
+				F42ABF2916F1402300133E48 /* SIOUtil.h */,
+				F42ABF2A16F1402300133E48 /* SIOUtil.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -552,6 +561,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F472B71C16F7E4D9005E474F /* PBXTargetDependency */,
 			);
 			name = Simpler;
 			productName = Simpler;
@@ -741,7 +751,7 @@
 				A65542A316F0200900BA9659 /* SIOTransactionViewController.m in Sources */,
 				A65542A816F0202500BA9659 /* SIOWalletViewController.m in Sources */,
 				F42ABF2716F13F8D00133E48 /* Card+SIO.m in Sources */,
-				F42ABF2B16F1402300133E48 /* HPDTUtil.m in Sources */,
+				F42ABF2B16F1402300133E48 /* SIOUtil.m in Sources */,
 				F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */,
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
 				F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */,
@@ -771,6 +781,11 @@
 			isa = PBXTargetDependency;
 			target = F42ABEAA16EFF9DE00133E48 /* Simpler */;
 			targetProxy = F42ABED616EFF9DE00133E48 /* PBXContainerItemProxy */;
+		};
+		F472B71C16F7E4D9005E474F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZXingObjC-iOS";
+			targetProxy = F472B71B16F7E4D9005E474F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -866,7 +881,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",
@@ -893,7 +908,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simpler/Simpler-Prefix.pch";
 				INFOPLIST_FILE = "Simpler/Simpler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lsqlite3.0",
 					"-ObjC",

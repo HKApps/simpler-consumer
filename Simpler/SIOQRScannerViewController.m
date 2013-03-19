@@ -3,13 +3,13 @@
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/12/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 #import "SIOQRScannerViewController.h"
-#import "SIOTransactionViewController.h";
+#import "SIOTransactionViewController.h"
 
 @interface SIOQRScannerViewController ()
 
@@ -194,7 +194,6 @@
         SIOTransactionViewController * transactionViewController = [[SIOTransactionViewController alloc] init];
         transactionViewController.transactionDetails = ticketDetails;
         
-        [self.navigationController popViewControllerAnimated:NO];
         [self.navigationController pushViewController:transactionViewController animated:YES];
         
     }

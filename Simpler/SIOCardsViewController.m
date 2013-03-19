@@ -1,9 +1,9 @@
 //
-//  HPDTCardsViewController.m
+//  SIOCardsViewController.m
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/13/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOCardsViewController.h"
@@ -76,11 +76,11 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"HPDTCardTableViewCell";
+    static NSString *CellIdentifier = @"SIOCardTableViewCell";
     
     SIOCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"HPDTCardTableViewCell" owner:nil options:nil];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SIOCardTableViewCell" owner:nil options:nil];
         for (id currentObject in topLevelObjects) {
             if ([currentObject isKindOfClass:[SIOCardTableViewCell class]]) {
                 cell = currentObject;

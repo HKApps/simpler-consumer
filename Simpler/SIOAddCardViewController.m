@@ -1,9 +1,9 @@
 //
-//  HPDT_AddCardViewController.m
+//  SIOAddCardViewController.m
 //  Simpler
 //
 //  Created by Snacks on 3/12/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOAddCardViewController.h"
@@ -120,11 +120,11 @@
 #pragma mark UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"HPDTAddCardTableViewCell";
+    static NSString *CellIdentifier = @"SIOAddCardTableViewCell";
     
     SIOAddCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"HPDTAddCardTableViewCell" owner:nil options:nil];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"SIOAddCardTableViewCell" owner:nil options:nil];
         for (id currentObject in topLevelObjects) {
             if ([currentObject isKindOfClass:[SIOAddCardTableViewCell class]]) {
                 cell = currentObject;

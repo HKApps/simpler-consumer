@@ -1,9 +1,9 @@
 //
-//  HPDT_AddCardTableViewCell.m
+//  SIOAddCardTableViewCell.m
 //  Simpler
 //
 //  Created by Snacks on 3/13/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOAddCardTableViewCell.h"

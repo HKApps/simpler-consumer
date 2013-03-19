@@ -1,15 +1,15 @@
 //
-//  HPDT_LoginViewController.m
+//  SIOLoginViewController.m
 //  Simpler
 //
 //  Created by Matthew Shultz on 3/12/13.
-//  Copyright (c) 2013 HPDTApps. All rights reserved.
+//  Copyright (c) 2013 SIOApps. All rights reserved.
 //
 
 #import "SIOLoginViewController.h"
 #import "Login.h"
 #import "SIOAppDelegate.h"
-#import "HPDT_RegisterViewController.h"
+#import "SIORegisterViewController.h"
 
 @interface SIOLoginViewController ()
 
@@ -64,7 +64,7 @@
 }
 
 - (IBAction)didTapRegisterButton:(id)sender {
-    HPDT_RegisterViewController * registerViewController = [[HPDT_RegisterViewController alloc] init];
+    SIORegisterViewController * registerViewController = [[SIORegisterViewController alloc] init];
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
