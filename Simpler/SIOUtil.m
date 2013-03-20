@@ -33,4 +33,27 @@
 }
 
 
++ (void) httpError {
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: @"Communcation Error"
+                          message: @"Error communicating with server."
+                          delegate: nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil];
+    [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+    
+}
+
++ (void) httpErrorWithString: (NSString *) error {
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: @"Communcation Error"
+                          message: error
+                          delegate: nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil];
+    [alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+    
+}
+
+
 @end

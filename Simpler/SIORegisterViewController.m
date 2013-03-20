@@ -8,6 +8,11 @@
 
 #import "SIORegisterViewController.h"
 #import "SIOAppDelegate.h"
+#import "SIOUtil.h"
+#import "SIOConstants.h"
+#import "AFHTTPClient.h"
+#import "AFJSONRequestOperation.h"
+#import "User+SIO.h"
 
 @implementation SIORegisterViewController
 
@@ -58,9 +63,49 @@
     //Then Log them in
     //And switch to home view
     
+    NSString * email = _emailAddress.text;
+    NSString * password = _password.text;
+    
+    NSDictionary * parameters = @{@"consumer":@{
+                                          @"email" : email,
+                                          @"password" : password
+                                          }
+                                  };
+    
+    AFHTTPClient * httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:SIO_REST_PATH]];
+    httpClient.parameterEncoding = AFJSONParameterEncoding;
+    NSMutableURLRequest * urlRequest = [httpClient requestWithMethod:@"POST" path:SIO_LOGIN_PATH parameters:parameters];
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation
+                                         JSONRequestOperationWithRequest:urlRequest
+                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                                             [self registerSucceeded: (NSDictionary *) JSON];
+                                             
+                                         }
+                                         failure:^( NSURLRequest *request , NSURLResponse *response , NSError *error , id JSON ) {
+                                             [SIOUtil httpError];
+                                         }];
+    [operation start];
+    
+
+    
     [(SIOAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
 
 }
+
+- (void) registerSucceeded: (NSDictionary *) parameters {
+    //Mocking data..
+    User * user = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"User"
+                   inManagedObjectContext:self->ctx];
+    user.name = [[parameters objectForKey:@"profile"] objectForKey:@"name"];
+    user.api_token = [parameters objectForKey:@"api_token"];
+    
+    //TODO: handle the credit card UUID's here
+    
+    [(SIOAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
+}
+
 
 
 @end

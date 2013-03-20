@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SIOAppDelegate.h"
+#import "SIOViewController.h"
 
-@interface SIOLoginViewController : UIViewController
+@interface SIOLoginViewController : SIOViewController
 
 @property (nonatomic, strong) IBOutlet UITextField * emailAddress;
 @property (nonatomic, strong) IBOutlet UITextField * password;

@@ -10,6 +10,11 @@
 #import "Login.h"
 #import "SIOAppDelegate.h"
 #import "SIORegisterViewController.h"
+#import "SIOConstants.h"
+#import "AFJSONRequestOperation.h"
+#import "AFHTTPClient.h"
+#import "SIOUtil.h"
+#import "User+SIO.h"
 
 @interface SIOLoginViewController ()
 
@@ -39,14 +44,38 @@
 }
 
 - (IBAction)loginButtonAction:(id)sender {
-    if([Login validateLogin:_emailAddress.text password:_password.text]){
+    
+    //if([Login validateLogin:_emailAddress.text password:_password.text]){
+    //Possible login validation before handing off to remote server
+    
+    //Should lock UI
+    
+    NSString * email = _emailAddress.text;
+    NSString * password = _password.text;
+    
+    NSDictionary * parameters = @{@"user_session":@{
+                                          @"email" : email,
+                                          @"password" : password
+                                          }
+                                  };
+    
+    AFHTTPClient * httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:SIO_REST_PATH]];
+    httpClient.parameterEncoding = AFJSONParameterEncoding;
+    NSMutableURLRequest * urlRequest = [httpClient requestWithMethod:@"POST" path:SIO_LOGIN_PATH parameters:parameters];
+
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation
+                                         JSONRequestOperationWithRequest:urlRequest
+                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                                            [self loginSucceeded: (NSDictionary *) JSON];
+
+                                        }
+                                         failure:^( NSURLRequest *request , NSURLResponse *response , NSError *error , id JSON ) {
+                                             [SIOUtil httpError];
+                                         }];
+    [operation start];
+    
         
-        [(SIOAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
-        
-    } else {
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Invalid username or password" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
-    }
+
 }
 
 
@@ -68,5 +97,18 @@
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
+
+- (void) loginSucceeded: (NSDictionary *) parameters {
+    //Mocking data..
+    User * user = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"User"
+                   inManagedObjectContext:self->ctx];
+    user.name = [[parameters objectForKey:@"profile"] objectForKey:@"name"];
+    user.api_token = [parameters objectForKey:@"api_token"];
+    
+    //TODO: handle the credit card UUID's here
+    
+    [(SIOAppDelegate*) [[UIApplication sharedApplication] delegate] showHomeView];
+}
 
 @end

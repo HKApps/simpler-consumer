@@ -263,13 +263,6 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 
 
 - (void)showHomeView {
-    //Mocking data..
-    User * user = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"User"
-                   inManagedObjectContext:self.managedObjectContext];
-    user.name = @"Default User";
-    
-
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:.5];

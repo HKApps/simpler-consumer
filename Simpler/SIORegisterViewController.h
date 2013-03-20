@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SIOViewController.h"
 
-@interface SIORegisterViewController : UIViewController
+@interface SIORegisterViewController : SIOViewController
+
+@property (nonatomic, strong) IBOutlet UITextField * emailAddress;
+@property (nonatomic, strong) IBOutlet UITextField * password;
 
 
 - (IBAction) didTapSignUpButton: (id) sender;

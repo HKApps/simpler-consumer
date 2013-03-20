@@ -9,6 +9,10 @@
 #import "SIOAddCardViewController.h"
 #import "SIOAddCardTableViewCell.h"
 #import "Card+SIO.h"
+#import "AFHTTPClient.h"
+#import "AFJSONRequestOperation.h"
+#import "SIOConstants.h"
+#import "SIOUtil.h"
 
 #define kCardNumber 1
 #define kExpDate 2
@@ -94,25 +98,53 @@
 
 -(IBAction)didTapAddCardButton:(id)sender{
     
+    //TODO: Lock UI
     
     //Initiate REST call
     //I.E. Send this data directly to the API without saving
     //Probably want to notify the user that an API call is happening
     //The below goes in the async callback
     
-    Card * card = [NSEntityDescription
-                   insertNewObjectForEntityForName:@"Card"
-                   inManagedObjectContext:self->ctx];
-    if(creditViewOnTop){
-        card.card_type = @"MasterCard";
-    } else {
-        card.card_type = @"Gift";
-    }
-    card.last_four = @"9999"; //from API?
-    card.token = @"Token";
-    card.name = @"No Name Specified";
+    NSDictionary * parameters = @{
+                                  @"card_number" : [_values objectForKey:@"CardNumber"],
+                                  @"cvv" : [_values objectForKey:@"SecurityCode"],
+                                  @"expiration_date" : [_values objectForKey:@"ExpDate"]
+                                  };
     
-    [self.navigationController popViewControllerAnimated:YES];
+    //TODO: card_type and card_name are missing from the REST document
+    
+    AFHTTPClient * httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:SIO_REST_PATH]];
+    httpClient.parameterEncoding = AFJSONParameterEncoding;
+    NSMutableURLRequest * urlRequest = [httpClient requestWithMethod:@"POST" path:SIO_ADDCARD_PATH parameters:parameters];
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation
+                                         JSONRequestOperationWithRequest:urlRequest
+                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                                            
+                                             Card * card = [NSEntityDescription
+                                                            insertNewObjectForEntityForName:@"Card"
+                                                            inManagedObjectContext:self->ctx];
+                                            
+                                             if(creditViewOnTop){
+                                                 card.card_type = @"MasterCard";
+                                             } else {
+                                                 card.card_type = @"Gift";
+                                             }
+                                             card.last_four = @"9999"; // NSString chopping
+                                             card.token = @"Token"; // This needs to come from the API
+                                             card.name = @"No Name Specified"; // This needs to be set
+                                             
+                                             [self.navigationController popViewControllerAnimated:YES];
+                                             
+                                         }
+                                         failure:^( NSURLRequest *request , NSURLResponse *response , NSError *error , id JSON ) {
+                                             [SIOUtil httpError];
+                                         }];
+    [operation start];
+    
+
+    
+ 
 }
 
 

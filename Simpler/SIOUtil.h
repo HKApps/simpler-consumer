@@ -12,5 +12,6 @@
 
 + (void) criticalError: (NSError *) error;
 + (void) criticalErrorWithString: (NSString *) error;
-
++ (void) httpError;
++ (void) httpErrorWithString: (NSString *) error;
 @end
