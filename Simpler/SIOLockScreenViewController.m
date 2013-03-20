@@ -21,7 +21,6 @@
 #import "User+SIO.h"
 
 @implementation SIOLockScreenViewController
-@synthesize statusLabel;
 
 
 - (void)didReceiveMemoryWarning

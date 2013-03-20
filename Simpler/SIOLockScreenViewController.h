@@ -20,8 +20,6 @@
 #import "JSLockScreenViewController.h"
 
 @interface SIOLockScreenViewController : UIViewController <JSLockScreenDelegate, UITextFieldDelegate> {
-    
-	UILabel *statusLabel;
 	
 	JSLockScreenViewController *_lockScreenViewController;
 }
