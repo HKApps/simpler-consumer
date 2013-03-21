@@ -75,9 +75,13 @@
 		F42ABF2F16F145D000133E48 /* SIOCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF2E16F145D000133E48 /* SIOCardTableViewCell.m */; };
 		F42ABF3216F1499100133E48 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3116F1499100133E48 /* Login.m */; };
 		F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */; };
+		F43B1F0116FBC19600282D31 /* KKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B1EF916FBC19600282D31 /* KKKeychain.m */; };
+		F43B1F0216FBC19600282D31 /* KKPasscodeLock.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F43B1EFA16FBC19600282D31 /* KKPasscodeLock.bundle */; };
+		F43B1F0316FBC19600282D31 /* KKPasscodeLock.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B1EFC16FBC19600282D31 /* KKPasscodeLock.m */; };
+		F43B1F0416FBC19600282D31 /* KKPasscodeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B1EFE16FBC19600282D31 /* KKPasscodeSettingsViewController.m */; };
+		F43B1F0516FBC19600282D31 /* KKPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43B1F0016FBC19600282D31 /* KKPasscodeViewController.m */; };
+		F43B1F0D16FBC68A00282D31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43B1F0C16FBC68900282D31 /* Security.framework */; };
 		F472B71D16F7E4E0005E474F /* libZXingObjC-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4658D6516F7D00F002F2122 /* libZXingObjC-iOS.a */; };
-		F472B71E16F7F5CD005E474F /* SIOLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */; };
-		F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F4BC87C916F15FE500456B18 /* lock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C116F15FE500456B18 /* lock_background.png */; };
 		F4BC87CA16F15FE500456B18 /* lock_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C216F15FE500456B18 /* lock_background@2x.png */; };
 		F4BC87CB16F15FE500456B18 /* passcodeFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C316F15FE500456B18 /* passcodeFieldBackground.png */; };
@@ -86,11 +90,8 @@
 		F4BC87CE16F15FE500456B18 /* passcodeTopBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C616F15FE500456B18 /* passcodeTopBackground@2x.png */; };
 		F4BC87CF16F15FE500456B18 /* passcodeTopBackground_red.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C716F15FE500456B18 /* passcodeTopBackground_red.png */; };
 		F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */; };
-		F4BC87D216F15FF900456B18 /* SIOLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */; };
 		F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87D416F1647800456B18 /* SIOViewController.m */; };
 		F4BC87E216F186E100456B18 /* User+SIO.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87E116F186E100456B18 /* User+SIO.m */; };
-		F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */; };
-		F4BC87EE16F19E6800456B18 /* SIOPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */; };
 		F4BC87F216F290EE00456B18 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F116F290EE00456B18 /* User.m */; };
 		F4BC87F816F2AF6700456B18 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BC87F716F2AF6700456B18 /* Card.m */; };
 /* End PBXBuildFile section */
@@ -237,11 +238,17 @@
 		F42ABF3316F151EC00133E48 /* SIOCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOCardsViewController.h; sourceTree = "<group>"; };
 		F42ABF3416F151EC00133E48 /* SIOCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOCardsViewController.m; sourceTree = "<group>"; };
 		F42ABF3616F1565400133E48 /* 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 2.xcdatamodel; sourceTree = "<group>"; };
+		F43B1EF816FBC19600282D31 /* KKKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKKeychain.h; path = KKPasscodeLock/src/KKKeychain.h; sourceTree = SOURCE_ROOT; };
+		F43B1EF916FBC19600282D31 /* KKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKKeychain.m; path = KKPasscodeLock/src/KKKeychain.m; sourceTree = SOURCE_ROOT; };
+		F43B1EFA16FBC19600282D31 /* KKPasscodeLock.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = KKPasscodeLock.bundle; path = KKPasscodeLock/src/KKPasscodeLock.bundle; sourceTree = SOURCE_ROOT; };
+		F43B1EFB16FBC19600282D31 /* KKPasscodeLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeLock.h; path = KKPasscodeLock/src/KKPasscodeLock.h; sourceTree = SOURCE_ROOT; };
+		F43B1EFC16FBC19600282D31 /* KKPasscodeLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeLock.m; path = KKPasscodeLock/src/KKPasscodeLock.m; sourceTree = SOURCE_ROOT; };
+		F43B1EFD16FBC19600282D31 /* KKPasscodeSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeSettingsViewController.h; path = KKPasscodeLock/src/KKPasscodeSettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		F43B1EFE16FBC19600282D31 /* KKPasscodeSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeSettingsViewController.m; path = KKPasscodeLock/src/KKPasscodeSettingsViewController.m; sourceTree = SOURCE_ROOT; };
+		F43B1EFF16FBC19600282D31 /* KKPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKPasscodeViewController.h; path = KKPasscodeLock/src/KKPasscodeViewController.h; sourceTree = SOURCE_ROOT; };
+		F43B1F0016FBC19600282D31 /* KKPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKPasscodeViewController.m; path = KKPasscodeLock/src/KKPasscodeViewController.m; sourceTree = SOURCE_ROOT; };
+		F43B1F0C16FBC68900282D31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F4658D5B16F7D00E002F2122 /* ZXingObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZXingObjC.xcodeproj; path = ZXingObjC/ZXingObjC.xcodeproj; sourceTree = "<group>"; };
-		F4BC87B916F15F0200456B18 /* JSLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLockScreenViewController.h; sourceTree = "<group>"; };
-		F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLockScreenViewController.m; sourceTree = "<group>"; };
-		F4BC87BC16F15F0C00456B18 /* SIOLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOLockScreenViewController.h; sourceTree = "<group>"; };
-		F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOLockScreenViewController.m; sourceTree = "<group>"; };
 		F4BC87C116F15FE500456B18 /* lock_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_background.png; sourceTree = "<group>"; };
 		F4BC87C216F15FE500456B18 /* lock_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock_background@2x.png"; sourceTree = "<group>"; };
 		F4BC87C316F15FE500456B18 /* passcodeFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passcodeFieldBackground.png; sourceTree = "<group>"; };
@@ -250,16 +257,12 @@
 		F4BC87C616F15FE500456B18 /* passcodeTopBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passcodeTopBackground@2x.png"; sourceTree = "<group>"; };
 		F4BC87C716F15FE500456B18 /* passcodeTopBackground_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passcodeTopBackground_red.png; sourceTree = "<group>"; };
 		F4BC87C816F15FE500456B18 /* passcodeTopBackground_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "passcodeTopBackground_red@2x.png"; sourceTree = "<group>"; };
-		F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOLockScreenViewController.xib; sourceTree = "<group>"; };
 		F4BC87D316F1647700456B18 /* SIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOViewController.h; sourceTree = "<group>"; };
 		F4BC87D416F1647800456B18 /* SIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOViewController.m; sourceTree = "<group>"; };
 		F4BC87D616F1854C00456B18 /* 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 3.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87E016F186E100456B18 /* User+SIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+SIO.h"; sourceTree = "<group>"; };
 		F4BC87E116F186E100456B18 /* User+SIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+SIO.m"; sourceTree = "<group>"; };
 		F4BC87E316F18D7000456B18 /* 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 4.xcdatamodel; sourceTree = "<group>"; };
-		F4BC87EA16F19E6400456B18 /* SIOPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOPasscodeEntryViewController.h; sourceTree = "<group>"; };
-		F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOPasscodeEntryViewController.m; sourceTree = "<group>"; };
-		F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIOPasscodeEntryViewController.xib; sourceTree = "<group>"; };
 		F4BC87EF16F28F7F00456B18 /* 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = 5.xcdatamodel; sourceTree = "<group>"; };
 		F4BC87F016F290EE00456B18 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F4BC87F116F290EE00456B18 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -272,6 +275,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43B1F0D16FBC68A00282D31 /* Security.framework in Frameworks */,
 				F472B71D16F7E4E0005E474F /* libZXingObjC-iOS.a in Frameworks */,
 				F42ABF1716F021FD00133E48 /* Accounts.framework in Frameworks */,
 				F42ABF1516F021F100133E48 /* Social.framework in Frameworks */,
@@ -340,6 +344,7 @@
 		F42ABEAD16EFF9DE00133E48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F43B1F0C16FBC68900282D31 /* Security.framework */,
 				F42ABF1616F021FD00133E48 /* Accounts.framework */,
 				F42ABF1416F021F100133E48 /* Social.framework */,
 				F42ABF1216F021ED00133E48 /* AdSupport.framework */,
@@ -363,6 +368,7 @@
 		F42ABEB616EFF9DE00133E48 /* Simpler */ = {
 			isa = PBXGroup;
 			children = (
+				F43B1EF216FBC18000282D31 /* KKPasscodeLock */,
 				F42ABEEC16F00CAC00133E48 /* Interface */,
 				F42ABF1C16F1380E00133E48 /* Models */,
 				F42ABF2116F13E7F00133E48 /* Core Data Models */,
@@ -411,14 +417,7 @@
 		F42ABEEC16F00CAC00133E48 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				F4BC87B816F15EF000456B18 /* Library */,
 				A69B795716F140BF00E9C1D5 /* UITableViewCells */,
-				F4BC87BC16F15F0C00456B18 /* SIOLockScreenViewController.h */,
-				F4BC87BD16F15F0C00456B18 /* SIOLockScreenViewController.m */,
-				F4BC87D116F15FF900456B18 /* SIOLockScreenViewController.xib */,
-				F4BC87EA16F19E6400456B18 /* SIOPasscodeEntryViewController.h */,
-				F4BC87EB16F19E6500456B18 /* SIOPasscodeEntryViewController.m */,
-				F4BC87EC16F19E6600456B18 /* SIOPasscodeEntryViewController.xib */,
 				F42ABEED16F00CD500133E48 /* SIOQRScannerViewController.h */,
 				F42ABEEE16F00CD500133E48 /* SIOQRScannerViewController.m */,
 				F42ABEEF16F00CD500133E48 /* SIOQRScannerViewController.xib */,
@@ -491,6 +490,22 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		F43B1EF216FBC18000282D31 /* KKPasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				F43B1EF816FBC19600282D31 /* KKKeychain.h */,
+				F43B1EF916FBC19600282D31 /* KKKeychain.m */,
+				F43B1EFA16FBC19600282D31 /* KKPasscodeLock.bundle */,
+				F43B1EFB16FBC19600282D31 /* KKPasscodeLock.h */,
+				F43B1EFC16FBC19600282D31 /* KKPasscodeLock.m */,
+				F43B1EFD16FBC19600282D31 /* KKPasscodeSettingsViewController.h */,
+				F43B1EFE16FBC19600282D31 /* KKPasscodeSettingsViewController.m */,
+				F43B1EFF16FBC19600282D31 /* KKPasscodeViewController.h */,
+				F43B1F0016FBC19600282D31 /* KKPasscodeViewController.m */,
+			);
+			name = KKPasscodeLock;
+			sourceTree = "<group>";
+		};
 		F4658D5C16F7D00E002F2122 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,15 +516,6 @@
 				F4658D6D16F7D00F002F2122 /* ZXingObjC.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F4BC87B816F15EF000456B18 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				F4BC87B916F15F0200456B18 /* JSLockScreenViewController.h */,
-				F4BC87BA16F15F0200456B18 /* JSLockScreenViewController.m */,
-			);
-			name = Library;
 			sourceTree = "<group>";
 		};
 		F4BC87BF16F15FD200456B18 /* Graphics */ = {
@@ -694,15 +700,14 @@
 				F4BC87CE16F15FE500456B18 /* passcodeTopBackground@2x.png in Resources */,
 				F4BC87CF16F15FE500456B18 /* passcodeTopBackground_red.png in Resources */,
 				F4BC87D016F15FE500456B18 /* passcodeTopBackground_red@2x.png in Resources */,
-				F4BC87D216F15FF900456B18 /* SIOLockScreenViewController.xib in Resources */,
 				A69B797E16F1673E00E9C1D5 /* amex.png in Resources */,
 				A69B797F16F1673E00E9C1D5 /* visa.png in Resources */,
 				A69B798016F1673E00E9C1D5 /* masterCard.png in Resources */,
 				A69B798116F1673E00E9C1D5 /* discover.png in Resources */,
-				F4BC87EE16F19E6800456B18 /* SIOPasscodeEntryViewController.xib in Resources */,
 				A69B798C16F191E300E9C1D5 /* backgroundTwo.png in Resources */,
 				A69B798D16F191E300E9C1D5 /* backgroundOne.png in Resources */,
 				A69B799016F1944D00E9C1D5 /* logo.png in Resources */,
+				F43B1F0216FBC19600282D31 /* KKPasscodeLock.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,13 +761,14 @@
 				F42ABF3216F1499100133E48 /* Login.m in Sources */,
 				F42ABF3516F151ED00133E48 /* SIOCardsViewController.m in Sources */,
 				A69B797316F15AEA00E9C1D5 /* SIOAddCardTableViewCell.m in Sources */,
-				F4BC87BB16F15F0200456B18 /* JSLockScreenViewController.m in Sources */,
 				F4BC87D516F1647800456B18 /* SIOViewController.m in Sources */,
 				F4BC87E216F186E100456B18 /* User+SIO.m in Sources */,
-				F4BC87ED16F19E6800456B18 /* SIOPasscodeEntryViewController.m in Sources */,
 				F4BC87F216F290EE00456B18 /* User.m in Sources */,
 				F4BC87F816F2AF6700456B18 /* Card.m in Sources */,
-				F472B71E16F7F5CD005E474F /* SIOLockScreenViewController.m in Sources */,
+				F43B1F0116FBC19600282D31 /* KKKeychain.m in Sources */,
+				F43B1F0316FBC19600282D31 /* KKPasscodeLock.m in Sources */,
+				F43B1F0416FBC19600282D31 /* KKPasscodeSettingsViewController.m in Sources */,
+				F43B1F0516FBC19600282D31 /* KKPasscodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

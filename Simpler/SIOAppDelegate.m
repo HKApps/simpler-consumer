@@ -14,7 +14,6 @@
 #import "Card+SIO.h"
 #import "User+SIO.h"
 
-
 NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSessionStateChangedNotification";
 
 @implementation SIOAppDelegate
@@ -28,6 +27,9 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [[KKPasscodeLock sharedLock] setDefaultSettings];
+    [KKPasscodeLock sharedLock].eraseOption = NO;
     
     SIOLoginViewController * loginViewController = [[SIOLoginViewController alloc] init];
     loginViewController.title = @"Login";
@@ -80,7 +82,31 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    if ([[KKPasscodeLock sharedLock] isPasscodeRequired]) {
+        KKPasscodeViewController *vc = [[KKPasscodeViewController alloc] initWithNibName:nil bundle:nil];
+        vc.mode = KKPasscodeModeEnter;
+        vc.delegate = self;
+        
+        dispatch_async(dispatch_get_main_queue(),^ {
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+            
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+                nav.modalPresentationStyle = UIModalPresentationFormSheet;
+                nav.navigationBar.barStyle = UIBarStyleBlack;
+                nav.navigationBar.opaque = NO;
+            } else {
+                nav.navigationBar.tintColor = _navigationController.navigationBar.tintColor;
+                nav.navigationBar.translucent = _navigationController.navigationBar.translucent;
+                nav.navigationBar.opaque = _navigationController.navigationBar.opaque;
+                nav.navigationBar.barStyle = _navigationController.navigationBar.barStyle;
+            }
+            
+            [_navigationController presentViewController:nav animated:NO completion:nil];
+        });
+        
+    }
+
 
     
     // We need to properly handle activation of the application with regards to Facebook Login
@@ -302,6 +328,18 @@ NSString *const FBSessionStateChangedNotification = @"simplerApp.Login:FBSession
     [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
+
+- (void)shouldEraseApplicationData:(KKPasscodeViewController*)viewController
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"You have entered an incorrect passcode too many times. All account data in this app has been deleted." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)didPasscodeEnteredIncorrectly:(KKPasscodeViewController*)viewController
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"You have entered an incorrect passcode too many times." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
 
 
 @end

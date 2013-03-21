@@ -13,6 +13,7 @@
 <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray * rowTitles;
+@property (nonatomic, strong) IBOutlet UITableView * tableView;
 
 -(IBAction)didTapLogout;
 

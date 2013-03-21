@@ -10,7 +10,7 @@
 #import "User+SIO.h"
 #import "SIOAppDelegate.h"
 #import "SIOBanksViewController.h"
-#import "SIOLockScreenViewController.h"
+#import "KKPasscodeSettingsViewController.h"
 
 @implementation SIOProfileViewController
 
@@ -46,6 +46,10 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [_tableView reloadData];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
@@ -53,7 +57,7 @@
 }
 
 -(IBAction)didTapLogout{
-    SIOAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    SIOAppDelegate *appDelegate = ( SIOAppDelegate *) [[UIApplication sharedApplication] delegate];
     [appDelegate logout];
 }
 
@@ -71,7 +75,7 @@
     UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ProfileTableViewCell"];
     cell.textLabel.text = (NSString*) [_rowTitles objectAtIndex:[indexPath row]];
     if([indexPath row] == 1){
-        if([User passcodeLockEnabled: self->ctx]){
+        if([[KKPasscodeLock sharedLock] isPasscodeRequired]){
             cell.textLabel.text = [cell.textLabel.text stringByAppendingFormat:@"         ON"];
         } else {
             cell.textLabel.text = [cell.textLabel.text stringByAppendingFormat:@"         OFF"];
@@ -96,7 +100,7 @@
         }
         case 1:
         {
-            SIOLockScreenViewController * passcodeEntryViewController = [[SIOLockScreenViewController alloc] init];
+            KKPasscodeSettingsViewController * passcodeEntryViewController = [[KKPasscodeSettingsViewController alloc] init];
             [self.navigationController pushViewController:passcodeEntryViewController animated:YES];
             break;
         }

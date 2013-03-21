@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "KKPasscodeLock.h"
+
 
 extern NSString *const FBSessionStateChangedNotification;
 
-@interface SIOAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SIOAppDelegate : UIResponder <UIApplicationDelegate, KKPasscodeViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
