@@ -64,7 +64,7 @@
 #pragma mark IBActions
 
 - (IBAction)didTapAddCard:(id)sender {
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     
     SIOAddCardViewController * addCardViewController = [[SIOAddCardViewController alloc] init];
     addCardViewController.title = @"Add Card";
@@ -73,7 +73,7 @@
 
 #pragma mark UITableViewDatasource 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     [self pushEditCardView:[self.cards objectAtIndex:[indexPath row]]];
 }
 

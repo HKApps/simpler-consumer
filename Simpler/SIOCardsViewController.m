@@ -55,7 +55,7 @@
     editCardViewController.title = @"Edit Card";
     editCardViewController.card = card;
     [self.navigationController pushViewController:editCardViewController animated:YES];
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     
 }
 

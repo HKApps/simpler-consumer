@@ -21,8 +21,21 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"user"] style:UIBarButtonItemStyleBordered target:self action:@selector(didTapProfileButton:)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didTapAddCardButton:)];
+        UIButton * payButton = [UIButton buttonWithType:UIButtonTypeRoundedRect] ;
+        //[payButton setBackgroundImage:[UIImage imageNamed:@"user"] forState:UIControlStateNormal];
+        [payButton setTitle:@"Pay" forState:UIControlStateNormal];
+        [payButton addTarget:self action:@selector(didTapPayButton:) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        view.backgroundColor = [UIColor clearColor];
+        payButton.frame = view.frame;
+        [view addSubview:payButton];
+
+        self.navigationItem.titleView = view;
     }
+    
     return self;
 }
 
@@ -53,7 +66,7 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    //self.navigationController.navigationBarHidden = YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -64,14 +77,14 @@
 
 #pragma mark IBActions
 -(IBAction)didTapProfileButton:(id)sender{
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     
     SIOProfileViewController * profileViewController = [[SIOProfileViewController alloc] init];
     [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
 -(IBAction)didTapAddCardButton:(id)sender{
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     
     SIOAddCardViewController * addCardViewController = [[SIOAddCardViewController alloc] init];
     addCardViewController.title = @"Add Card";
@@ -79,7 +92,7 @@
 }
 
 -(IBAction)didTapPayButton:(id)sender{
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
 
     SIOQRScannerViewController * qrScannerViewController = [[SIOQRScannerViewController alloc] init];
     qrScannerViewController.title = @"QR Scanner";
@@ -89,7 +102,7 @@
 #pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-    self.navigationController.navigationBarHidden = NO;
+    //self.navigationController.navigationBarHidden = NO;
     [self pushEditCardView:[self.cards objectAtIndex:[indexPath row]]];
 }
 
