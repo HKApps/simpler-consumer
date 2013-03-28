@@ -24,7 +24,7 @@
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"user"] style:UIBarButtonItemStyleBordered target:self action:@selector(didTapProfileButton:)];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didTapAddCardButton:)];
         UIButton * payButton = [UIButton buttonWithType:UIButtonTypeRoundedRect] ;
-        //[payButton setBackgroundImage:[UIImage imageNamed:@"user"] forState:UIControlStateNormal];
+        //[payButton setBackgroundImage:[UIImage imageNamed:@"BUTTON IMAGE WITH GLOSS EFFECT"] forState:UIControlStateNormal];
         [payButton setTitle:@"Pay" forState:UIControlStateNormal];
         [payButton addTarget:self action:@selector(didTapPayButton:) forControlEvents:UIControlEventTouchUpInside];
         
